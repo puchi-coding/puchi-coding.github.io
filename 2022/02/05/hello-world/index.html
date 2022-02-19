@@ -159,4 +159,38 @@
 
   }
 }
-window.addEventListener('load',preloader.endLoading())</script><div class="js-pjax"></div><script defer src="https://cdn.jsdelivr.net/combine/npm/jquery@latest/dist/jquery.min.js,gh/weilining/jsdelivr/jquery/circlemagic/circlemagic.min.js,gh/weilining/jsdelivr@latest/jquery/circlemagic/butterflycirclemagic.js"></script><script defer="defer" id="fluttering_ribbon" mobile="false" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/canvas-fluttering-ribbon.min.js"></script><script id="click-heart" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/click-heart.min.js" async="async" mobile="true"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><script type="text/javascript" src="/js/crash_cheat.js"></script></body></html>
+window.addEventListener('load',preloader.endLoading())</script><div class="js-pjax"></div><script defer src="https://cdn.jsdelivr.net/combine/npm/jquery@latest/dist/jquery.min.js,gh/weilining/jsdelivr/jquery/circlemagic/circlemagic.min.js,gh/weilining/jsdelivr@latest/jquery/circlemagic/butterflycirclemagic.js"></script><script defer="defer" id="fluttering_ribbon" mobile="false" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/canvas-fluttering-ribbon.min.js"></script><script id="click-heart" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/click-heart.min.js" async="async" mobile="true"></script><script>window.$crisp = [];
+window.CRISP_WEBSITE_ID = "ef1a5ce7-cc4c-4c3a-b3b4-b0bda1212298";
+(function () {
+  d = document;
+  s = d.createElement("script");
+  s.src = "https://client.crisp.chat/l.js";
+  s.async = 1;
+  d.getElementsByTagName("head")[0].appendChild(s);
+})();
+$crisp.push(["safe", true])
+
+if (true) {
+  $crisp.push(["do", "chat:hide"])
+  $crisp.push(["on", "chat:closed", function() {
+    $crisp.push(["do", "chat:hide"])
+  }])
+  var chatBtnFn = () => {
+    var chatBtn = document.getElementById("chat_btn")
+    chatBtn.addEventListener("click", function(){
+      $crisp.push(["do", "chat:show"])
+      $crisp.push(["do", "chat:open"])
+
+    });
+  }
+  chatBtnFn()
+} else {
+  if (true) {
+    function chatBtnHide () {
+      $crisp.push(["do", "chat:hide"])
+    }
+    function chatBtnShow () {
+      $crisp.push(["do", "chat:show"])
+    }
+  }
+}</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><script type="text/javascript" src="/js/crash_cheat.js"></script></body></html>
