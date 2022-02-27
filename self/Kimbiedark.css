@@ -18,14 +18,14 @@
 */
 
 :root {
-    --hl-color: #d3af86;
-    --hl-bg: #221a0f;
-    --hltools-bg: #321a0f;
-    --hltools-color: #fff;
-    --hlnumber-bg: #221a0f;
-    --hlnumber-color: #fff;
-    --hlscrollbar-bg: #d3af86;
-    --hlexpand-bg: #d3af86;
+    --hl-color: #b4cff1;
+    --hl-bg: #b4cff1;
+    --hltools-bg: #b4cff1;
+    --hltools-color: #b4cff1;
+    --hlnumber-bg: #b4cff1;
+    --hlnumber-color: #b4cff1;
+    --hlscrollbar-bg: #b4cff1;
+    --hlexpand-bg: #b4cff1;
   }
   
   /* Kimbie Comment */
