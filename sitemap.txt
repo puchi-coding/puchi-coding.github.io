@@ -7,7 +7,8 @@ https://puchi-coding.github.io/about/index.html
 https://puchi-coding.github.io/link/index.html
 https://puchi-coding.github.io/categories/index.html
 https://puchi-coding.github.io/
-https://puchi-coding.github.io/categories/%E9%9B%9C%E8%AB%87/
-https://puchi-coding.github.io/categories/%E5%89%8D%E7%AB%AF%E8%A7%A3%E9%A1%8C/
 https://puchi-coding.github.io/categories/%E6%B4%BB%E5%8B%95%E5%BF%83%E5%BE%97/
+https://puchi-coding.github.io/categories/%E5%89%8D%E7%AB%AF%E8%A7%A3%E9%A1%8C/
+https://puchi-coding.github.io/categories/%E9%9B%9C%E8%AB%87/
 https://puchi-coding.github.io/categories/%E5%89%8D%E7%AB%AF%E8%A7%A3%E9%A1%8C/Sprout-OJ/
+https://puchi-coding.github.io/categories/%E5%89%8D%E7%AB%AF%E8%A7%A3%E9%A1%8C/Sprout-OJ/Python/
