@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://puchi-coding.github.io/2022/03/29/%E7%AB%A0%E9%AD%9AP%E7%9A%84%E5%8E%9F%E7%BD%AA/</loc>
+    <loc>https://puchi-coding.github.io/2022/05/12/%E4%BF%AE%E7%BE%85%E9%81%93%E7%9A%84%E9%96%8B%E5%A7%8B/</loc>
     
     <lastmod>2022-05-12</lastmod>
     
@@ -13,7 +13,16 @@
   <url>
     <loc>https://puchi-coding.github.io/2022/03/04/%E8%B3%87%E8%A8%8A%E4%B9%8B%E8%8A%BD/</loc>
     
-    <lastmod>2022-03-18</lastmod>
+    <lastmod>2022-05-12</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://puchi-coding.github.io/2022/03/29/%E7%AB%A0%E9%AD%9AP%E7%9A%84%E5%8E%9F%E7%BD%AA/</loc>
+    
+    <lastmod>2022-05-12</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -76,6 +85,20 @@
 
   
   <url>
+    <loc>https://puchi-coding.github.io/categories/%E9%9B%9C%E8%AB%87/</loc>
+    <lastmod>2022-05-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://puchi-coding.github.io/categories/%E5%89%8D%E7%AB%AF%E8%A7%A3%E9%A1%8C/</loc>
+    <lastmod>2022-05-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://puchi-coding.github.io/categories/%E6%B4%BB%E5%8B%95%E5%BF%83%E5%BE%97/</loc>
     <lastmod>2022-05-12</lastmod>
     <changefreq>weekly</changefreq>
@@ -83,7 +106,7 @@
   </url>
   
   <url>
-    <loc>https://puchi-coding.github.io/categories/%E9%9B%9C%E8%AB%87/</loc>
+    <loc>https://puchi-coding.github.io/categories/%E5%89%8D%E7%AB%AF%E8%A7%A3%E9%A1%8C/Sprout-OJ/</loc>
     <lastmod>2022-05-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
