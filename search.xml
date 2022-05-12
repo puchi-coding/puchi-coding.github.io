@@ -8,7 +8,7 @@
       <link href="/2022/05/12/%E4%BF%AE%E7%BE%85%E9%81%93%E7%9A%84%E9%96%8B%E5%A7%8B/"/>
       <url>/2022/05/12/%E4%BF%AE%E7%BE%85%E9%81%93%E7%9A%84%E9%96%8B%E5%A7%8B/</url>
       
-        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs py">// Sprout OJ NO<span class="hljs-number">.3000</span>-修羅道的開始<br><span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;Hello, world&quot;</span>)<br></code></pre></td></tr></table></figure>]]></content>
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h5 id="解題邏輯"><a href="#解題邏輯" class="headerlink" title="解題邏輯:"></a>解題邏輯:</h5><p>就是單純的 <b>輸出</b> Hello, world</p><h5 id="程式碼"><a href="#程式碼" class="headerlink" title="程式碼:"></a>程式碼:</h5><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs py">// Sprout OJ NO<span class="hljs-number">.3000</span>-修羅道的開始<br><span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;Hello, world&quot;</span>)<br></code></pre></td></tr></table></figure>]]></content>
       
       
       <categories>
