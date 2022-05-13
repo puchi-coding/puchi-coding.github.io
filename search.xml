@@ -4,6 +4,29 @@
   
     
     <entry>
+      <title>NO.3009-時間換算</title>
+      <link href="/2022/05/13/NO-3009-%E6%99%82%E9%96%93%E6%8F%9B%E7%AE%97/"/>
+      <url>/2022/05/13/NO-3009-%E6%99%82%E9%96%93%E6%8F%9B%E7%AE%97/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="題目連結"><a href="#題目連結" class="headerlink" title="題目連結:"></a>題目連結:</h3><p><a href="https://neoj.sprout.tw/problem/3009/">https://neoj.sprout.tw/problem/3009/</a></p><h3 id="解題邏輯"><a href="#解題邏輯" class="headerlink" title="解題邏輯:"></a>解題邏輯:</h3><p>1hr有60min<br>t除取整數得hr,t除取餘數得min<br>輸出結果</p><h3 id="程式碼"><a href="#程式碼" class="headerlink" title="程式碼:"></a>程式碼:</h3><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs py">// Sprout OJ NO<span class="hljs-number">.3009</span>-時間換算<br>t = <span class="hljs-built_in">int</span>(<span class="hljs-built_in">input</span>())<br>hours = t // <span class="hljs-number">60</span><br>minutes = t % <span class="hljs-number">60</span><br><span class="hljs-built_in">print</span>(<span class="hljs-built_in">str</span>(hours) + <span class="hljs-string">&quot; &quot;</span> + <span class="hljs-built_in">str</span>(minutes))<br></code></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> 前端解題 </category>
+          
+          <category> Sprout OJ </category>
+          
+          <category> Python </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>NO.3000-修羅道的開始</title>
       <link href="/2022/05/12/%E4%BF%AE%E7%BE%85%E9%81%93%E7%9A%84%E9%96%8B%E5%A7%8B/"/>
       <url>/2022/05/12/%E4%BF%AE%E7%BE%85%E9%81%93%E7%9A%84%E9%96%8B%E5%A7%8B/</url>
