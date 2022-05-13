@@ -5,8 +5,8 @@
     
     <entry>
       <title>NO.3020-印三角形</title>
-      <link href="/2022/05/13/NO-3020-%E5%8D%B0%E4%B8%89%E8%A7%92%E5%BD%A2/"/>
-      <url>/2022/05/13/NO-3020-%E5%8D%B0%E4%B8%89%E8%A7%92%E5%BD%A2/</url>
+      <link href="/2022/05/13/Sprout%20OJ/%E5%8D%B0%E4%B8%89%E8%A7%92%E5%BD%A2/"/>
+      <url>/2022/05/13/Sprout%20OJ/%E5%8D%B0%E4%B8%89%E8%A7%92%E5%BD%A2/</url>
       
         <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="題目連結"><a href="#題目連結" class="headerlink" title="題目連結:"></a>題目連結:</h3><p><a href="https://neoj.sprout.tw/problem/3020/">https://neoj.sprout.tw/problem/3020/</a></p><h3 id="解題邏輯"><a href="#解題邏輯" class="headerlink" title="解題邏輯:"></a>解題邏輯:</h3><p>輸入數字<br>for迴圈重複n次<br>輸出” * “乘上 i+1,<br>使 “ * “ 每次都能多一個</p><h3 id="程式碼"><a href="#程式碼" class="headerlink" title="程式碼:"></a>程式碼:</h3><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">// Sprout OJ NO<span class="number">.3020</span>-印三角形</span><br><span class="line">n = <span class="built_in">int</span>(<span class="built_in">input</span>())</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(n):</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;*&quot;</span>*(i+<span class="number">1</span>))</span><br></pre></td></tr></table></figure>]]></content>
       
@@ -28,8 +28,8 @@
     
     <entry>
       <title>NO.3009-時間換算</title>
-      <link href="/2022/05/13/%E6%99%82%E9%96%93%E6%8F%9B%E7%AE%97/"/>
-      <url>/2022/05/13/%E6%99%82%E9%96%93%E6%8F%9B%E7%AE%97/</url>
+      <link href="/2022/05/13/Sprout%20OJ/%E6%99%82%E9%96%93%E6%8F%9B%E7%AE%97/"/>
+      <url>/2022/05/13/Sprout%20OJ/%E6%99%82%E9%96%93%E6%8F%9B%E7%AE%97/</url>
       
         <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="題目連結"><a href="#題目連結" class="headerlink" title="題目連結:"></a>題目連結:</h3><p><a href="https://neoj.sprout.tw/problem/3009/">https://neoj.sprout.tw/problem/3009/</a></p><h3 id="解題邏輯"><a href="#解題邏輯" class="headerlink" title="解題邏輯:"></a>解題邏輯:</h3><p>1hr有60min<br>t除取整數得hr,t除取餘數得min<br>輸出結果</p><h3 id="程式碼"><a href="#程式碼" class="headerlink" title="程式碼:"></a>程式碼:</h3><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">// Sprout OJ NO<span class="number">.3009</span>-時間換算</span><br><span class="line">t = <span class="built_in">int</span>(<span class="built_in">input</span>())</span><br><span class="line">hours = t // <span class="number">60</span></span><br><span class="line">minutes = t % <span class="number">60</span></span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">str</span>(hours) + <span class="string">&quot; &quot;</span> + <span class="built_in">str</span>(minutes))</span><br></pre></td></tr></table></figure>]]></content>
       
@@ -51,8 +51,8 @@
     
     <entry>
       <title>NO.3000-修羅道的開始</title>
-      <link href="/2022/05/12/%E4%BF%AE%E7%BE%85%E9%81%93%E7%9A%84%E9%96%8B%E5%A7%8B/"/>
-      <url>/2022/05/12/%E4%BF%AE%E7%BE%85%E9%81%93%E7%9A%84%E9%96%8B%E5%A7%8B/</url>
+      <link href="/2022/05/12/Sprout%20OJ/%E4%BF%AE%E7%BE%85%E9%81%93%E7%9A%84%E9%96%8B%E5%A7%8B/"/>
+      <url>/2022/05/12/Sprout%20OJ/%E4%BF%AE%E7%BE%85%E9%81%93%E7%9A%84%E9%96%8B%E5%A7%8B/</url>
       
         <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="題目連結"><a href="#題目連結" class="headerlink" title="題目連結:"></a>題目連結:</h3><p><a href="https://neoj.sprout.tw/problem/3000/">https://neoj.sprout.tw/problem/3000/</a></p><h3 id="解題邏輯"><a href="#解題邏輯" class="headerlink" title="解題邏輯:"></a>解題邏輯:</h3><p>就是單純的輸出 Hello, world</p><h3 id="程式碼"><a href="#程式碼" class="headerlink" title="程式碼:"></a>程式碼:</h3><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">// Sprout OJ NO<span class="number">.3000</span>-修羅道的開始</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;Hello, world&quot;</span>)</span><br></pre></td></tr></table></figure>]]></content>
       
