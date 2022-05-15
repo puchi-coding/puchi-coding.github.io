@@ -1,13 +1,11 @@
-# hexo robots.txt
 User-agent: *
 Allow: /
 Allow: /archives/
 Allow: /categories/
 Allow: /tags/
-Allow: /about/ 
-
-# Disallow: /js/
-# Disallow: /css/
-# Disallow: /fancybox/
-
+Disallow: /vendors/
+Disallow: /fonts/
+Disallow: /vendors/
+Disallow: /fancybox/
 Sitemap: https://puchi-coding.github.io/sitemap.xml
+Sitemap: https://puchi-coding.github.io/baidusitemap.xml
