@@ -130,35 +130,7 @@
 
   
   <url>
-    <loc>https://puchi-coding.github.io/categories/%E9%9B%9C%E8%AB%87/</loc>
-    <lastmod>2022-05-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://puchi-coding.github.io/categories/%E6%97%A5%E6%9C%AC%E6%96%87%E5%8C%96/</loc>
-    <lastmod>2022-05-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://puchi-coding.github.io/categories/%E6%B4%BB%E5%8B%95%E5%BF%83%E5%BE%97/</loc>
-    <lastmod>2022-05-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://puchi-coding.github.io/categories/%E5%89%8D%E7%AB%AF%E8%A7%A3%E9%A1%8C/</loc>
-    <lastmod>2022-05-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://puchi-coding.github.io/categories/%E6%97%A5%E6%9C%AC%E6%96%87%E5%8C%96/%E5%8B%95%E6%BC%AB%E6%8E%A8%E8%96%A6/</loc>
     <lastmod>2022-05-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -172,7 +144,35 @@
   </url>
   
   <url>
+    <loc>https://puchi-coding.github.io/categories/%E9%9B%9C%E8%AB%87/</loc>
+    <lastmod>2022-05-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://puchi-coding.github.io/categories/%E6%B4%BB%E5%8B%95%E5%BF%83%E5%BE%97/</loc>
+    <lastmod>2022-05-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://puchi-coding.github.io/categories/%E6%97%A5%E6%9C%AC%E6%96%87%E5%8C%96/</loc>
+    <lastmod>2022-05-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://puchi-coding.github.io/categories/%E5%89%8D%E7%AB%AF%E8%A7%A3%E9%A1%8C/Python/Sprout-OJ/</loc>
+    <lastmod>2022-05-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://puchi-coding.github.io/categories/%E6%97%A5%E6%9C%AC%E6%96%87%E5%8C%96/%E5%8B%95%E6%BC%AB%E6%8E%A8%E8%96%A6/</loc>
     <lastmod>2022-05-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
