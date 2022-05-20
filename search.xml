@@ -17,19 +17,6 @@
     
     
     <entry>
-      <title>No.3019來印三角形吧</title>
-      <link href="/2022/05/13/Sprout%20OJ/%E4%BE%86%E5%8D%B0%E4%B8%89%E8%A7%92%E5%BD%A2%E5%90%A7/"/>
-      <url>/2022/05/13/Sprout%20OJ/%E4%BE%86%E5%8D%B0%E4%B8%89%E8%A7%92%E5%BD%A2%E5%90%A7/</url>
-      
-        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="題目連結"><a href="#題目連結" class="headerlink" title="題目連結:"></a>題目連結:</h3><p><a href="https://neoj.sprout.tw/problem/3089/">https://neoj.sprout.tw/problem/3089/</a></p><h3 id="解題邏輯"><a href="#解題邏輯" class="headerlink" title="解題邏輯:"></a>解題邏輯:</h3><p>比較困難的印三角形，每行前面都要持續加n-i個空白</p><h3 id="程式碼"><a href="#程式碼" class="headerlink" title="程式碼:"></a>程式碼:</h3><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">// Sprout OJ No<span class="number">.3019</span>-來印三角形吧</span><br><span class="line">n = <span class="built_in">int</span>(<span class="built_in">input</span>())</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">1</span>,n+<span class="number">1</span>):</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot; &quot;</span>*(n-i)+<span class="string">&quot;*&quot;</span>*(<span class="number">2</span>*i-<span class="number">1</span>))</span><br><span class="line"></span><br></pre></td></tr></table></figure>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>No.3087差太多了吧</title>
       <link href="/2022/05/13/Sprout%20OJ/%E5%B7%AE%E5%A4%AA%E5%A4%9A%E4%BA%86%E5%90%A7/"/>
       <url>/2022/05/13/Sprout%20OJ/%E5%B7%AE%E5%A4%AA%E5%A4%9A%E4%BA%86%E5%90%A7/</url>
@@ -43,20 +30,7 @@
     
     
     <entry>
-      <title>No.3089-卍九九乘法改乂</title>
-      <link href="/2022/05/13/Sprout%20OJ/%E5%8D%8D%E4%B9%9D%E4%B9%9D%E4%B9%98%E6%B3%95%E6%94%B9%E4%B9%82/"/>
-      <url>/2022/05/13/Sprout%20OJ/%E5%8D%8D%E4%B9%9D%E4%B9%9D%E4%B9%98%E6%B3%95%E6%94%B9%E4%B9%82/</url>
-      
-        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="題目連結"><a href="#題目連結" class="headerlink" title="題目連結:"></a>題目連結:</h3><p><a href="https://neoj.sprout.tw/problem/3089/">https://neoj.sprout.tw/problem/3089/</a></p><h3 id="解題邏輯"><a href="#解題邏輯" class="headerlink" title="解題邏輯:"></a>解題邏輯:</h3><p>輸入的數字不計，用迴圈和條件判斷跳過此數</p><h3 id="程式碼"><a href="#程式碼" class="headerlink" title="程式碼:"></a>程式碼:</h3><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">// Sprout OJ No<span class="number">.3089</span>-卍九九乘法改乂</span><br><span class="line">i , j = <span class="number">1</span>, <span class="number">1</span></span><br><span class="line">n = <span class="built_in">int</span>(<span class="built_in">input</span>())</span><br><span class="line"></span><br><span class="line"><span class="keyword">while</span> i &lt;= <span class="number">9</span>:</span><br><span class="line">    <span class="keyword">if</span> i == n:</span><br><span class="line">        i += <span class="number">1</span></span><br><span class="line">        j = <span class="number">1</span></span><br><span class="line">        <span class="keyword">continue</span></span><br><span class="line">    <span class="keyword">while</span> j &lt;= <span class="number">9</span>:</span><br><span class="line">        <span class="keyword">if</span> j == n:</span><br><span class="line">            j += <span class="number">1</span></span><br><span class="line">            <span class="keyword">continue</span></span><br><span class="line">        <span class="built_in">print</span>(<span class="string">f&quot;<span class="subst">&#123;i&#125;</span>*<span class="subst">&#123;j&#125;</span>=<span class="subst">&#123;i*j&#125;</span>&quot;</span>, end =<span class="string">&#x27; &#x27;</span>)</span><br><span class="line">        j += <span class="number">1</span></span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&#x27;&#x27;</span>)</span><br><span class="line">    i += <span class="number">1</span></span><br><span class="line">    j = <span class="number">1</span></span><br></pre></td></tr></table></figure>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>No.3020-印三角形</title>
+      <title>No.3020印三角形</title>
       <link href="/2022/05/13/Sprout%20OJ/%E5%8D%B0%E4%B8%89%E8%A7%92%E5%BD%A2/"/>
       <url>/2022/05/13/Sprout%20OJ/%E5%8D%B0%E4%B8%89%E8%A7%92%E5%BD%A2/</url>
       
@@ -79,7 +53,7 @@
     
     
     <entry>
-      <title>No.3009-時間換算</title>
+      <title>No.3009時間換算</title>
       <link href="/2022/05/13/Sprout%20OJ/%E6%99%82%E9%96%93%E6%8F%9B%E7%AE%97/"/>
       <url>/2022/05/13/Sprout%20OJ/%E6%99%82%E9%96%93%E6%8F%9B%E7%AE%97/</url>
       
@@ -102,7 +76,7 @@
     
     
     <entry>
-      <title>No.3000-修羅道的開始</title>
+      <title>No.3000修羅道的開始</title>
       <link href="/2022/05/12/Sprout%20OJ/%E4%BF%AE%E7%BE%85%E9%81%93%E7%9A%84%E9%96%8B%E5%A7%8B/"/>
       <url>/2022/05/12/Sprout%20OJ/%E4%BF%AE%E7%BE%85%E9%81%93%E7%9A%84%E9%96%8B%E5%A7%8B/</url>
       
