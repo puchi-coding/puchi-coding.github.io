@@ -11,6 +11,16 @@
         <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="題目連結"><a href="#題目連結" class="headerlink" title="題目連結:"></a>題目連結:</h3><p><a href="https://neoj.sprout.tw/problem/3007/">https://neoj.sprout.tw/problem/3007/</a></p><h3 id="解題邏輯"><a href="#解題邏輯" class="headerlink" title="解題邏輯:"></a>解題邏輯:</h3><p>單純的分數運算…</p><h3 id="程式碼"><a href="#程式碼" class="headerlink" title="程式碼:"></a>程式碼:</h3><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">// Sprout OJ No<span class="number">.3007</span>-修羅道的開始</span><br><span class="line">old_grade=<span class="built_in">int</span>(<span class="built_in">input</span>())</span><br><span class="line">new_grade= (old_grade+<span class="number">33</span>)*<span class="number">3</span>-<span class="number">66</span></span><br><span class="line"><span class="built_in">print</span>(new_grade)</span><br><span class="line"></span><br></pre></td></tr></table></figure>]]></content>
       
       
+      <categories>
+          
+          <category> 前端解題 </category>
+          
+          <category> Python </category>
+          
+          <category> Sprout OJ </category>
+          
+      </categories>
+      
       
     </entry>
     
@@ -24,6 +34,16 @@
         <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="題目連結"><a href="#題目連結" class="headerlink" title="題目連結:"></a>題目連結:</h3><p><a href="https://neoj.sprout.tw/problem/3011/">https://neoj.sprout.tw/problem/3011/</a></p><h3 id="解題邏輯"><a href="#解題邏輯" class="headerlink" title="解題邏輯:"></a>解題邏輯:</h3><p>最簡單的方式，就是將所有大小可能都列出來，然後再條件判斷和輸出</p><h3 id="程式碼"><a href="#程式碼" class="headerlink" title="程式碼:"></a>程式碼:</h3><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">// Sprout OJ No<span class="number">.3011</span>-三元排序</span><br><span class="line">a = <span class="built_in">int</span>(<span class="built_in">input</span>())</span><br><span class="line">b = <span class="built_in">int</span>(<span class="built_in">input</span>())</span><br><span class="line">c = <span class="built_in">int</span>(<span class="built_in">input</span>())</span><br><span class="line"><span class="keyword">if</span> a &gt; b &gt; c:</span><br><span class="line">    <span class="built_in">print</span>(a,b,c)</span><br><span class="line"><span class="keyword">elif</span> a &gt; c &gt; b:</span><br><span class="line">    <span class="built_in">print</span>(a,c,b)</span><br><span class="line"><span class="keyword">elif</span> b &gt; a &gt; c:</span><br><span class="line">    <span class="built_in">print</span>(b,a,c)</span><br><span class="line"><span class="keyword">elif</span> b &gt; c &gt; a :</span><br><span class="line">    <span class="built_in">print</span>(b,c,a)</span><br><span class="line"><span class="keyword">elif</span> c &gt; a &gt;b:</span><br><span class="line">    <span class="built_in">print</span>(c,a,b)</span><br><span class="line"><span class="keyword">elif</span> c &gt; b &gt; a:</span><br><span class="line">    <span class="built_in">print</span>(c,b,a)</span><br><span class="line"></span><br></pre></td></tr></table></figure>]]></content>
       
       
+      <categories>
+          
+          <category> 前端解題 </category>
+          
+          <category> Python </category>
+          
+          <category> Sprout OJ </category>
+          
+      </categories>
+      
       
     </entry>
     
@@ -36,6 +56,16 @@
       
         <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="題目連結"><a href="#題目連結" class="headerlink" title="題目連結:"></a>題目連結:</h3><p><a href="https://neoj.sprout.tw/problem/3010/">https://neoj.sprout.tw/problem/3010/</a></p><h3 id="解題邏輯"><a href="#解題邏輯" class="headerlink" title="解題邏輯:"></a>解題邏輯:</h3><p>兩者相減，加上abs(絕對值)使數字不會出現負號</p><h3 id="程式碼"><a href="#程式碼" class="headerlink" title="程式碼:"></a>程式碼:</h3><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">// Sprout OJ No<span class="number">.3010</span>-野豬騎士來囉</span><br><span class="line">N = <span class="built_in">int</span>(<span class="built_in">input</span>())</span><br><span class="line">M = <span class="built_in">int</span>(<span class="built_in">input</span>())</span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">abs</span>(N-M))</span><br><span class="line"></span><br></pre></td></tr></table></figure>]]></content>
       
+      
+      <categories>
+          
+          <category> 前端解題 </category>
+          
+          <category> Python </category>
+          
+          <category> Sprout OJ </category>
+          
+      </categories>
       
       
     </entry>
@@ -55,6 +85,8 @@
           <category> 前端解題 </category>
           
           <category> Python </category>
+          
+          <category> Sprout OJ </category>
           
       </categories>
       
@@ -77,6 +109,8 @@
           
           <category> Python </category>
           
+          <category> Sprout OJ </category>
+          
       </categories>
       
       
@@ -91,6 +125,16 @@
       
         <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="題目連結"><a href="#題目連結" class="headerlink" title="題目連結:"></a>題目連結:</h3><p><a href="https://neoj.sprout.tw/problem/3087/">https://neoj.sprout.tw/problem/3087/</a></p><h3 id="解題邏輯"><a href="#解題邏輯" class="headerlink" title="解題邏輯:"></a>解題邏輯:</h3><p>將分數放進列表中，並透過mix和min來找值，最後加減輸出</p><h3 id="程式碼"><a href="#程式碼" class="headerlink" title="程式碼:"></a>程式碼:</h3><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">// Sprout OJ No<span class="number">.3087</span>-差太多了吧</span><br><span class="line">n = <span class="built_in">eval</span>(<span class="built_in">input</span>())</span><br><span class="line">m = <span class="built_in">eval</span>(<span class="built_in">input</span>())</span><br><span class="line"><span class="keyword">if</span> n==<span class="number">0</span> <span class="keyword">and</span> m==<span class="number">0</span>:</span><br><span class="line">    <span class="keyword">pass</span></span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">    list1 = []</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(n):</span><br><span class="line">        <span class="keyword">for</span> j <span class="keyword">in</span> <span class="built_in">range</span>(m):</span><br><span class="line">            list1.append(<span class="built_in">eval</span>(<span class="built_in">input</span>()))</span><br><span class="line">    maxmu = []</span><br><span class="line">    minmu = []</span><br><span class="line">    fminmu = []</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(n):</span><br><span class="line">        maxmu.append(<span class="built_in">max</span>(list1[i*m:(i*m)+m]))</span><br><span class="line">        minmu.append(<span class="built_in">min</span>(list1[i*m:(i*m)+m]))</span><br><span class="line">        fminmu.append(maxmu[i]-minmu[i])</span><br><span class="line">        <span class="built_in">print</span>(maxmu[i]-minmu[i])</span><br><span class="line">    <span class="built_in">print</span>(<span class="built_in">sorted</span>(fminmu)[<span class="number">0</span>])</span><br></pre></td></tr></table></figure>]]></content>
       
+      
+      <categories>
+          
+          <category> 前端解題 </category>
+          
+          <category> Python </category>
+          
+          <category> Sprout OJ </category>
+          
+      </categories>
       
       
     </entry>
@@ -156,6 +200,8 @@
           <category> 前端解題 </category>
           
           <category> Python </category>
+          
+          <category> Sprout OJ </category>
           
       </categories>
       
