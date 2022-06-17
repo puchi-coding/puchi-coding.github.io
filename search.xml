@@ -4,6 +4,29 @@
   
     
     <entry>
+      <title>No.2005修羅道之佛</title>
+      <link href="/2022/06/17/Sprout%20OJ/%E4%BF%AE%E7%BE%85%E9%81%93%E4%B9%8B%E4%BD%9B/"/>
+      <url>/2022/06/17/Sprout%20OJ/%E4%BF%AE%E7%BE%85%E9%81%93%E4%B9%8B%E4%BD%9B/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="題目連結"><a href="#題目連結" class="headerlink" title="題目連結:"></a>題目連結:</h3><p><a href="https://neoj.sprout.tw/problem/2005/">https://neoj.sprout.tw/problem/2005/</a></p><h3 id="解題邏輯"><a href="#解題邏輯" class="headerlink" title="解題邏輯:"></a>解題邏輯:</h3><p>透過enumerate來將value和第幾個元素給列因出來</p><h3 id="程式碼"><a href="#程式碼" class="headerlink" title="程式碼:"></a>程式碼:</h3><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">// Sprout OJ No<span class="number">.2009</span>-自動點名機</span><br><span class="line">num = <span class="built_in">list</span>(<span class="built_in">input</span>().split())</span><br><span class="line">n = <span class="built_in">input</span>()</span><br><span class="line"><span class="keyword">for</span> i , j <span class="keyword">in</span> <span class="built_in">enumerate</span>(num):</span><br><span class="line">    <span class="keyword">if</span> j == n:</span><br><span class="line">        <span class="built_in">print</span>(num.index(n,i))</span><br><span class="line"></span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> 前端解題 </category>
+          
+          <category> Python </category>
+          
+          <category> Sprout OJ </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>No.2009自動點名機</title>
       <link href="/2022/06/13/Sprout%20OJ/%E8%87%AA%E5%8B%95%E9%BB%9E%E5%90%8D%E6%A9%9F/"/>
       <url>/2022/06/13/Sprout%20OJ/%E8%87%AA%E5%8B%95%E9%BB%9E%E5%90%8D%E6%A9%9F/</url>
