@@ -4,6 +4,19 @@
   
     
     <entry>
+      <title>No.3046西瓜的名字</title>
+      <link href="/2022/07/06/Sprout%20OJ/%E8%A5%BF%E7%93%9C%E7%9A%84%E5%90%8D%E5%AD%97/"/>
+      <url>/2022/07/06/Sprout%20OJ/%E8%A5%BF%E7%93%9C%E7%9A%84%E5%90%8D%E5%AD%97/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="題目連結"><a href="#題目連結" class="headerlink" title="題目連結:"></a>題目連結:</h3><p><a href="https://neoj.sprout.tw/problem/3046/">https://neoj.sprout.tw/problem/3046/</a></p><h3 id="解題邏輯"><a href="#解題邏輯" class="headerlink" title="解題邏輯:"></a>解題邏輯:</h3><p>題目最後要求的就是有幾個西瓜綽號<br>首先先將要求的綽號變成小寫，為了方便判斷(要求1)<br>再來把”，”和”.”替換成空白，為了在分割(split)字串時，不要讓綽號前多了其他多餘的符號(要求2)<br>要求1和要求2達成後，每個小寫單字前面都是空白<br>最後只要將字串split成列表，再count出來有幾個是符合的</p><p>這題就是在練string的各種語法</p><p>題目有幾個要求:</p><ol><li>名字不分大小寫</li><li>前後不能有不是綽號的英文字母</li></ol><h3 id="程式碼"><a href="#程式碼" class="headerlink" title="程式碼:"></a>程式碼:</h3><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">// Sprout OJ No<span class="number">.3046</span>-西瓜的名字</span><br><span class="line">name = <span class="built_in">input</span>().lower()</span><br><span class="line">article = <span class="built_in">str</span>(<span class="built_in">input</span>().lower())</span><br><span class="line">article = article.replace(<span class="string">&quot;,&quot;</span>,<span class="string">&quot; &quot;</span>)</span><br><span class="line">article = article.replace(<span class="string">&quot;.&quot;</span>,<span class="string">&quot; &quot;</span>)</span><br><span class="line">article = article.split()</span><br><span class="line"><span class="built_in">print</span>(article.count(name))</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>No.3028野豬騎士來囉 II</title>
       <link href="/2022/07/06/Sprout%20OJ/%E9%87%8E%E8%B1%AC%E9%A8%8E%E5%A3%AB%E4%BE%86%E5%9B%89-II/"/>
       <url>/2022/07/06/Sprout%20OJ/%E9%87%8E%E8%B1%AC%E9%A8%8E%E5%A3%AB%E4%BE%86%E5%9B%89-II/</url>
