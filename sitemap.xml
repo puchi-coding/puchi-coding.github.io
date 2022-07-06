@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://puchi-coding.github.io/2022/07/06/Sprout%20OJ/%E9%87%8E%E8%B1%AC%E9%A8%8E%E5%A3%AB%E4%BE%86%E5%9B%89-II/</loc>
+    
+    <lastmod>2022-07-06</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://puchi-coding.github.io/2022/06/17/Sprout%20OJ/%E4%BF%AE%E7%BE%85%E9%81%93%E4%B9%8B%E6%80%AA%E7%95%B0%E7%9A%84%E7%AF%84%E5%9C%8D/</loc>
     
     <lastmod>2022-07-06</lastmod>
@@ -200,14 +209,14 @@
   </url>
   
   <url>
-    <loc>https://puchi-coding.github.io/categories/%E6%B4%BB%E5%8B%95%E5%BF%83%E5%BE%97/</loc>
+    <loc>https://puchi-coding.github.io/categories/%E6%97%A5%E6%9C%AC%E6%96%87%E5%8C%96/</loc>
     <lastmod>2022-07-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://puchi-coding.github.io/categories/%E6%97%A5%E6%9C%AC%E6%96%87%E5%8C%96/</loc>
+    <loc>https://puchi-coding.github.io/categories/%E6%B4%BB%E5%8B%95%E5%BF%83%E5%BE%97/</loc>
     <lastmod>2022-07-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
