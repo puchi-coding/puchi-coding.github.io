@@ -4,6 +4,29 @@
   
     
     <entry>
+      <title>No.3035bearrrrrrrro的綽號們</title>
+      <link href="/2022/07/06/Sprout%20OJ/bearrrrrrrro%E7%9A%84%E7%B6%BD%E8%99%9F%E5%80%91/"/>
+      <url>/2022/07/06/Sprout%20OJ/bearrrrrrrro%E7%9A%84%E7%B6%BD%E8%99%9F%E5%80%91/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="題目連結"><a href="#題目連結" class="headerlink" title="題目連結:"></a>題目連結:</h3><p><a href="https://neoj.sprout.tw/problem/3035/">https://neoj.sprout.tw/problem/3035/</a></p><h3 id="解題邏輯"><a href="#解題邏輯" class="headerlink" title="解題邏輯:"></a>解題邏輯:</h3><p>這題跟No.3055蠻像的，不過論述更加複雜<br>但只要把握No.3055的邏輯和注意1,2,3,4(Key)對應的動作，再將動作一一實行就能成功</p><h3 id="程式碼"><a href="#程式碼" class="headerlink" title="程式碼:"></a>程式碼:</h3><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">// Sprout OJ No<span class="number">.3035</span>-bearrrrrrrro的綽號們</span><br><span class="line">n = <span class="built_in">int</span>(<span class="built_in">input</span>())</span><br><span class="line">dic = &#123;&#125;</span><br><span class="line"><span class="keyword">for</span> _ <span class="keyword">in</span> <span class="built_in">range</span>(n):</span><br><span class="line">    inputs = <span class="built_in">input</span>().split()</span><br><span class="line">    op = <span class="built_in">int</span>(inputs[<span class="number">0</span>])</span><br><span class="line">    <span class="keyword">if</span> op == <span class="number">1</span>:</span><br><span class="line">        nickname = inputs[<span class="number">1</span>]</span><br><span class="line">        <span class="keyword">if</span> nickname <span class="keyword">in</span> dic:</span><br><span class="line">            dic[nickname] += <span class="number">1</span></span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            dic[nickname] = <span class="number">1</span></span><br><span class="line">    <span class="keyword">elif</span> op == <span class="number">2</span>:</span><br><span class="line">        nickname = inputs[<span class="number">1</span>]</span><br><span class="line">        <span class="keyword">if</span> nickname <span class="keyword">in</span> dic:</span><br><span class="line">            dic[nickname] -= <span class="number">1</span></span><br><span class="line">        <span class="keyword">if</span> dic[nickname] == <span class="number">0</span>:</span><br><span class="line">            <span class="keyword">del</span> dic[nickname]</span><br><span class="line">    <span class="keyword">elif</span> op == <span class="number">3</span>:</span><br><span class="line">        ans = <span class="built_in">list</span>(dic.items())</span><br><span class="line">        ans.sort()</span><br><span class="line">        <span class="keyword">for</span> key, value <span class="keyword">in</span> ans:</span><br><span class="line">            <span class="built_in">print</span>(key, value)</span><br><span class="line">    <span class="keyword">elif</span> op == <span class="number">4</span>:</span><br><span class="line">        <span class="built_in">print</span>(<span class="built_in">len</span>(dic))</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> 前端解題 </category>
+          
+          <category> Python </category>
+          
+          <category> Sprout OJ </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>No.3055凌晨4點的修羅道</title>
       <link href="/2022/07/06/Sprout%20OJ/%E5%87%8C%E6%99%A84%E9%BB%9E%E7%9A%84%E4%BF%AE%E7%BE%85%E9%81%93/"/>
       <url>/2022/07/06/Sprout%20OJ/%E5%87%8C%E6%99%A84%E9%BB%9E%E7%9A%84%E4%BF%AE%E7%BE%85%E9%81%93/</url>
