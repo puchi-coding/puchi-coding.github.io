@@ -4,6 +4,29 @@
   
     
     <entry>
+      <title>No.3052海芭樂愛的大冒險III</title>
+      <link href="/2022/07/06/Sprout%20OJ/%E6%B5%B7%E8%8A%AD%E6%A8%82%E6%84%9B%E7%9A%84%E5%A4%A7%E5%86%92%E9%9A%AAIII/"/>
+      <url>/2022/07/06/Sprout%20OJ/%E6%B5%B7%E8%8A%AD%E6%A8%82%E6%84%9B%E7%9A%84%E5%A4%A7%E5%86%92%E9%9A%AAIII/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="題目連結"><a href="#題目連結" class="headerlink" title="題目連結:"></a>題目連結:</h3><p><a href="https://neoj.sprout.tw/problem/3052/">https://neoj.sprout.tw/problem/3052/</a></p><h3 id="解題邏輯"><a href="#解題邏輯" class="headerlink" title="解題邏輯:"></a>解題邏輯:</h3><p>這題要求的就是看哪個人AC最多次<br>把”人名(Key)”和”結果(Value)”匯入dictionary當中，再把最多AC的人輸出出來<br>(這題跟之前寫過的幾題很像，可以去翻翻看)</p><h3 id="程式碼"><a href="#程式碼" class="headerlink" title="程式碼:"></a>程式碼:</h3><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">// Sprout OJ No<span class="number">.3052</span>-海芭樂愛的大冒險III</span><br><span class="line">n = <span class="built_in">int</span>(<span class="built_in">input</span>())</span><br><span class="line">score = &#123;&#125;</span><br><span class="line"><span class="keyword">for</span> _ <span class="keyword">in</span> <span class="built_in">range</span>(n):</span><br><span class="line">    name, status = <span class="built_in">input</span>().split()</span><br><span class="line">    <span class="keyword">if</span> status == <span class="string">&quot;AC&quot;</span>:</span><br><span class="line">        <span class="keyword">if</span> name <span class="keyword">in</span> score:</span><br><span class="line">            score[name] += <span class="number">1</span></span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            score[name] = <span class="number">1</span></span><br><span class="line">    </span><br><span class="line">max_score = <span class="number">0</span></span><br><span class="line">ans = <span class="string">&quot;&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> name <span class="keyword">in</span> score:</span><br><span class="line">    <span class="keyword">if</span> score[name] &gt;= max_score:</span><br><span class="line">        max_score = score[name]</span><br><span class="line">        ans = name</span><br><span class="line"><span class="built_in">print</span>(ans)</span><br><span class="line"></span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> 前端解題 </category>
+          
+          <category> Python </category>
+          
+          <category> Sprout OJ </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>No.3035bearrrrrrrro的綽號們</title>
       <link href="/2022/07/06/Sprout%20OJ/bearrrrrrrro%E7%9A%84%E7%B6%BD%E8%99%9F%E5%80%91/"/>
       <url>/2022/07/06/Sprout%20OJ/bearrrrrrrro%E7%9A%84%E7%B6%BD%E8%99%9F%E5%80%91/</url>
