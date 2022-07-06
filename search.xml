@@ -4,6 +4,29 @@
   
     
     <entry>
+      <title>No.3031修羅道之怪異的範圍</title>
+      <link href="/2022/06/17/Sprout%20OJ/%E4%BF%AE%E7%BE%85%E9%81%93%E4%B9%8B%E6%80%AA%E7%95%B0%E7%9A%84%E7%AF%84%E5%9C%8D/"/>
+      <url>/2022/06/17/Sprout%20OJ/%E4%BF%AE%E7%BE%85%E9%81%93%E4%B9%8B%E6%80%AA%E7%95%B0%E7%9A%84%E7%AF%84%E5%9C%8D/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="題目連結"><a href="#題目連結" class="headerlink" title="題目連結:"></a>題目連結:</h3><p><a href="https://neoj.sprout.tw/problem/3031/">https://neoj.sprout.tw/problem/3031/</a></p><h3 id="解題邏輯"><a href="#解題邏輯" class="headerlink" title="解題邏輯:"></a>解題邏輯:</h3><p>等差數列，a為首項，b為公差，c為末項，n為倍數，然後就開始重複代等差公式，直到最後等於要求的值</p><p>注意:</p><ol><li>如果 a&#x3D;c，則直接輸出c</li><li>如果公差為0，則輸出&gt;&lt;(不存在)</li><li>如果(a + b*n)無法等於c，則輸出&gt;&lt;(不存在)</li><li>如果 a&gt;c 且 b&gt;0，則輸出&gt;&lt;(不存在)<br>&#x3D;&gt;因為公差怎麼疊加(越來越多)都無法等於末項</li><li>如果 a&lt;c 且 b&lt;0，則輸出&gt;&lt;(不存在)<br>&#x3D;&gt;因為公差怎麼疊加(越來越少)都無法等於末項</li></ol><h3 id="程式碼"><a href="#程式碼" class="headerlink" title="程式碼:"></a>程式碼:</h3><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">// Sprout OJ No<span class="number">.3031</span>-修羅道之怪異的範圍</span><br><span class="line">a,b,c = <span class="built_in">map</span>(<span class="built_in">int</span>,<span class="built_in">input</span>().split())</span><br><span class="line">t = <span class="number">0</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> a == c:</span><br><span class="line">    <span class="built_in">print</span>(c)</span><br><span class="line"><span class="keyword">elif</span> b == <span class="number">0</span>:</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;&gt;&lt;&quot;</span>)</span><br><span class="line"><span class="keyword">elif</span> (c-a) % b != <span class="number">0</span>:</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;&gt;&lt;&quot;</span>)</span><br><span class="line"><span class="keyword">elif</span> b &gt; <span class="number">0</span> <span class="keyword">and</span> a &gt; c:</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;&gt;&lt;&quot;</span>)</span><br><span class="line"><span class="keyword">elif</span> b &lt; <span class="number">0</span> <span class="keyword">and</span> a &lt; c:</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;&gt;&lt;&quot;</span>)</span><br><span class="line"></span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">    <span class="keyword">while</span> <span class="literal">True</span>:</span><br><span class="line">        g = ((a+(b)*t))</span><br><span class="line">        <span class="built_in">print</span>(g,end=<span class="string">&quot; &quot;</span>)</span><br><span class="line">        t += <span class="number">1</span></span><br><span class="line">        <span class="keyword">if</span> g == (c - b):</span><br><span class="line">            <span class="built_in">print</span>(c)</span><br><span class="line">            <span class="keyword">break</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> 前端解題 </category>
+          
+          <category> Python </category>
+          
+          <category> Sprout OJ </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>No.3088不只跳舞</title>
       <link href="/2022/06/17/Sprout%20OJ/%E4%B8%8D%E5%8F%AA%E8%B7%B3%E8%88%9E/"/>
       <url>/2022/06/17/Sprout%20OJ/%E4%B8%8D%E5%8F%AA%E8%B7%B3%E8%88%9E/</url>
