@@ -4,11 +4,80 @@
   
     
     <entry>
-      <title>YTP 2021初賽_筆電裝飾</title>
-      <link href="/2022/07/15/YTP/%E7%AD%86%E9%9B%BB%E8%A3%9D%E9%A3%BE-Laptop-Decoration/"/>
-      <url>/2022/07/15/YTP/%E7%AD%86%E9%9B%BB%E8%A3%9D%E9%A3%BE-Laptop-Decoration/</url>
+      <title>YTP 2016挑戰營_地震源與觀測站的距離計算</title>
+      <link href="/2022/07/15/YTP/%E5%9C%B0%E9%9C%87%E6%BA%90%E8%88%87%E8%A7%80%E6%B8%AC%E7%AB%99%E7%9A%84%E8%B7%9D%E9%9B%A2%E8%A8%88%E7%AE%97/"/>
+      <url>/2022/07/15/YTP/%E5%9C%B0%E9%9C%87%E6%BA%90%E8%88%87%E8%A7%80%E6%B8%AC%E7%AB%99%E7%9A%84%E8%B7%9D%E9%9B%A2%E8%A8%88%E7%AE%97/</url>
       
-        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="題目連結"><a href="#題目連結" class="headerlink" title="題目連結:"></a>題目連結:</h3><p><a href="https://www.tw-ytp.org/past-exam/">https://www.tw-ytp.org/past-exam/</a></p><h3 id="解題邏輯"><a href="#解題邏輯" class="headerlink" title="解題邏輯:"></a>解題邏輯:</h3><p><strong>#沒有Judge，所以程式碼不一定完全正確，但輸入題目的測資一定正確</strong></p><p>先將所有的字母變成小寫，方便後續的程式進行<br>使用count將y、t、p的個數求出來<br>最後將y、t、p中個數最少的輸出出來<br>(題目是求最多能有幾組ytp，所以只要將個數最少的字母求出就是解答)</p><h3 id="程式碼"><a href="#程式碼" class="headerlink" title="程式碼:"></a>程式碼:</h3><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">// 2021YTP初賽_筆電裝飾(Laptop Decoration)</span><br><span class="line">word = <span class="built_in">str</span>(<span class="built_in">input</span>().lower())</span><br><span class="line">y = word.count(<span class="string">&quot;y&quot;</span>)</span><br><span class="line">t = word.count(<span class="string">&quot;t&quot;</span>)</span><br><span class="line">p = word.count(<span class="string">&quot;p&quot;</span>)</span><br><span class="line">ytp_list = [y, t, p]</span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">min</span>(ytp_list))</span><br></pre></td></tr></table></figure>]]></content>
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="題目連結"><a href="#題目連結" class="headerlink" title="題目連結:"></a>題目連結:</h3><p><a href="https://www.tw-ytp.org/past-exam/">https://www.tw-ytp.org/past-exam/</a></p><h3 id="解題邏輯"><a href="#解題邏輯" class="headerlink" title="解題邏輯:"></a>解題邏輯:</h3><p><strong>#沒有Judge，所以程式碼不一定完全正確，但輸入題目的測資一定正確</strong></p><p>這題就是高一地科會碰到的題目，可以參考附圖</p><p><img src="http://1.bp.blogspot.com/-vW2ENhUmRLY/Wa-6K84dxdI/AAAAAAAAAME/hBU5BV70zQMCLyMxLe5YrknpWwUuWifaQCLcBGAs/s1600/%25E5%25AE%259A%25E4%25BD%258D%25E5%258E%259F%25E7%2590%2586.JPG" alt="圖片取自網路"></p><h3 id="程式碼"><a href="#程式碼" class="headerlink" title="程式碼:"></a>程式碼:</h3><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">// YTP <span class="number">2016</span>挑戰營_地震源與觀測站的距離計算</span><br><span class="line">n1, n2, n3 = <span class="built_in">map</span>(<span class="built_in">int</span>, <span class="built_in">input</span>().split(<span class="string">&quot; &quot;</span>))</span><br><span class="line">dis = (n3*n2*n1) / (n1-n2)</span><br><span class="line"><span class="keyword">if</span> dis &lt; <span class="number">0</span>:</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;none&quot;</span>)</span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">    <span class="built_in">print</span>(<span class="built_in">int</span>(dis))</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> 後端解題 </category>
+          
+          <category> Python </category>
+          
+          <category> YTP </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>YTP 2020初賽_簡易數學計算機</title>
+      <link href="/2022/07/15/YTP/%E7%B0%A1%E6%98%93%E6%95%B8%E5%AD%B8%E8%A8%88%E7%AE%97%E6%A9%9F/"/>
+      <url>/2022/07/15/YTP/%E7%B0%A1%E6%98%93%E6%95%B8%E5%AD%B8%E8%A8%88%E7%AE%97%E6%A9%9F/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="題目連結"><a href="#題目連結" class="headerlink" title="題目連結:"></a>題目連結:</h3><p><a href="https://www.tw-ytp.org/past-exam/">https://www.tw-ytp.org/past-exam/</a></p><h3 id="解題邏輯"><a href="#解題邏輯" class="headerlink" title="解題邏輯:"></a>解題邏輯:</h3><p><strong>#沒有Judge，所以程式碼不一定完全正確，但輸入題目的測資一定正確</strong></p><p>這題就是代公式，再依照挖空的位置來做公式的調整</p><h3 id="程式碼"><a href="#程式碼" class="headerlink" title="程式碼:"></a>程式碼:</h3><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line">// YTP <span class="number">2020</span>初賽_簡易數學計算機</span><br><span class="line">formula, a, b, c = <span class="built_in">input</span>().split(<span class="string">&quot;,&quot;</span>)</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> formula == <span class="string">&quot;1&quot;</span>:</span><br><span class="line">    <span class="keyword">if</span> a == <span class="string">&quot;&quot;</span>:</span><br><span class="line">        a_1 = (<span class="built_in">int</span>(c)**<span class="number">2</span> - <span class="built_in">int</span>(b)**<span class="number">2</span>)**(<span class="number">1</span>/<span class="number">2</span>)</span><br><span class="line">        <span class="built_in">print</span>(<span class="built_in">int</span>(a_1))</span><br><span class="line">    <span class="keyword">if</span> b == <span class="string">&quot;&quot;</span>:</span><br><span class="line">        b_1 = (<span class="built_in">int</span>(c)**<span class="number">2</span> - <span class="built_in">int</span>(a)**<span class="number">2</span>)**(<span class="number">1</span>/<span class="number">2</span>)</span><br><span class="line">        <span class="built_in">print</span>(<span class="built_in">int</span>(b_1))</span><br><span class="line">    <span class="keyword">if</span> c == <span class="string">&quot;&quot;</span>:</span><br><span class="line">        c_1 = (<span class="built_in">int</span>(a)**<span class="number">2</span> + <span class="built_in">int</span>(b)**<span class="number">2</span>)**(<span class="number">1</span>/<span class="number">2</span>)</span><br><span class="line">        <span class="built_in">print</span>(<span class="built_in">int</span>(c_1))</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> formula == <span class="string">&quot;2&quot;</span>:</span><br><span class="line">    <span class="keyword">if</span> a == <span class="string">&quot;&quot;</span>:</span><br><span class="line">        a_2 = (<span class="built_in">int</span>(c) / <span class="number">2</span>) + <span class="built_in">int</span>(b)</span><br><span class="line">        <span class="built_in">print</span>(<span class="built_in">int</span>(a_2))</span><br><span class="line">    <span class="keyword">if</span> b == <span class="string">&quot;&quot;</span>:</span><br><span class="line">        b_2 = <span class="built_in">int</span>(a) - (<span class="built_in">int</span>(c) / <span class="number">2</span>)</span><br><span class="line">        <span class="built_in">print</span>(<span class="built_in">int</span>(b_2))</span><br><span class="line">    <span class="keyword">if</span> c == <span class="string">&quot;&quot;</span>:</span><br><span class="line">        c_2 = (<span class="built_in">int</span>(a) - <span class="built_in">int</span>(b))*<span class="built_in">int</span>(c)</span><br><span class="line">        <span class="built_in">print</span>(<span class="built_in">int</span>(c_2))</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> formula == <span class="string">&quot;3&quot;</span>:</span><br><span class="line">    <span class="keyword">if</span> a == <span class="string">&quot;&quot;</span>:</span><br><span class="line">        a_3 = <span class="built_in">int</span>(c) / <span class="built_in">int</span>(b)</span><br><span class="line">        <span class="built_in">print</span>(<span class="built_in">int</span>(a_3))</span><br><span class="line">    <span class="keyword">if</span> b == <span class="string">&quot;&quot;</span>:</span><br><span class="line">        b_3 = <span class="built_in">int</span>(c) / <span class="built_in">int</span>(a)</span><br><span class="line">        <span class="built_in">print</span>(<span class="built_in">int</span>(b_3))</span><br><span class="line">    <span class="keyword">if</span> c == <span class="string">&quot;&quot;</span>:</span><br><span class="line">        c_3 = <span class="built_in">int</span>(a)*<span class="built_in">int</span>(b)</span><br><span class="line">        <span class="built_in">print</span>(<span class="built_in">int</span>(c_3))</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> 後端解題 </category>
+          
+          <category> Python </category>
+          
+          <category> YTP </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>YTP 2020初賽_買口罩</title>
+      <link href="/2022/07/15/YTP/%E8%B2%B7%E5%8F%A3%E7%BD%A9/"/>
+      <url>/2022/07/15/YTP/%E8%B2%B7%E5%8F%A3%E7%BD%A9/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="題目連結"><a href="#題目連結" class="headerlink" title="題目連結:"></a>題目連結:</h3><p><a href="https://www.tw-ytp.org/past-exam/">https://www.tw-ytp.org/past-exam/</a></p><h3 id="解題邏輯"><a href="#解題邏輯" class="headerlink" title="解題邏輯:"></a>解題邏輯:</h3><p><strong>#沒有Judge，所以程式碼不一定完全正確，但輸入題目的測資一定正確</strong></p><p>要超過7天才能再領5片口罩<br>只要天數除7，再無條件進位就能知道已經過了幾個禮拜<br>最後禮拜個數乘與5片口罩就能得解</p><h3 id="程式碼"><a href="#程式碼" class="headerlink" title="程式碼:"></a>程式碼:</h3><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">// YTP <span class="number">2020</span>初賽_買口罩</span><br><span class="line"><span class="keyword">import</span> math</span><br><span class="line">day = <span class="built_in">int</span>(<span class="built_in">input</span>())</span><br><span class="line">mask = day / <span class="number">7</span></span><br><span class="line"><span class="built_in">print</span>(math.ceil(mask)*<span class="number">5</span>)</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> 後端解題 </category>
+          
+          <category> Python </category>
+          
+          <category> YTP </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>YTP 2021初賽_筆電裝飾</title>
+      <link href="/2022/07/15/YTP/%E7%AD%86%E9%9B%BB%E8%A3%9D%E9%A3%BE/"/>
+      <url>/2022/07/15/YTP/%E7%AD%86%E9%9B%BB%E8%A3%9D%E9%A3%BE/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="題目連結"><a href="#題目連結" class="headerlink" title="題目連結:"></a>題目連結:</h3><p><a href="https://www.tw-ytp.org/past-exam/">https://www.tw-ytp.org/past-exam/</a></p><h3 id="解題邏輯"><a href="#解題邏輯" class="headerlink" title="解題邏輯:"></a>解題邏輯:</h3><p><strong>#沒有Judge，所以程式碼不一定完全正確，但輸入題目的測資一定正確</strong></p><p>先將所有的字母變成小寫，方便後續的程式進行<br>使用count將y、t、p的個數求出來<br>最後將y、t、p中個數最少的輸出出來<br>(題目是求最多能有幾組ytp，所以只要將個數最少的字母求出就是解答)</p><h3 id="程式碼"><a href="#程式碼" class="headerlink" title="程式碼:"></a>程式碼:</h3><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">// YTP <span class="number">2021</span>初賽_筆電裝飾</span><br><span class="line">word = <span class="built_in">str</span>(<span class="built_in">input</span>().lower())</span><br><span class="line">y = word.count(<span class="string">&quot;y&quot;</span>)</span><br><span class="line">t = word.count(<span class="string">&quot;t&quot;</span>)</span><br><span class="line">p = word.count(<span class="string">&quot;p&quot;</span>)</span><br><span class="line">ytp_list = [y, t, p]</span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">min</span>(ytp_list))</span><br></pre></td></tr></table></figure>]]></content>
       
       
       <categories>
