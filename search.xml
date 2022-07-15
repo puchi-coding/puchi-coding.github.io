@@ -4,6 +4,29 @@
   
     
     <entry>
+      <title>2021YTP初賽_筆電裝飾 (Laptop Decoration)</title>
+      <link href="/2022/07/15/YTP/%E7%AD%86%E9%9B%BB%E8%A3%9D%E9%A3%BE-Laptop-Decoration/"/>
+      <url>/2022/07/15/YTP/%E7%AD%86%E9%9B%BB%E8%A3%9D%E9%A3%BE-Laptop-Decoration/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="題目連結"><a href="#題目連結" class="headerlink" title="題目連結:"></a>題目連結:</h3><p><a href="https://www.tw-ytp.org/past-exam/">https://www.tw-ytp.org/past-exam/</a></p><h3 id="解題邏輯"><a href="#解題邏輯" class="headerlink" title="解題邏輯:"></a>解題邏輯:</h3><p><strong>#沒有Judge，所以程式碼不一定完全正確，但輸入測資一定正確</strong></p><p>先將所有的字母變成小寫，方便後續的程式行動<br>使用count將<strong>y</strong></p><h3 id="程式碼"><a href="#程式碼" class="headerlink" title="程式碼:"></a>程式碼:</h3><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">// 2021YTP初賽_筆電裝飾(Laptop Decoration)</span><br><span class="line">word = <span class="built_in">str</span>(<span class="built_in">input</span>().lower())</span><br><span class="line">y = word.count(<span class="string">&quot;y&quot;</span>)</span><br><span class="line">t = word.count(<span class="string">&quot;t&quot;</span>)</span><br><span class="line">p = word.count(<span class="string">&quot;p&quot;</span>)</span><br><span class="line">ytp_list = [y, t, p]</span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">min</span>(ytp_list))</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> 後端解題 </category>
+          
+          <category> Python </category>
+          
+          <category> YTP </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>No.3040傳奇野豬騎士--陳刀</title>
       <link href="/2022/07/06/Sprout%20OJ/%E5%82%B3%E5%A5%87%E9%87%8E%E8%B1%AC%E9%A8%8E%E5%A3%AB-%E9%99%B3%E5%88%80/"/>
       <url>/2022/07/06/Sprout%20OJ/%E5%82%B3%E5%A5%87%E9%87%8E%E8%B1%AC%E9%A8%8E%E5%A3%AB-%E9%99%B3%E5%88%80/</url>
@@ -13,7 +36,7 @@
       
       <categories>
           
-          <category> 前端解題 </category>
+          <category> 後端解題 </category>
           
           <category> Python </category>
           
@@ -36,7 +59,7 @@
       
       <categories>
           
-          <category> 前端解題 </category>
+          <category> 後端解題 </category>
           
           <category> Python </category>
           
@@ -59,7 +82,7 @@
       
       <categories>
           
-          <category> 前端解題 </category>
+          <category> 後端解題 </category>
           
           <category> Python </category>
           
@@ -82,7 +105,7 @@
       
       <categories>
           
-          <category> 前端解題 </category>
+          <category> 後端解題 </category>
           
           <category> Python </category>
           
@@ -105,7 +128,7 @@
       
       <categories>
           
-          <category> 前端解題 </category>
+          <category> 後端解題 </category>
           
           <category> Python </category>
           
@@ -128,7 +151,7 @@
       
       <categories>
           
-          <category> 前端解題 </category>
+          <category> 後端解題 </category>
           
           <category> Python </category>
           
@@ -151,7 +174,7 @@
       
       <categories>
           
-          <category> 前端解題 </category>
+          <category> 後端解題 </category>
           
           <category> Python </category>
           
@@ -197,7 +220,7 @@
       
       <categories>
           
-          <category> 前端解題 </category>
+          <category> 後端解題 </category>
           
           <category> Python </category>
           
@@ -220,7 +243,7 @@
       
       <categories>
           
-          <category> 前端解題 </category>
+          <category> 後端解題 </category>
           
           <category> Python </category>
           
@@ -266,7 +289,7 @@
       
       <categories>
           
-          <category> 前端解題 </category>
+          <category> 後端解題 </category>
           
           <category> Python </category>
           
@@ -289,7 +312,7 @@
       
       <categories>
           
-          <category> 前端解題 </category>
+          <category> 後端解題 </category>
           
           <category> Python </category>
           
@@ -312,7 +335,7 @@
       
       <categories>
           
-          <category> 前端解題 </category>
+          <category> 後端解題 </category>
           
           <category> Python </category>
           
@@ -358,7 +381,7 @@
       
       <categories>
           
-          <category> 前端解題 </category>
+          <category> 後端解題 </category>
           
           <category> Python </category>
           
@@ -379,6 +402,16 @@
         <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="題目連結"><a href="#題目連結" class="headerlink" title="題目連結:"></a>題目連結:</h3><p><a href="https://neoj.sprout.tw/problem/3089/">https://neoj.sprout.tw/problem/3089/</a></p><h3 id="解題邏輯"><a href="#解題邏輯" class="headerlink" title="解題邏輯:"></a>解題邏輯:</h3><p>比較困難的印三角形，每行前面都要持續加n-i個空白</p><h3 id="程式碼"><a href="#程式碼" class="headerlink" title="程式碼:"></a>程式碼:</h3><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">// Sprout OJ No<span class="number">.3019</span>-來印三角形吧</span><br><span class="line">n = <span class="built_in">int</span>(<span class="built_in">input</span>())</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">1</span>,n+<span class="number">1</span>):</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot; &quot;</span>*(n-i)+<span class="string">&quot;*&quot;</span>*(<span class="number">2</span>*i-<span class="number">1</span>))</span><br><span class="line"></span><br></pre></td></tr></table></figure>]]></content>
       
       
+      <categories>
+          
+          <category> 後端解題 </category>
+          
+          <category> Python </category>
+          
+          <category> Sprout OJ </category>
+          
+      </categories>
+      
       
     </entry>
     
@@ -394,7 +427,7 @@
       
       <categories>
           
-          <category> 前端解題 </category>
+          <category> 後端解題 </category>
           
           <category> Python </category>
           
@@ -463,7 +496,7 @@
       
       <categories>
           
-          <category> 前端解題 </category>
+          <category> 後端解題 </category>
           
           <category> Python </category>
           
@@ -486,7 +519,7 @@
       
       <categories>
           
-          <category> 前端解題 </category>
+          <category> 後端解題 </category>
           
           <category> Python </category>
           
