@@ -4,6 +4,29 @@
   
     
     <entry>
+      <title>YTP 2021初賽_飢餓時刻</title>
+      <link href="/2022/07/16/YTP/%E9%A3%A2%E9%A4%93%E6%99%82%E5%88%BB/"/>
+      <url>/2022/07/16/YTP/%E9%A3%A2%E9%A4%93%E6%99%82%E5%88%BB/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="題目連結"><a href="#題目連結" class="headerlink" title="題目連結:"></a>題目連結:</h3><p><a href="https://www.tw-ytp.org/past-exam/">https://www.tw-ytp.org/past-exam/</a></p><h3 id="解題邏輯"><a href="#解題邏輯" class="headerlink" title="解題邏輯:"></a>解題邏輯:</h3><p><strong>#沒有Judge，所以程式碼不一定完全正確，但輸入題目的測資一定正確</strong></p><p>這題我有匯入一個模組(用在list中的資料相乘)<br>只要把將後一項減掉前一項，直到最後一項，就能知道滿足度<br>最後將所有滿足度相乘就能得到美味度</p><p>注意:<br>美味度有限制區間(0 &lt;&#x3D; 美味度 &lt; (9+10**9))，不在這區間的話就要做出調整</p><h3 id="程式碼"><a href="#程式碼" class="headerlink" title="程式碼:"></a>程式碼:</h3><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">// YTP <span class="number">2021</span>初賽_飢餓時刻</span><br><span class="line"><span class="keyword">from</span> functools <span class="keyword">import</span> reduce</span><br><span class="line"></span><br><span class="line">bowl = <span class="built_in">int</span>(<span class="built_in">input</span>())</span><br><span class="line">yummy = <span class="built_in">list</span>(<span class="built_in">map</span>(<span class="built_in">int</span>, <span class="built_in">input</span>().split(<span class="string">&quot; &quot;</span>)))</span><br><span class="line">list_level = []</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(bowl-<span class="number">1</span>):</span><br><span class="line">    level = (yummy[i+<span class="number">1</span>] - yummy[i])</span><br><span class="line">    list_level = list_level + [level]</span><br><span class="line"></span><br><span class="line">Y = reduce(<span class="keyword">lambda</span> x,y:x*y, list_level)</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> <span class="number">0</span> &lt;= Y &lt; (<span class="number">9</span>+<span class="number">10</span>**<span class="number">9</span>) :</span><br><span class="line">    <span class="built_in">print</span>(Y)</span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">    <span class="built_in">print</span>((<span class="number">9</span> + <span class="number">10</span>**<span class="number">9</span>)+Y)</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> 後端解題 </category>
+          
+          <category> Python </category>
+          
+          <category> YTP </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>YTP 2016挑戰營_地震源與觀測站的距離計算</title>
       <link href="/2022/07/15/YTP/%E5%9C%B0%E9%9C%87%E6%BA%90%E8%88%87%E8%A7%80%E6%B8%AC%E7%AB%99%E7%9A%84%E8%B7%9D%E9%9B%A2%E8%A8%88%E7%AE%97/"/>
       <url>/2022/07/15/YTP/%E5%9C%B0%E9%9C%87%E6%BA%90%E8%88%87%E8%A7%80%E6%B8%AC%E7%AB%99%E7%9A%84%E8%B7%9D%E9%9B%A2%E8%A8%88%E7%AE%97/</url>
