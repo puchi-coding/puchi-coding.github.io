@@ -1,0 +1,345 @@
+<!DOCTYPE html><html lang="zh-TW" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>Fun AI Winter Camp 心得 | Puchi-coding</title><meta name="author" content="Puchi"><meta name="copyright" content="Puchi"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="2023年度概要   2023年寒假參加由成大、清大聯合舉辦的AI研習課程。當初在設計Python爬蟲專題時有想結合AI來進行數據預測分析，但艱澀難懂的數學與理論讓當時高一的我不知該如何是好。只好先把專題擱置一旁，先學習最基本的AI知識。有幸被我發現這項研習課程，讓我能夠有資源地學習AI知識，透過專題競賽來打下扎實的實作能力，也在Keynote演講中收獲許多業界和學者們的經驗。    在三天兩夜的">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Fun AI Winter Camp 心得">
+<meta property="og:url" content="https://puchi-coding.github.io/2024/02/07/Fun-AI-Winter-Camp-%E5%BF%83%E5%BE%97/index.html">
+<meta property="og:site_name" content="Puchi-coding">
+<meta property="og:description" content="2023年度概要   2023年寒假參加由成大、清大聯合舉辦的AI研習課程。當初在設計Python爬蟲專題時有想結合AI來進行數據預測分析，但艱澀難懂的數學與理論讓當時高一的我不知該如何是好。只好先把專題擱置一旁，先學習最基本的AI知識。有幸被我發現這項研習課程，讓我能夠有資源地學習AI知識，透過專題競賽來打下扎實的實作能力，也在Keynote演講中收獲許多業界和學者們的經驗。    在三天兩夜的">
+<meta property="og:locale" content="zh_TW">
+<meta property="og:image" content="https://github.com/puchi-coding/puchi-coding.github.io/blob/master/icon.jpg?raw=true">
+<meta property="article:published_time" content="2024-02-07T04:43:00.000Z">
+<meta property="article:modified_time" content="2024-03-23T04:03:22.383Z">
+<meta property="article:author" content="Puchi">
+<meta property="article:tag" content="課程">
+<meta property="article:tag" content="心得">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://github.com/puchi-coding/puchi-coding.github.io/blob/master/icon.jpg?raw=true"><link rel="shortcut icon" href="https://github.com/puchi-coding/puchi-coding.github.io/blob/master/logo.jpg?raw=true"><link rel="canonical" href="https://puchi-coding.github.io/2024/02/07/Fun-AI-Winter-Camp-%E5%BF%83%E5%BE%97/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css?v=4.12.0"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.32/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":false,"top_n_per_article":1,"unescape":false,"languages":{"hits_empty":"找不到您查詢的內容：${query}","hits_stats":"共找到 ${hits} 篇文章"}},
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '複製成功',
+    error: '複製錯誤',
+    noSupport: '瀏覽器不支援'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '剛剛',
+    min: '分鐘前',
+    hour: '小時前',
+    day: '天前',
+    month: '個月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid@4.11.0/dist/infinitegrid.min.js',
+    buttonText: '載入更多'
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'Fun AI Winter Camp 心得',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2024-03-23 12:03:22'
+}</script><script>(win=>{
+      win.saveToLocal = {
+        set: (key, value, ttl) => {
+          if (ttl === 0) return
+          const now = Date.now()
+          const expiry = now + ttl * 86400000
+          const item = {
+            value,
+            expiry
+          }
+          localStorage.setItem(key, JSON.stringify(item))
+        },
+      
+        get: key => {
+          const itemStr = localStorage.getItem(key)
+      
+          if (!itemStr) {
+            return undefined
+          }
+          const item = JSON.parse(itemStr)
+          const now = Date.now()
+      
+          if (now > item.expiry) {
+            localStorage.removeItem(key)
+            return undefined
+          }
+          return item.value
+        }
+      }
+    
+      win.getScript = (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        script.onerror = reject
+        script.onload = script.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          script.onload = script.onreadystatechange = null
+          resolve()
+        }
+
+        Object.keys(attr).forEach(key => {
+          script.setAttribute(key, attr[key])
+        })
+
+        document.head.appendChild(script)
+      })
+    
+      win.getCSS = (url, id = false) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onerror = reject
+        link.onload = link.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          link.onload = link.onreadystatechange = null
+          resolve()
+        }
+        document.head.appendChild(link)
+      })
+    
+      win.activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+        if (t === 'dark') activateDarkMode()
+        else if (t === 'light') activateLightMode()
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+      const detectApple = () => {
+        if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+          document.documentElement.classList.add('apple')
+        }
+      }
+      detectApple()
+    })(window)</script><meta name="generator" content="Hexo 7.1.1"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://github.com/puchi-coding/puchi-coding.github.io/blob/master/icon.jpg?raw=true" onerror="onerror=null;src='https://github.com/puchi-coding/puchi-coding.github.io/blob/master/404.gif?raw=true'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">4</div></a><a href="/tags/"><div class="headline">標籤</div><div class="length-num">8</div></a><a href="/categories/"><div class="headline">分類</div><div class="length-num">3</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 書房</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 書籍</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 書籤</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 書櫃</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 交流區</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 作者</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg fixed" id="page-header"><nav id="nav"><span id="blog-info"><a href="/" title="Puchi-coding"><img class="site-icon" src="https://github.com/puchi-coding/puchi-coding.github.io/blob/master/logo.jpg?raw=tru"/><span class="site-name">Puchi-coding</span></a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search" href="javascript:void(0);"><i class="fas fa-search fa-fw"></i><span> 搜尋</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 書房</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 書籍</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 書籤</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 書櫃</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 交流區</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 作者</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">Fun AI Winter Camp 心得</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">發表於</span><time class="post-meta-date-created" datetime="2024-02-07T04:43:00.000Z" title="發表於 2024-02-07 12:43:00">2024-02-07</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新於</span><time class="post-meta-date-updated" datetime="2024-03-23T04:03:22.383Z" title="更新於 2024-03-23 12:03:22">2024-03-23</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E6%B4%BB%E5%8B%95/">活動</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="Fun AI Winter Camp 心得"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">閱讀量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="2023年度"><a href="#2023年度" class="headerlink" title="2023年度"></a>2023年度</h1><h2 id="概要"><a href="#概要" class="headerlink" title="概要"></a>概要</h2><p>   2023年寒假參加由成大、清大聯合舉辦的AI研習課程。當初在設計Python爬蟲專題時有想結合AI來進行數據預測分析，但艱澀難懂的數學與理論讓當時高一的我不知該如何是好。只好先把專題擱置一旁，先學習最基本的AI知識。有幸被我發現這項研習課程，讓我能夠有資源地學習AI知識，透過專題競賽來打下扎實的實作能力，也在Keynote演講中收獲許多業界和學者們的經驗。</p>
+<p>   在三天兩夜的課程與實作競賽中，我們這組以經過上百次訓練的Model，以分組第一闖進決賽。可惜最後飲恨僅得到第四名的成績，與其在乎勝敗，我更在意在活動中的收穫。在製作Model的過程中不只培養出與隊友的相互合作，也學習到AI領域的理論知識和實作，更激起我對機器學習方面的想像且有利於日後開發上的實作上基礎。</p>
+<h2 id="競賽紀錄"><a href="#競賽紀錄" class="headerlink" title="競賽紀錄"></a>競賽紀錄</h2><p><strong>專案實行:</strong><br><a target="_blank" rel="noopener" href="https://youtu.be/2BvEnmnK4r0">專案測試</a></p>
+<p><strong>競賽資訊:</strong></p>
+<ul>
+<li>小組隊名: 來玩的</li>
+<li>賽程表:<img src="https://hackmd.io/_uploads/SylsM8U4T.png" alt="screenshot-drive.google.com-2023.11.18-23_04_02"></li>
+</ul>
+<p><strong>比賽影片:</strong></p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://youtu.be/ASAXCgJjQG4">決賽</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=RwuEtXrDdMI">初賽 + 複賽 + 決賽</a></li>
+</ul>
+<hr></hr>
+
+<h1 id="2024年度"><a href="#2024年度" class="headerlink" title="2024年度"></a>2024年度</h1><h2 id="概要-1"><a href="#概要-1" class="headerlink" title="概要"></a>概要</h2><p>  在2024年度的活動中成功申請到獎學金與助教的資格。在幾乎都是碩班生的助教群中，以唯一的「高中生」身分進入助教的行前培訓當中，並在為期三天兩夜的活動中擔任「機動」與「教學」的工作。</p>
+<p>  相比去年，今年的活動相比去年有不少的改變，學員與助教間有十分熱烈的討論和交流，這歸功於先前分組與共同完成行前作業。此外，活動行程表多出更多的競賽前準備時間，充裕的準備讓學員們能夠順利完成課題，不會像去年一樣匆忙和爆肝。我最喜歡的改變是無限供應的Coffee Time，今年學員們不用再被餓肚子所苦，也能更有精神的進行活動。整體來說，不單單是行程與內容的進步，更是能以不同的角度來參與，有與學員身分截然不同的體會。我能夠站在教學者的角度看待學員們有什麼樣的問題，來加以改進自身的說話與教學方式。比如，我在當學員時僅僅以單一方向的方法想完成Model但在擔任助教解決學員問題時，我能提供他們其他角度的方法，並找出學員程式的缺陷和問題。不只增進讀程式的能力，更增加解決問題的能力。</p>
+<h2 id="Keynote-紀錄與心得"><a href="#Keynote-紀錄與心得" class="headerlink" title="Keynote 紀錄與心得"></a>Keynote 紀錄與心得</h2><h3 id="Day-1"><a href="#Day-1" class="headerlink" title="Day.1"></a>Day.1</h3><ul>
+<li><strong>Speaker , Jack Nikodem</strong></li>
+</ul>
+<p>剛開始的Keynote就是一場硬戰，是由現任Google工程師向我們分享如何成為一位AI工程師，但內容是以全英文的方式演說。雖然胡敏君教授已經事先向講師說要放慢，但對我來說還是很吃力，大概只聽得懂五成而已XD。內容專注於該如何成為一位AI工程師，以及軟實力的培養。講師有特別提到口語表達在職場上十分重要，這句話一語驚醒夢中人，原本以為自己的英文程度還可以，但在全英文的環境下，讓我意識到自己在聽力與口說能力還要再加油。在最後的Q&amp;A卻很熱烈。大家問的問題主要是想詢問Google工程師的工作內容，以及在求學階段能夠先將什麼能力培養好。在最後一位學員要發問時，向講師詢問能不能問兩個問題。講師居然直接答應，而且還開玩笑地說:「Are you sure only two questions ?」。總而言之，講師真的很有趣人又好，內容我也很喜歡。</p>
+<h3 id="Day-2"><a href="#Day-2" class="headerlink" title="Day.2"></a>Day.2</h3><ul>
+<li><strong>Speaker, 郭彥伶 助理教授</strong></li>
+</ul>
+<p>講師是弗吉尼亞大學的助理教授。我想這應該是今年Keynote中最接地氣的演講了，內容是教授團隊在產學合作中，將AI結合服裝界和表演藝術的成果。AI在服裝的運用是透過以圖搜圖、keyword推薦、服裝分類等運用技術，將服飾加以推薦至消費者端，達到最大的曝光率和購買成效。在表演藝術中，透過動態追蹤將不規則的光線條紋附著在人體動作上，達到很炫麗的效果，這項技術有用在台南市政府的表演活動中。教授在演講中強烈建議學員能夠在大學接觸各領域的人，將AI運用於跨領域合作中，並且大學升研究所時依照個人發展來設計專題。</p>
+<ul>
+<li><strong>Speaker, 劉育綸 助理教授</strong></li>
+</ul>
+<p>講者是陽交大助理教授，這是今年我最喜歡的一場Keynote。內容是AI在攝影上的運用，在深度學習的幫助下達成合適的修圖。除了最基本的光暗平衡外，也能夠自動生成合適的圖片景物，和將擋住的圍欄間隙修掉，又或是將光暗落差產生的反射倒影用掉。教授本人留著一個帥帥的髮型，風趣幽默卻又不失專業性。教授剛開始演講時就有自嘲:「大家看看我在交大的<a target="_blank" rel="noopener" href="https://www.cs.nycu.edu.tw/members/detail/yulunliu">形象照</a>，再看看我本人，是不是知道我擅長的領域了XD!」。劉育綸教授的演講十分精彩，幾乎是把整份專案裡的技術觀念講得透徹，可以在演講中感受到教授對研究的熱愛。分享完後學員迴響熱烈，到下一場Keynote前還有一群人圍在教授旁問問題(偷偷講我也在其中)。希望未來有幸能夠錄取陽交大時，能夠請教授收我成為專題生，真的很想要在教授底下學習&gt;&lt;。</p>
+<ul>
+<li><strong>Speaker, 邱維辰 副教授</strong></li>
+</ul>
+<p>這場是由陽交大的副教授向我們介紹影像辨識的各種知識和運用，內容包括訓練AI模型的過程、汽車環境影像辨識介紹、人臉生成問題、相機部分影像生成等。除了介紹教授團隊在研究的主題外，也向我們展示教授實驗室底下學生的專題。透過學生們的作品向我們傳達「付諸實現想法」的重要性，希望我們思考如何將想法付諸於專案當中，這在未來從事開發或研究時將會是不可或缺的能力。我在這場Keynote中最有印象的一段話:「目前人工智慧所遇到的三大難題，要能夠攻克才能叫做成功。分別是: 印度語音辨識、韓國人臉辨識、台灣自駕車。」聽完之後台下的學員都哄堂大笑，實在是講得太親切了，無法反駁XD。活動結束後才發現教授是「人工智慧高中進階人才培育」的大學輔導教師，我會報名今年第三屆的計畫，會不會到時候就剛好配對到了。</p>
+<h3 id="Day-3"><a href="#Day-3" class="headerlink" title="Day.3"></a>Day.3</h3><ul>
+<li><strong>Yu-Lin Chang &amp; Emma Tu</strong></li>
+</ul>
+<p>最後一場是由Google兩位工程師分享自身的職涯歷程，我很喜歡聽過來人分享自己的人生經歷。除了能以此為鑒不用繞遠路外，也可以聽到很多不同世代的趣聞。前半段講者是 Emma 向我們分享她從高中至大學，再到錄取上Google工程師的歷程分享。Emma 講師與胡敏君教授是高中升大學的補習班同學，所以有提到和教授的互動與對彼此的看法。講師有提及家庭狀況對其影響，但靠著努力和毅力成功錄取台大數學系。當分享到這裡時，我對內容產生了蠻大的共鳴，因為講師的一些情況與我相同。在這之後有提到她是如何應徵上Google，並且超級詳細分享了Google是如何從找人才、面試內容和流程、選才標準等。在最後的Q&amp;A中講師向學員們提出一個問題:「你們未來有什麼目標?」。原本以為回覆會有點冷漠，但是講師有送Google的紀念品，所以台下的回答很踴躍XD。下半場的 Yu-Lin 講師也是分享從求學到求職的歷程，但不一樣的是小孩和妻子都有到現場XD。講師在Keynote的內容中插入了許多當時的科技產品，讓我們能夠體會科技的進步。講師在Google是在做Pixel手機鏡頭的開發，這也與講師的興趣有關。簡報中幾乎每張照片都是她親自用相機拍攝的，而且都是他自己生活所發生的事，所以不會很有距離感，反而十分親切。這場Keynote主幹雖然是經驗談，但時不時會有心靈雞湯的感覺，我很喜歡這兩位講師的分享。</p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>文章作者: </span><span class="post-copyright-info"><a href="https://puchi-coding.github.io">Puchi</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>文章連結: </span><span class="post-copyright-info"><a href="https://puchi-coding.github.io/2024/02/07/Fun-AI-Winter-Camp-%E5%BF%83%E5%BE%97/">https://puchi-coding.github.io/2024/02/07/Fun-AI-Winter-Camp-%E5%BF%83%E5%BE%97/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>版權聲明: </span><span class="post-copyright-info">本部落格所有文章除特別聲明外，均採用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 許可協議。轉載請註明來自 <a href="https://puchi-coding.github.io" target="_blank">Puchi-coding</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E8%AA%B2%E7%A8%8B/">課程</a><a class="post-meta__tags" href="/tags/%E5%BF%83%E5%BE%97/">心得</a></div><div class="post_share"><div class="social-share" data-image="https://github.com/puchi-coding/puchi-coding.github.io/blob/master/icon.jpg?raw=true" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="next-post pull-full"><a href="/2024/02/02/%E9%9A%A8%E7%AD%86%E7%B4%80%E9%8C%84-1/" title="隨筆紀錄"><div class="cover" style="background: var(--default-bg-color)"></div><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">隨筆紀錄</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相關推薦</span></div><div class="relatedPosts-list"><div><a href="/2022/03/04/%E8%B3%87%E8%A8%8A%E4%B9%8B%E8%8A%BD/" title="資訊之芽培訓計畫 心得"><div class="cover" style="background: var(--default-bg-color)"></div><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-03-04</div><div class="title">資訊之芽培訓計畫 心得</div></div></a></div></div></div><hr class="custom-hr"/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 評論</span></div></div><div class="comment-wrap"><div><div id="disqus_thread"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://github.com/puchi-coding/puchi-coding.github.io/blob/master/icon.jpg?raw=true" onerror="this.onerror=null;this.src='https://github.com/puchi-coding/puchi-coding.github.io/blob/master/404.gif?raw=true'" alt="avatar"/></div><div class="author-info__name">Puchi</div><div class="author-info__description"></div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">4</div></a><a href="/tags/"><div class="headline">標籤</div><div class="length-num">8</div></a><a href="/categories/"><div class="headline">分類</div><div class="length-num">3</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/puchi-coding" target="_blank" title="Github"><i class="fab fa-github" style="color: #24292e;"></i></a><a class="social-icon" href="mailto:st35810atv3d@gmail.com" target="_blank" title="Email"><i class="fas fa-envelope" style="color: #4a7dbe;"></i></a><a class="social-icon" href="https://twitter.com/Pochi37615744" target="_blank" title="Twitter"><i class="fab fa-twitter" style="color: #74C0FC;"></i></a></div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目錄</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#2023%E5%B9%B4%E5%BA%A6"><span class="toc-number">1.</span> <span class="toc-text">2023年度</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%A6%82%E8%A6%81"><span class="toc-number">1.1.</span> <span class="toc-text">概要</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AB%B6%E8%B3%BD%E7%B4%80%E9%8C%84"><span class="toc-number">1.2.</span> <span class="toc-text">競賽紀錄</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#2024%E5%B9%B4%E5%BA%A6"><span class="toc-number">2.</span> <span class="toc-text">2024年度</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%A6%82%E8%A6%81-1"><span class="toc-number">2.1.</span> <span class="toc-text">概要</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Keynote-%E7%B4%80%E9%8C%84%E8%88%87%E5%BF%83%E5%BE%97"><span class="toc-number">2.2.</span> <span class="toc-text">Keynote 紀錄與心得</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Day-1"><span class="toc-number">2.2.1.</span> <span class="toc-text">Day.1</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Day-2"><span class="toc-number">2.2.2.</span> <span class="toc-text">Day.2</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Day-3"><span class="toc-number">2.2.3.</span> <span class="toc-text">Day.3</span></a></li></ol></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/02/07/Fun-AI-Winter-Camp-%E5%BF%83%E5%BE%97/" title="Fun AI Winter Camp 心得">Fun AI Winter Camp 心得</a><time datetime="2024-02-07T04:43:00.000Z" title="發表於 2024-02-07 12:43:00">2024-02-07</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/02/02/%E9%9A%A8%E7%AD%86%E7%B4%80%E9%8C%84-1/" title="隨筆紀錄">隨筆紀錄</a><time datetime="2024-02-02T14:06:39.000Z" title="發表於 2024-02-02 22:06:39">2024-02-02</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2022/05/12/Sprout%20OJ/" title="Sprout OJ">Sprout OJ</a><time datetime="2022-05-12T13:08:00.000Z" title="發表於 2022-05-12 21:08:00">2022-05-12</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2022/03/04/%E8%B3%87%E8%A8%8A%E4%B9%8B%E8%8A%BD/" title="資訊之芽培訓計畫 心得">資訊之芽培訓計畫 心得</a><time datetime="2022-03-04T06:07:00.000Z" title="發表於 2022-03-04 14:07:00">2022-03-04</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2024 By Puchi</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主題 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="閱讀模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="淺色和深色模式轉換"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="單欄和雙欄切換"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="設定"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目錄"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="直達評論"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="返回頂部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=4.12.0"></script><script src="/js/main.js?v=4.12.0"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.32/dist/fancybox/fancybox.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page@5.2.0/instantpage.min.js" type="module"></script><script>function panguFn () {
+  if (typeof pangu === 'object') pangu.autoSpacingPage()
+  else {
+    getScript('https://cdn.jsdelivr.net/npm/pangu@4.0.7/dist/browser/pangu.min.js')
+      .then(() => {
+        pangu.autoSpacingPage()
+      })
+  }
+}
+
+function panguInit () {
+  if (false){
+    GLOBAL_CONFIG_SITE.isPost && panguFn()
+  } else {
+    panguFn()
+  }
+}
+
+document.addEventListener('DOMContentLoaded', panguInit)</script><div class="js-pjax"><script>if (!window.MathJax) {
+  window.MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
+      tags: 'ams'
+    },
+    chtml: {
+      scale: 1.1
+    },
+    options: {
+      renderActions: {
+        findScript: [10, doc => {
+          for (const node of document.querySelectorAll('script[type^="math/tex"]')) {
+            const display = !!node.type.match(/; *mode=display/)
+            const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display)
+            const text = document.createTextNode('')
+            node.parentNode.replaceChild(text, node)
+            math.start = {node: text, delim: '', n: 0}
+            math.end = {node: text, delim: '', n: 0}
+            doc.math.push(math)
+          }
+        }, '']
+      }
+    }
+  }
+  
+  const script = document.createElement('script')
+  script.src = 'https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.min.js'
+  script.id = 'MathJax-script'
+  script.async = true
+  document.head.appendChild(script)
+} else {
+  MathJax.startup.document.state(0)
+  MathJax.texReset()
+  MathJax.typesetPromise()
+}</script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"><script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/copy-tex.min.js"></script><script>(() => {
+  document.querySelectorAll('#article-container span.katex-display').forEach(item => {
+    btf.wrap(item, 'div', { class: 'katex-wrap'})
+  })
+})()</script><script>(() => {
+  const disqus_config = function () {
+    this.page.url = 'https://puchi-coding.github.io/2024/02/07/Fun-AI-Winter-Camp-%E5%BF%83%E5%BE%97/'
+    this.page.identifier = '/2024/02/07/Fun-AI-Winter-Camp-%E5%BF%83%E5%BE%97/'
+    this.page.title = 'Fun AI Winter Camp 心得'
+  }
+
+  const disqusReset = () => {
+    window.DISQUS && window.DISQUS.reset({
+      reload: true,
+      config: disqus_config
+    })
+  }
+
+  btf.addGlobalFn('themeChange', disqusReset, 'disqus')
+
+  const loadDisqus = () =>{
+    if (window.DISQUS) disqusReset()
+    else {
+      const script = document.createElement('script')
+      script.src = 'https://https-puchi-coding-github-io.disqus.com/embed.js'
+      script.setAttribute('data-timestamp', +new Date())
+      document.head.appendChild(script)
+    }
+  }
+
+  const getCount = async() => {
+    try {
+      const eleGroup = document.querySelector('#post-meta .disqus-comment-count')
+      if (!eleGroup) return
+      const cleanedLinks = eleGroup.href.replace(/#post-comment$/, '')
+
+      const res = await fetch(`https://disqus.com/api/3.0/threads/set.json?forum=https-puchi-coding-github-io&api_key=&thread:link=${cleanedLinks}`,{
+        method: 'GET'
+      })
+      const result = await res.json()
+
+      const count = result.response.length ? result.response[0].posts : 0
+      eleGroup.textContent = count
+    } catch (err) {
+      console.error(err)
+    }
+  }
+
+  if ('Disqus' === 'Disqus' || !true) {
+    if (true) btf.loadComment(document.getElementById('disqus_thread'), loadDisqus)
+    else {
+      loadDisqus()
+      GLOBAL_CONFIG_SITE.isPost && getCount()
+    }
+  } else {
+    window.loadOtherComment = loadDisqus
+  }
+})()</script></div><script src="//code.tidio.co/qtkpb0sbco4pwsl059fowe0b3c0avt6u.js" async="async"></script><script>(() => {
+  const isChatBtn = false
+  const isChatHideShow = false
+
+  if (isChatBtn) {
+    let isShow = false
+    const close = () => {
+      window.tidioChatApi.hide()
+      isShow = false
+    }
+    
+    const open = () => {
+      window.tidioChatApi.open()
+      window.tidioChatApi.show()
+      isShow = true
+    }
+
+    const onTidioChatApiReady = () => {
+      window.tidioChatApi.hide()
+      window.tidioChatApi.on("close", close)
+    }
+    if (window.tidioChatApi) {
+      window.tidioChatApi.on("ready", onTidioChatApiReady)
+    } else {
+      document.addEventListener("tidioChat-ready", onTidioChatApiReady)
+    }
+
+    window.chatBtnFn = () => {
+      if (!window.tidioChatApi) return
+      isShow ? close() : open()
+    }
+  } else if (isChatHideShow) {
+    window.chatBtn = {
+      hide: () => {
+        window.tidioChatApi && window.tidioChatApi.hide()
+      },
+      show: () => {
+        window.tidioChatApi && window.tidioChatApi.show()
+      }
+    }
+  }
+})()</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜尋</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  資料庫載入中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜尋文章" type="text"/></div></div><hr/><div id="local-search-results"></div><div id="local-search-stats-wrap"></div></div></div><div id="search-mask"></div><script src="/js/search/local-search.js?v=4.12.0"></script></div></div></body></html>
