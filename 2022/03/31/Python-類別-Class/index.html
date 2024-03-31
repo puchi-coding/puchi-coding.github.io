@@ -1,0 +1,366 @@
+<!DOCTYPE html><html lang="zh-TW" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>Python[類別(Class)] | Puchi-coding</title><meta name="author" content="Puchi"><meta name="copyright" content="Puchi"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="Hackmd 文章連結 Github 範例連結  類別(Class) 功能:  創造一個物件 把函數跟變數結合的工具 可以用來建立資料結構   語法: 12class class_name:    pass  名詞定義:  method(方法)：class 裡面的 function instance(實體)：依照 class 做出來的物件 attribute(屬性)：class 裡面的變數">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Python[類別(Class)]">
+<meta property="og:url" content="https://puchi-coding.github.io/2022/03/31/Python-%E9%A1%9E%E5%88%A5-Class/index.html">
+<meta property="og:site_name" content="Puchi-coding">
+<meta property="og:description" content="Hackmd 文章連結 Github 範例連結  類別(Class) 功能:  創造一個物件 把函數跟變數結合的工具 可以用來建立資料結構   語法: 12class class_name:    pass  名詞定義:  method(方法)：class 裡面的 function instance(實體)：依照 class 做出來的物件 attribute(屬性)：class 裡面的變數">
+<meta property="og:locale" content="zh_TW">
+<meta property="og:image" content="https://github.com/puchi-coding/puchi-coding.github.io/blob/master/icon.jpg?raw=true">
+<meta property="article:published_time" content="2022-03-31T03:11:59.000Z">
+<meta property="article:modified_time" content="2024-03-31T03:32:28.598Z">
+<meta property="article:author" content="Puchi">
+<meta property="article:tag" content="Python">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://github.com/puchi-coding/puchi-coding.github.io/blob/master/icon.jpg?raw=true"><link rel="shortcut icon" href="https://github.com/puchi-coding/puchi-coding.github.io/blob/master/logo.jpg?raw=true"><link rel="canonical" href="https://puchi-coding.github.io/2022/03/31/Python-%E9%A1%9E%E5%88%A5-Class/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css?v=4.12.0"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.32/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":false,"top_n_per_article":1,"unescape":false,"languages":{"hits_empty":"找不到您查詢的內容：${query}","hits_stats":"共找到 ${hits} 篇文章"}},
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '複製成功',
+    error: '複製錯誤',
+    noSupport: '瀏覽器不支援'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '剛剛',
+    min: '分鐘前',
+    hour: '小時前',
+    day: '天前',
+    month: '個月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid@4.11.0/dist/infinitegrid.min.js',
+    buttonText: '載入更多'
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'Python[類別(Class)]',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2024-03-31 11:32:28'
+}</script><script>(win=>{
+      win.saveToLocal = {
+        set: (key, value, ttl) => {
+          if (ttl === 0) return
+          const now = Date.now()
+          const expiry = now + ttl * 86400000
+          const item = {
+            value,
+            expiry
+          }
+          localStorage.setItem(key, JSON.stringify(item))
+        },
+      
+        get: key => {
+          const itemStr = localStorage.getItem(key)
+      
+          if (!itemStr) {
+            return undefined
+          }
+          const item = JSON.parse(itemStr)
+          const now = Date.now()
+      
+          if (now > item.expiry) {
+            localStorage.removeItem(key)
+            return undefined
+          }
+          return item.value
+        }
+      }
+    
+      win.getScript = (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        script.onerror = reject
+        script.onload = script.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          script.onload = script.onreadystatechange = null
+          resolve()
+        }
+
+        Object.keys(attr).forEach(key => {
+          script.setAttribute(key, attr[key])
+        })
+
+        document.head.appendChild(script)
+      })
+    
+      win.getCSS = (url, id = false) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onerror = reject
+        link.onload = link.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          link.onload = link.onreadystatechange = null
+          resolve()
+        }
+        document.head.appendChild(link)
+      })
+    
+      win.activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+        if (t === 'dark') activateDarkMode()
+        else if (t === 'light') activateLightMode()
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+      const detectApple = () => {
+        if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+          document.documentElement.classList.add('apple')
+        }
+      }
+      detectApple()
+    })(window)</script><meta name="generator" content="Hexo 7.1.1"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://github.com/puchi-coding/puchi-coding.github.io/blob/master/icon.jpg?raw=true" onerror="onerror=null;src='https://github.com/puchi-coding/puchi-coding.github.io/blob/master/404.gif?raw=true'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">16</div></a><a href="/tags/"><div class="headline">標籤</div><div class="length-num">7</div></a><a href="/categories/"><div class="headline">分類</div><div class="length-num">4</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 書房</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 書籍</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 書籤</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 書櫃</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 交流區</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 作者</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg fixed" id="page-header"><nav id="nav"><span id="blog-info"><a href="/" title="Puchi-coding"><img class="site-icon" src="https://github.com/puchi-coding/puchi-coding.github.io/blob/master/logo.jpg?raw=tru"/><span class="site-name">Puchi-coding</span></a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search" href="javascript:void(0);"><i class="fas fa-search fa-fw"></i><span> 搜尋</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 書房</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 書籍</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 書籤</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 書櫃</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 交流區</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 作者</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">Python[類別(Class)]</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">發表於</span><time class="post-meta-date-created" datetime="2022-03-31T03:11:59.000Z" title="發表於 2022-03-31 11:11:59">2022-03-31</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新於</span><time class="post-meta-date-updated" datetime="2024-03-31T03:32:28.598Z" title="更新於 2024-03-31 11:32:28">2024-03-31</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E6%95%99%E5%AD%B8/">教學</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="Python[類別(Class)]"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">閱讀量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><blockquote>
+<p><a target="_blank" rel="noopener" href="https://hackmd.io/@Puchi1118/rJsWG9_0s">Hackmd 文章連結</a></p>
+<p><a target="_blank" rel="noopener" href="https://github.com/puchi-coding/Python-note">Github 範例連結</a></p>
+</blockquote>
+<h1 id="類別-Class"><a href="#類別-Class" class="headerlink" title="類別(Class)"></a>類別(Class)</h1><ul>
+<li><p>功能:</p>
+<ul>
+<li>創造一個物件</li>
+<li>把函數跟變數結合的工具</li>
+<li>可以用來建立資料結構</li>
+</ul>
+</li>
+<li><p>語法:</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">class_name</span>:</span><br><span class="line">    <span class="keyword">pass</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>名詞定義:</p>
+<ul>
+<li>method(方法)：class 裡面的 function</li>
+<li>instance(實體)：依照 class 做出來的物件</li>
+<li>attribute(屬性)：class 裡面的變數</li>
+</ul>
+</li>
+<li>範例:<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">introduction</span>:</span><br><span class="line"><span class="keyword">def</span> <span class="title function_">__init__</span>(<span class="params">self, name, age, hobby</span>): <span class="comment"># method(方式)</span></span><br><span class="line">    self.name = name <span class="comment"># attribute(屬性)</span></span><br><span class="line">    self.age = age</span><br><span class="line">    self.hobby = hobby</span><br><span class="line"></span><br><span class="line">About_me = introduction(<span class="string">&quot;Puchi&quot;</span>, <span class="string">&quot;18&quot;</span>, <span class="string">&quot;Bottle Cap Baseball&quot;</span>) <span class="comment"># instance(實體)</span></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;Name:&quot;</span>, About_me.name)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;Age:&quot;</span>, About_me.age)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;hobby:&quot;</span>, About_me.hobby)</span><br><span class="line"></span><br><span class="line"><span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">輸出結果: </span></span><br><span class="line"><span class="string">Name: Puchi</span></span><br><span class="line"><span class="string">Age: 18</span></span><br><span class="line"><span class="string">hobby: Bottle Cap Baseball</span></span><br><span class="line"><span class="string">&quot;&quot;&quot;</span></span><br></pre></td></tr></table></figure></li>
+<li><p>self</p>
+<ul>
+<li>每個 class 中 method 的參數都要有 self</li>
+<li>決定要設定哪一個物件</li>
+<li>要用 self 才能存取 instance 中的 attribute</li>
+</ul>
+</li>
+<li><p><strong> init </strong></p>
+<ul>
+<li>class 中一個的 method</li>
+<li>是一個建構子，初始化的時候用時一定要搭配 self 作為參數</li>
+</ul>
+</li>
+</ul>
+<h2 id="繼承"><a href="#繼承" class="headerlink" title="繼承"></a>繼承</h2><ul>
+<li>功用:<ul>
+<li>繼承就是以一個既有的類別，對那個類別進行擴充，變成一個新的類別</li>
+<li>原有的類別稱為”父類別”，以父類別為基礎做擴充跟改寫而成的新類別稱為”子類別”</li>
+<li>經由繼承可以降低程式的重複性</li>
+</ul>
+</li>
+<li><p>語法:</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> (BaseClass_1, BaseClass_2, ...):</span><br><span class="line">    <span class="keyword">pass</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>super</p>
+<ul>
+<li>代表父類別</li>
+<li>透過 super() 執行上層 function</li>
+<li>放在 function 開頭、中間、結尾都可以</li>
+<li>單一繼承範例:<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Person</span>:</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">__init__</span>(<span class="params">self, name, age</span>):</span><br><span class="line">        self.name = name</span><br><span class="line">        self.age = age</span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Normalperson</span>(<span class="title class_ inherited__">Person</span>):</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">__init__</span>(<span class="params">self, name, age, punch</span>):</span><br><span class="line">        <span class="built_in">super</span>().__init__(name, age)</span><br><span class="line">        self.punch_1 = punch</span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Vampire</span>(<span class="title class_ inherited__">Person</span>):</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">__init__</span>(<span class="params">self, name, age, punch</span>):</span><br><span class="line">        <span class="built_in">super</span>().__init__(name, age)</span><br><span class="line">        self.punch_2 = punch</span><br><span class="line"></span><br><span class="line">Jojo = Normalperson(<span class="string">&quot;JOJO&quot;</span>, <span class="string">&quot;17&quot;</span>, <span class="string">&quot;olaola&quot;</span>)</span><br><span class="line">Dio = Vampire(<span class="string">&quot;DIO&quot;</span>, <span class="string">&quot;120&quot;</span>, <span class="string">&quot;mudamuda&quot;</span>)</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;Name:&quot;</span>, Jojo.name, <span class="string">&quot;Age:&quot;</span>, Jojo.age, <span class="string">&quot;Punch:&quot;</span>, Jojo.punch_1)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;Name:&quot;</span>, Dio.name, <span class="string">&quot;Age:&quot;</span>, Dio.age, <span class="string">&quot;Punch:&quot;</span>, Dio.punch_2)</span><br><span class="line"></span><br><span class="line"><span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">輸出結果: </span></span><br><span class="line"><span class="string">Name: JOJO Age: 17 Punch: olaola</span></span><br><span class="line"><span class="string">Name: DIO Age: 120 Punch: mudamuda</span></span><br><span class="line"><span class="string">&quot;&quot;&quot;</span></span><br></pre></td></tr></table></figure></li>
+<li>多重繼承範例:<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">First</span>:</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">__init__</span>(<span class="params">self</span>):</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&#x27;First class&#x27;</span>)</span><br><span class="line">        <span class="comment"># super().__init__()  # no need</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Second</span>(<span class="title class_ inherited__">First</span>):</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">__init__</span>(<span class="params">self</span>):</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&#x27;Second class&#x27;</span>)</span><br><span class="line">        <span class="built_in">super</span>().__init__()</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Third</span>(<span class="title class_ inherited__">Second</span>):</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">__init__</span>(<span class="params">self</span>):</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&#x27;Third class&#x27;</span>)</span><br><span class="line">        <span class="built_in">super</span>().__init__()</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">test = Third()</span><br><span class="line"></span><br><span class="line"><span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">輸出結果: </span></span><br><span class="line"><span class="string">Third class</span></span><br><span class="line"><span class="string">Second class</span></span><br><span class="line"><span class="string">First class</span></span><br><span class="line"><span class="string">&quot;&quot;&quot;</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="參考資料"><a href="#參考資料" class="headerlink" title="參考資料"></a>參考資料</h2><p><a target="_blank" rel="noopener" href="https://github.com/tw-csie-sprout">資訊之芽 Python語法班 歷屆講義</a><br><a target="_blank" rel="noopener" href="https://docs.python.org/zh-tw/3/contents.html">Python Documentation contents</a></p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>文章作者: </span><span class="post-copyright-info"><a href="https://puchi-coding.github.io">Puchi</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>文章連結: </span><span class="post-copyright-info"><a href="https://puchi-coding.github.io/2022/03/31/Python-%E9%A1%9E%E5%88%A5-Class/">https://puchi-coding.github.io/2022/03/31/Python-%E9%A1%9E%E5%88%A5-Class/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>版權聲明: </span><span class="post-copyright-info">本部落格所有文章除特別聲明外，均採用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 許可協議。轉載請註明來自 <a href="https://puchi-coding.github.io" target="_blank">Puchi-coding</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/Python/">Python</a></div><div class="post_share"><div class="social-share" data-image="https://github.com/puchi-coding/puchi-coding.github.io/blob/master/icon.jpg?raw=true" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2022/05/12/Sprout%20OJ/" title="Sprout OJ"><div class="cover" style="background: var(--default-bg-color)"></div><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">Sprout OJ</div></div></a></div><div class="next-post pull-right"><a href="/2022/03/31/Python-%E5%87%BD%E5%BC%8F-Function/" title="Python[函式(Function)]"><div class="cover" style="background: var(--default-bg-color)"></div><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">Python[函式(Function)]</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相關推薦</span></div><div class="relatedPosts-list"><div><a href="/2022/05/12/Sprout%20OJ/" title="Sprout OJ"><div class="cover" style="background: var(--default-bg-color)"></div><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-05-12</div><div class="title">Sprout OJ</div></div></a></div><div><a href="/2022/03/31/Python-%E5%9E%8B%E6%85%8B-Type/" title="Python[型態(Type)]"><div class="cover" style="background: var(--default-bg-color)"></div><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-03-31</div><div class="title">Python[型態(Type)]</div></div></a></div><div><a href="/2022/03/31/Python-%E9%81%8B%E7%AE%97%E5%AD%90-Operator/" title="Python[運算子(Operator)]"><div class="cover" style="background: var(--default-bg-color)"></div><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-03-31</div><div class="title">Python[運算子(Operator)]</div></div></a></div><div><a href="/2022/03/31/Python-%E8%AE%8A%E6%95%B8-Variable/" title="Python[變數(Variable)]"><div class="cover" style="background: var(--default-bg-color)"></div><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-03-31</div><div class="title">Python[變數(Variable)]</div></div></a></div><div><a href="/2022/03/31/Python-%E6%A2%9D%E4%BB%B6%E5%88%A4%E6%96%B7-If/" title="Python[條件判斷(If)]"><div class="cover" style="background: var(--default-bg-color)"></div><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-03-31</div><div class="title">Python[條件判斷(If)]</div></div></a></div><div><a href="/2022/03/31/Python-%E8%BF%B4%E5%9C%88-Loop/" title="Python[迴圈(Loop)]"><div class="cover" style="background: var(--default-bg-color)"></div><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-03-31</div><div class="title">Python[迴圈(Loop)]</div></div></a></div></div></div><hr class="custom-hr"/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 評論</span></div></div><div class="comment-wrap"><div><div id="disqus_thread"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://github.com/puchi-coding/puchi-coding.github.io/blob/master/icon.jpg?raw=true" onerror="this.onerror=null;this.src='https://github.com/puchi-coding/puchi-coding.github.io/blob/master/404.gif?raw=true'" alt="avatar"/></div><div class="author-info__name">Puchi</div><div class="author-info__description"></div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">16</div></a><a href="/tags/"><div class="headline">標籤</div><div class="length-num">7</div></a><a href="/categories/"><div class="headline">分類</div><div class="length-num">4</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/puchi-coding" target="_blank" title="Github"><i class="fab fa-github" style="color: #24292e;"></i></a><a class="social-icon" href="mailto:st35810atv3d@gmail.com" target="_blank" title="Email"><i class="fas fa-envelope" style="color: #4a7dbe;"></i></a><a class="social-icon" href="https://twitter.com/Pochi37615744" target="_blank" title="Twitter"><i class="fab fa-twitter" style="color: #74C0FC;"></i></a></div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目錄</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E9%A1%9E%E5%88%A5-Class"><span class="toc-number">1.</span> <span class="toc-text">類別(Class)</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%B9%BC%E6%89%BF"><span class="toc-number">1.1.</span> <span class="toc-text">繼承</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8F%83%E8%80%83%E8%B3%87%E6%96%99"><span class="toc-number">1.2.</span> <span class="toc-text">參考資料</span></a></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/02/07/Fun-AI-Winter-Camp-%E5%BF%83%E5%BE%97/" title="Fun AI Winter Camp 心得">Fun AI Winter Camp 心得</a><time datetime="2024-02-07T04:43:00.000Z" title="發表於 2024-02-07 12:43:00">2024-02-07</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/02/02/%E9%9A%A8%E7%AD%86%E7%B4%80%E9%8C%84-1/" title="隨筆紀錄">隨筆紀錄</a><time datetime="2024-02-02T14:06:39.000Z" title="發表於 2024-02-02 22:06:39">2024-02-02</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2022/05/12/Sprout%20OJ/" title="Sprout OJ">Sprout OJ</a><time datetime="2022-05-12T13:08:00.000Z" title="發表於 2022-05-12 21:08:00">2022-05-12</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2022/03/31/Python-%E9%A1%9E%E5%88%A5-Class/" title="Python[類別(Class)]">Python[類別(Class)]</a><time datetime="2022-03-31T03:11:59.000Z" title="發表於 2022-03-31 11:11:59">2022-03-31</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2022/03/31/Python-%E5%87%BD%E5%BC%8F-Function/" title="Python[函式(Function)]">Python[函式(Function)]</a><time datetime="2022-03-31T03:10:40.000Z" title="發表於 2022-03-31 11:10:40">2022-03-31</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2024 By Puchi</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主題 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="閱讀模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="淺色和深色模式轉換"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="單欄和雙欄切換"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="設定"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目錄"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="直達評論"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="返回頂部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=4.12.0"></script><script src="/js/main.js?v=4.12.0"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.32/dist/fancybox/fancybox.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page@5.2.0/instantpage.min.js" type="module"></script><script>function panguFn () {
+  if (typeof pangu === 'object') pangu.autoSpacingPage()
+  else {
+    getScript('https://cdn.jsdelivr.net/npm/pangu@4.0.7/dist/browser/pangu.min.js')
+      .then(() => {
+        pangu.autoSpacingPage()
+      })
+  }
+}
+
+function panguInit () {
+  if (false){
+    GLOBAL_CONFIG_SITE.isPost && panguFn()
+  } else {
+    panguFn()
+  }
+}
+
+document.addEventListener('DOMContentLoaded', panguInit)</script><div class="js-pjax"><script>if (!window.MathJax) {
+  window.MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
+      tags: 'ams'
+    },
+    chtml: {
+      scale: 1.1
+    },
+    options: {
+      renderActions: {
+        findScript: [10, doc => {
+          for (const node of document.querySelectorAll('script[type^="math/tex"]')) {
+            const display = !!node.type.match(/; *mode=display/)
+            const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display)
+            const text = document.createTextNode('')
+            node.parentNode.replaceChild(text, node)
+            math.start = {node: text, delim: '', n: 0}
+            math.end = {node: text, delim: '', n: 0}
+            doc.math.push(math)
+          }
+        }, '']
+      }
+    }
+  }
+  
+  const script = document.createElement('script')
+  script.src = 'https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.min.js'
+  script.id = 'MathJax-script'
+  script.async = true
+  document.head.appendChild(script)
+} else {
+  MathJax.startup.document.state(0)
+  MathJax.texReset()
+  MathJax.typesetPromise()
+}</script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"><script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/copy-tex.min.js"></script><script>(() => {
+  document.querySelectorAll('#article-container span.katex-display').forEach(item => {
+    btf.wrap(item, 'div', { class: 'katex-wrap'})
+  })
+})()</script><script>(() => {
+  const disqus_config = function () {
+    this.page.url = 'https://puchi-coding.github.io/2022/03/31/Python-%E9%A1%9E%E5%88%A5-Class/'
+    this.page.identifier = '/2022/03/31/Python-%E9%A1%9E%E5%88%A5-Class/'
+    this.page.title = 'Python[類別(Class)]'
+  }
+
+  const disqusReset = () => {
+    window.DISQUS && window.DISQUS.reset({
+      reload: true,
+      config: disqus_config
+    })
+  }
+
+  btf.addGlobalFn('themeChange', disqusReset, 'disqus')
+
+  const loadDisqus = () =>{
+    if (window.DISQUS) disqusReset()
+    else {
+      const script = document.createElement('script')
+      script.src = 'https://https-puchi-coding-github-io.disqus.com/embed.js'
+      script.setAttribute('data-timestamp', +new Date())
+      document.head.appendChild(script)
+    }
+  }
+
+  const getCount = async() => {
+    try {
+      const eleGroup = document.querySelector('#post-meta .disqus-comment-count')
+      if (!eleGroup) return
+      const cleanedLinks = eleGroup.href.replace(/#post-comment$/, '')
+
+      const res = await fetch(`https://disqus.com/api/3.0/threads/set.json?forum=https-puchi-coding-github-io&api_key=&thread:link=${cleanedLinks}`,{
+        method: 'GET'
+      })
+      const result = await res.json()
+
+      const count = result.response.length ? result.response[0].posts : 0
+      eleGroup.textContent = count
+    } catch (err) {
+      console.error(err)
+    }
+  }
+
+  if ('Disqus' === 'Disqus' || !true) {
+    if (true) btf.loadComment(document.getElementById('disqus_thread'), loadDisqus)
+    else {
+      loadDisqus()
+      GLOBAL_CONFIG_SITE.isPost && getCount()
+    }
+  } else {
+    window.loadOtherComment = loadDisqus
+  }
+})()</script></div><script src="//code.tidio.co/qtkpb0sbco4pwsl059fowe0b3c0avt6u.js" async="async"></script><script>(() => {
+  const isChatBtn = false
+  const isChatHideShow = false
+
+  if (isChatBtn) {
+    let isShow = false
+    const close = () => {
+      window.tidioChatApi.hide()
+      isShow = false
+    }
+    
+    const open = () => {
+      window.tidioChatApi.open()
+      window.tidioChatApi.show()
+      isShow = true
+    }
+
+    const onTidioChatApiReady = () => {
+      window.tidioChatApi.hide()
+      window.tidioChatApi.on("close", close)
+    }
+    if (window.tidioChatApi) {
+      window.tidioChatApi.on("ready", onTidioChatApiReady)
+    } else {
+      document.addEventListener("tidioChat-ready", onTidioChatApiReady)
+    }
+
+    window.chatBtnFn = () => {
+      if (!window.tidioChatApi) return
+      isShow ? close() : open()
+    }
+  } else if (isChatHideShow) {
+    window.chatBtn = {
+      hide: () => {
+        window.tidioChatApi && window.tidioChatApi.hide()
+      },
+      show: () => {
+        window.tidioChatApi && window.tidioChatApi.show()
+      }
+    }
+  }
+})()</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜尋</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  資料庫載入中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜尋文章" type="text"/></div></div><hr/><div id="local-search-results"></div><div id="local-search-stats-wrap"></div></div></div><div id="search-mask"></div><script src="/js/search/local-search.js?v=4.12.0"></script></div></div></body></html>

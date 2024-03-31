@@ -141,18 +141,619 @@
       </tags>
   </entry>
   <entry>
-    <title>Python 語法筆記</title>
-    <url>/2024/02/25/Python-%E8%AA%9E%E6%B3%95%E7%AD%86%E8%A8%98/</url>
-    <content><![CDATA[<h1 id="筆記"><a href="#筆記" class="headerlink" title="筆記"></a>筆記</h1><h2 id="輸出-Input-輸入-Output"><a href="#輸出-Input-輸入-Output" class="headerlink" title="輸出(Input) / 輸入(Output)"></a>輸出(Input) / 輸入(Output)</h2><h3 id="輸入"><a href="#輸入" class="headerlink" title="輸入"></a>輸入</h3><ul>
+    <title>Python[型態(Type)]</title>
+    <url>/2022/03/31/Python-%E5%9E%8B%E6%85%8B-Type/</url>
+    <content><![CDATA[<blockquote>
+<p><a href="https://hackmd.io/@Puchi1118/rJsWG9_0s">Hackmd 文章連結</a></p>
+<p><a href="https://github.com/puchi-coding/Python-note">Github 範例連結</a></p>
+</blockquote>
+<h1 id="型態-Type"><a href="#型態-Type" class="headerlink" title="型態(Type)"></a>型態(Type)</h1><h2 id="分類"><a href="#分類" class="headerlink" title="分類"></a>分類</h2><div class="table-container">
+<table>
+<thead>
+<tr>
+<th>型態</th>
+<th>範例</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>整數(int)</td>
+<td>0、1、123</td>
+</tr>
+<tr>
+<td>浮點數(float)</td>
+<td>0.3、1.4、100.0</td>
+</tr>
+<tr>
+<td>字串(string)</td>
+<td>“安安”、”Puchi”、”111”</td>
+</tr>
+<tr>
+<td>布林值(bool)</td>
+<td>True、False</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id="查看型態"><a href="#查看型態" class="headerlink" title="查看型態"></a>查看型態</h2><ul>
+<li>語法:<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="built_in">type</span>()</span><br></pre></td></tr></table></figure></li>
+<li>範例:<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="built_in">print</span>(<span class="built_in">type</span>(<span class="number">1</span>))</span><br><span class="line"></span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line"><span class="string">輸出結果: </span></span><br><span class="line"><span class="string">&lt;class &#x27;int&#x27;&gt;</span></span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h2 id="參考資料"><a href="#參考資料" class="headerlink" title="參考資料"></a>參考資料</h2><p><a href="https://github.com/tw-csie-sprout">資訊之芽 Python語法班 歷屆講義</a><br><a href="https://docs.python.org/zh-tw/3/contents.html">Python Documentation contents</a></p>
+]]></content>
+      <categories>
+        <category>教學</category>
+      </categories>
+      <tags>
+        <tag>Python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Python[運算子(Operator)]</title>
+    <url>/2022/03/31/Python-%E9%81%8B%E7%AE%97%E5%AD%90-Operator/</url>
+    <content><![CDATA[<blockquote>
+<p><a href="https://hackmd.io/@Puchi1118/rJsWG9_0s">Hackmd 文章連結</a></p>
+<p><a href="https://github.com/puchi-coding/Python-note">Github 範例連結</a></p>
+</blockquote>
+<h1 id="運算子-Operator"><a href="#運算子-Operator" class="headerlink" title="運算子(Operator)"></a>運算子(Operator)</h1><h2 id="Assignment-Operators"><a href="#Assignment-Operators" class="headerlink" title="Assignment Operators"></a>Assignment Operators</h2><div class="table-container">
+<table>
+<thead>
+<tr>
+<th>運算子</th>
+<th>舉例</th>
+<th>同等</th>
+<th>意義</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>=</strong></td>
+<td>x = 3</td>
+<td>x = 3</td>
+<td>運算等號</td>
+</tr>
+<tr>
+<td><strong>+=</strong></td>
+<td>x += 3</td>
+<td>x = x + 3</td>
+<td>加法</td>
+</tr>
+<tr>
+<td><strong>-=</strong></td>
+<td>x -= 3</td>
+<td>x = x - 3</td>
+<td>減法</td>
+</tr>
+<tr>
+<td><strong>*=</strong></td>
+<td>x *= 3</td>
+<td>x = x * 3</td>
+<td>乘法</td>
+</tr>
+<tr>
+<td><strong>/=</strong></td>
+<td>x /= 3</td>
+<td>x = x / 3</td>
+<td>除法</td>
+</tr>
+<tr>
+<td><strong>%=</strong></td>
+<td>x %= 3</td>
+<td>x = x % 3</td>
+<td>除法取餘數</td>
+</tr>
+<tr>
+<td><strong>//=</strong></td>
+<td>x //= 3</td>
+<td>x = x // 3</td>
+<td>除法取商數</td>
+</tr>
+<tr>
+<td><strong>**=</strong></td>
+<td>x **= 3</td>
+<td>x = x ** 3</td>
+<td>指數</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id="Comparison-Operators"><a href="#Comparison-Operators" class="headerlink" title="Comparison Operators"></a>Comparison Operators</h2><div class="table-container">
+<table>
+<thead>
+<tr>
+<th>運算子</th>
+<th>意義</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>==</strong></td>
+<td>相同</td>
+</tr>
+<tr>
+<td><strong>!=</strong></td>
+<td>不同</td>
+</tr>
+<tr>
+<td><strong>&gt;</strong></td>
+<td>大於</td>
+</tr>
+<tr>
+<td><strong>&lt;</strong></td>
+<td>小於</td>
+</tr>
+<tr>
+<td><strong>&gt;=</strong></td>
+<td>大於等於</td>
+</tr>
+<tr>
+<td><strong>&lt;=</strong></td>
+<td>小於等於</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id="Logical-Operators"><a href="#Logical-Operators" class="headerlink" title="Logical Operators"></a>Logical Operators</h2><div class="table-container">
+<table>
+<thead>
+<tr>
+<th>運算子</th>
+<th>意義</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>and</strong></td>
+<td>且(兩個都要符合)</td>
+</tr>
+<tr>
+<td><strong>or</strong></td>
+<td>或(只要一個符合)</td>
+</tr>
+<tr>
+<td><strong>not</strong></td>
+<td>不(相反)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id="Membership-Operators"><a href="#Membership-Operators" class="headerlink" title="Membership Operators"></a>Membership Operators</h2><div class="table-container">
+<table>
+<thead>
+<tr>
+<th>運算子</th>
+<th>意義</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>in</strong></td>
+<td>在</td>
+</tr>
+<tr>
+<td><strong>not in</strong></td>
+<td>不在</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id="Identity-Operators"><a href="#Identity-Operators" class="headerlink" title="Identity Operators"></a>Identity Operators</h2><div class="table-container">
+<table>
+<thead>
+<tr>
+<th>運算子</th>
+<th>意義</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>is</strong></td>
+<td>是</td>
+</tr>
+<tr>
+<td><strong>not is</strong></td>
+<td>不是</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id="比較-、-、-差異"><a href="#比較-、-、-差異" class="headerlink" title="比較(==、!=、=)差異"></a>比較(==、!=、=)差異</h2><ul>
+<li>範例:<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">x = <span class="number">1</span> <span class="comment"># 賦予變數 x 為1</span></span><br><span class="line"><span class="keyword">if</span> x == <span class="number">1</span>: <span class="comment"># 如果 x 是1</span></span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;It&#x27;s 1.&quot;</span>)</span><br><span class="line"><span class="keyword">if</span> x != <span class="number">2</span>: <span class="comment"># 如果 x 不是2</span></span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;It&#x27;s 2.&quot;</span>)</span><br><span class="line">    </span><br><span class="line"><span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">輸出結果:</span></span><br><span class="line"><span class="string">It&#x27;s 1.</span></span><br><span class="line"><span class="string">It&#x27;s 2.</span></span><br><span class="line"><span class="string">&quot;&quot;&quot;</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h2 id="運算順序"><a href="#運算順序" class="headerlink" title="運算順序"></a>運算順序</h2><p><strong>(由高至低排序)</strong></p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>排序</th>
+<th>運算子</th>
+<th>意義</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1.</td>
+<td><strong>()</strong></td>
+<td>括號</td>
+</tr>
+<tr>
+<td>2.</td>
+<td><strong>**</strong></td>
+<td>指數</td>
+</tr>
+<tr>
+<td>3.</td>
+<td><strong>+x, -x</strong></td>
+<td>正、負</td>
+</tr>
+<tr>
+<td>4.</td>
+<td><strong>, /, //, %</strong></td>
+<td>乘、除、餘數)</td>
+</tr>
+<tr>
+<td>5.</td>
+<td><strong>+, -</strong></td>
+<td>加、減</td>
+</tr>
+<tr>
+<td>6.</td>
+<td><strong>==, !=, &gt;, &gt;=, &lt;, &lt;=, is, is not, in, not in</strong></td>
+<td>Comparison、Membership、Identity Operators</td>
+</tr>
+<tr>
+<td>7.</td>
+<td><strong>not</strong></td>
+<td>邏輯NOT</td>
+</tr>
+<tr>
+<td>8.</td>
+<td><strong>and</strong></td>
+<td>邏輯AND</td>
+</tr>
+<tr>
+<td>9.</td>
+<td><strong>or</strong></td>
+<td>邏輯OR</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id="參考資料"><a href="#參考資料" class="headerlink" title="參考資料"></a>參考資料</h2><p><a href="https://github.com/tw-csie-sprout">資訊之芽 Python語法班 歷屆講義</a><br><a href="https://docs.python.org/zh-tw/3/contents.html">Python Documentation contents</a></p>
+]]></content>
+      <categories>
+        <category>教學</category>
+      </categories>
+      <tags>
+        <tag>Python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Python[變數(Variable)]</title>
+    <url>/2022/03/31/Python-%E8%AE%8A%E6%95%B8-Variable/</url>
+    <content><![CDATA[<blockquote>
+<p><a href="https://hackmd.io/@Puchi1118/rJsWG9_0s">Hackmd 文章連結</a></p>
+<p><a href="https://github.com/puchi-coding/Python-note">Github 範例連結</a></p>
+</blockquote>
+<h1 id="變數-Variable"><a href="#變數-Variable" class="headerlink" title="變數(Variable)"></a>變數(Variable)</h1><ul>
+<li>功用:<ul>
+<li>用來儲存資料數值的容器</li>
+</ul>
+</li>
+<li>賦值<ul>
+<li>將變數賦予為一種型態的值</li>
+</ul>
+</li>
+<li>變數命名規則<ol>
+<li>變數名稱的開頭必須是字母或者底線，不能以數字開頭</li>
+<li>變數名稱只能包含字母、數字與底線</li>
+<li>變數名稱的大小寫不一樣則被視為不同變數</li>
+<li>不能是if, else, while等關鍵字</li>
+<li>不要用函數名稱當變數名字</li>
+</ol>
+</li>
+</ul>
+<h2 id="參考資料"><a href="#參考資料" class="headerlink" title="參考資料"></a>參考資料</h2><p><a href="https://github.com/tw-csie-sprout">資訊之芽 Python語法班 歷屆講義</a><br><a href="https://docs.python.org/zh-tw/3/contents.html">Python Documentation contents</a></p>
+]]></content>
+      <categories>
+        <category>教學</category>
+      </categories>
+      <tags>
+        <tag>Python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Python[條件判斷(If)]</title>
+    <url>/2022/03/31/Python-%E6%A2%9D%E4%BB%B6%E5%88%A4%E6%96%B7-If/</url>
+    <content><![CDATA[<blockquote>
+<p><a href="https://hackmd.io/@Puchi1118/rJsWG9_0s">Hackmd 文章連結</a></p>
+<p><a href="https://github.com/puchi-coding/Python-note">Github 範例連結</a></p>
+</blockquote>
+<h1 id="條件判斷-If"><a href="#條件判斷-If" class="headerlink" title="條件判斷(If)"></a>條件判斷(If)</h1><ul>
+<li><p>語法:</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span> condition :</span><br><span class="line">    do something</span><br><span class="line"></span><br><span class="line"><span class="keyword">elif</span> condition : </span><br><span class="line">    do something</span><br><span class="line"></span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">    do something</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>範例:</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">n = <span class="number">2</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> n &lt; <span class="number">1</span>:</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;It&#x27;s 1.&quot;</span>)</span><br><span class="line"></span><br><span class="line"><span class="keyword">elif</span> n &lt; <span class="number">2</span> :</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;It&#x27;s 2.&quot;</span>)</span><br><span class="line"></span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;It&#x27;s 3.&quot;</span>)</span><br><span class="line"></span><br><span class="line"><span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">輸出結果: </span></span><br><span class="line"><span class="string">It&#x27;s 3.</span></span><br><span class="line"><span class="string">&quot;&quot;&quot;</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h2 id="參考資料"><a href="#參考資料" class="headerlink" title="參考資料"></a>參考資料</h2><p><a href="https://github.com/tw-csie-sprout">資訊之芽 Python語法班 歷屆講義</a><br><a href="https://docs.python.org/zh-tw/3/contents.html">Python Documentation contents</a></p>
+]]></content>
+      <categories>
+        <category>教學</category>
+      </categories>
+      <tags>
+        <tag>Python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Python[迴圈(Loop)]</title>
+    <url>/2022/03/31/Python-%E8%BF%B4%E5%9C%88-Loop/</url>
+    <content><![CDATA[<blockquote>
+<p><a href="https://hackmd.io/@Puchi1118/rJsWG9_0s">Hackmd 文章連結</a></p>
+<p><a href="https://github.com/puchi-coding/Python-note">Github 範例連結</a></p>
+</blockquote>
+<h1 id="迴圈-Loop"><a href="#迴圈-Loop" class="headerlink" title="迴圈(Loop)"></a>迴圈(Loop)</h1><h2 id="While-Loop"><a href="#While-Loop" class="headerlink" title="While-Loop"></a>While-Loop</h2><ul>
+<li>語法:<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">while</span> condition :</span><br><span class="line">    do something</span><br></pre></td></tr></table></figure></li>
+<li>範例:<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">i = <span class="number">0</span></span><br><span class="line"><span class="keyword">while</span> i &lt;= <span class="number">5</span>:</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;Hello, world!&quot;</span>)</span><br><span class="line">    i += <span class="number">1</span></span><br><span class="line"></span><br><span class="line"><span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">輸出結果: </span></span><br><span class="line"><span class="string">Hello, world!</span></span><br><span class="line"><span class="string">Hello, world!</span></span><br><span class="line"><span class="string">Hello, world!</span></span><br><span class="line"><span class="string">Hello, world!</span></span><br><span class="line"><span class="string">Hello, world!</span></span><br><span class="line"><span class="string">Hello, world!</span></span><br><span class="line"><span class="string">&quot;&quot;&quot;</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h2 id="For-Loop"><a href="#For-Loop" class="headerlink" title="For-Loop"></a>For-Loop</h2><ul>
+<li>語法:<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span> variable <span class="keyword">in</span> iterable: </span><br><span class="line">    do something </span><br><span class="line"></span><br><span class="line"><span class="comment"># Iterable（可迭代物件）: 可以一個一個輪流取出其中元素的物件</span></span><br><span class="line"><span class="comment"># Variable(變數): 變數是用來儲存資料數值的容器</span></span><br></pre></td></tr></table></figure></li>
+<li>範例:<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> [<span class="number">1</span>, <span class="number">2</span> ,<span class="number">3</span>]: </span><br><span class="line">    <span class="built_in">print</span>(i, end = <span class="string">&#x27; &#x27;</span>)</span><br><span class="line"></span><br><span class="line"><span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">輸出結果: </span></span><br><span class="line"><span class="string">1 2 3</span></span><br><span class="line"><span class="string">&quot;&quot;&quot;</span></span><br></pre></td></tr></table></figure></li>
+<li>range<ul>
+<li>功用:<ul>
+<li>可以建立一個包含整數的iterable</li>
+</ul>
+</li>
+<li>規則:<ul>
+<li>range(start, stop, step)</li>
+<li>由start至stop(不含)，每次遞增step</li>
+<li>start預設是0，step預設是1</li>
+</ul>
+</li>
+<li>範例:<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">5</span>, <span class="number">15</span>, <span class="number">5</span>):</span><br><span class="line">    <span class="built_in">print</span>(i, end = <span class="string">&#x27; &#x27;</span>)</span><br><span class="line"></span><br><span class="line"><span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">輸出結果: </span></span><br><span class="line"><span class="string">5 10</span></span><br><span class="line"><span class="string">&quot;&quot;&quot;</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+<li>巢狀迴圈(Nested For)<ul>
+<li>語法: <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span> variable_1 <span class="keyword">in</span> iterable:</span><br><span class="line">    <span class="keyword">for</span> variable_2 <span class="keyword">in</span> iterable:</span><br><span class="line">        do something</span><br><span class="line">        ...(更多)...</span><br></pre></td></tr></table></figure></li>
+<li>範例:<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">3</span>):</span><br><span class="line">    <span class="keyword">for</span> j <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">2</span>):</span><br><span class="line">        <span class="built_in">print</span>(i, j)</span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line"><span class="string">輸出結果: </span></span><br><span class="line"><span class="string">0 0</span></span><br><span class="line"><span class="string">0 1</span></span><br><span class="line"><span class="string">1 0</span></span><br><span class="line"><span class="string">1 1</span></span><br><span class="line"><span class="string">2 0</span></span><br><span class="line"><span class="string">2 1</span></span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br></pre></td></tr></table></figure></li>
+<li>規則: 外層執行n次，內層m次，則總共會執行m*n次</li>
+</ul>
+</li>
+</ul>
+<h2 id="Break-amp-Continue"><a href="#Break-amp-Continue" class="headerlink" title="Break &amp; Continue"></a>Break &amp; Continue</h2><ul>
+<li>break<ul>
+<li>功用:<ul>
+<li>跑到 break 的程式時會離開當次迴圈</li>
+</ul>
+</li>
+<li>範例:<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">n = <span class="number">0</span></span><br><span class="line"><span class="keyword">while</span> <span class="literal">True</span>:</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;Hello, world!&quot;</span>)</span><br><span class="line">    n += <span class="number">1</span></span><br><span class="line">    <span class="keyword">if</span> n == <span class="number">3</span>:</span><br><span class="line">        <span class="keyword">break</span></span><br><span class="line"></span><br><span class="line"><span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">輸出結果: </span></span><br><span class="line"><span class="string">Hello, world!</span></span><br><span class="line"><span class="string">Hello, world!</span></span><br><span class="line"><span class="string">Hello, world!</span></span><br><span class="line"><span class="string">&quot;&quot;&quot;</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+<li>continue<ul>
+<li>功用:<ul>
+<li>跑到 continue 的程式時會直接忽略接續程式，進入下一次迴圈</li>
+</ul>
+</li>
+<li>範例:<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">n = <span class="number">0</span></span><br><span class="line"><span class="keyword">while</span> n &lt; <span class="number">10</span>:</span><br><span class="line">    n += <span class="number">1</span></span><br><span class="line">    <span class="keyword">if</span> (n % <span class="number">2</span>) == <span class="number">0</span>:</span><br><span class="line">        <span class="keyword">continue</span></span><br><span class="line">    <span class="built_in">print</span>(n)</span><br><span class="line"></span><br><span class="line"><span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">輸出結果: </span></span><br><span class="line"><span class="string">1</span></span><br><span class="line"><span class="string">3</span></span><br><span class="line"><span class="string">5</span></span><br><span class="line"><span class="string">7</span></span><br><span class="line"><span class="string">9</span></span><br><span class="line"><span class="string">&quot;&quot;&quot;</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="While-Loop-vs-For-Loop"><a href="#While-Loop-vs-For-Loop" class="headerlink" title="While-Loop vs. For-Loop"></a>While-Loop vs. For-Loop</h2><ul>
+<li>While-Loop<ul>
+<li>有明確終止條件</li>
+<li>不確定執行次數</li>
+</ul>
+</li>
+<li>For-Loop<ul>
+<li>確定執行次數</li>
+<li>可用於遍歷可迭代物件</li>
+</ul>
+</li>
+</ul>
+<h2 id="參考資料"><a href="#參考資料" class="headerlink" title="參考資料"></a>參考資料</h2><p><a href="https://github.com/tw-csie-sprout">資訊之芽 Python語法班 歷屆講義</a><br>[Python Documentation contents](<a href="https://docs.python.org/zh-tw/3/contents.html">https://docs.python.org/zh-tw/3/contents.html</a></p>
+]]></content>
+      <categories>
+        <category>教學</category>
+      </categories>
+      <tags>
+        <tag>Python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Python[字典(Dictionay)]</title>
+    <url>/2022/03/31/Python-%E5%AD%97%E5%85%B8-Dictionay/</url>
+    <content><![CDATA[<blockquote>
+<p><a href="https://hackmd.io/@Puchi1118/rJsWG9_0s">Hackmd 文章連結</a></p>
+<p><a href="https://github.com/puchi-coding/Python-note">Github 範例連結</a></p>
+</blockquote>
+<h1 id="字典-Dictionay"><a href="#字典-Dictionay" class="headerlink" title="字典(Dictionay)"></a>字典(Dictionay)</h1><ul>
+<li><p>語法:</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="built_in">dict</span> = &#123;key : value&#125;</span><br><span class="line"><span class="comment"># 建立 dictionay</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">len</span>(<span class="built_in">dict</span>)</span><br><span class="line"><span class="comment"># 在 dictionay 中有多少個項目</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">dict</span>[key]</span><br><span class="line"><span class="comment"># 取值</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">dict</span>.get(key)</span><br><span class="line"><span class="comment"># 搜尋 key 是否存在，否則回傳 None</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">dict</span>[new_key] = new_value</span><br><span class="line"><span class="comment"># 新增</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">dict</span>[old_key] = new_value</span><br><span class="line"><span class="comment"># 修改</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">dict</span>.pop(key)</span><br><span class="line"><span class="comment"># 刪除指定的 key 和他對應到的 value</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">dict</span>.clear()</span><br><span class="line"><span class="comment"># 刪除所有的 key 和他對應到的 value</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>範例:</p>
+<ul>
+<li><p>dict</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="built_in">dict</span> = &#123;<span class="string">&quot;Bertolt&quot;</span> : <span class="string">&quot;The Colossus Titan&quot;</span>&#125;</span><br><span class="line"><span class="built_in">print</span>(<span class="string">f&quot;Bertolt is <span class="subst">&#123;<span class="built_in">dict</span>[<span class="string">&#x27;Bertolt&#x27;</span>]&#125;</span>.&quot;</span>)</span><br><span class="line"></span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line"><span class="string">輸出結果: </span></span><br><span class="line"><span class="string">Bertolt is The Colossus Titan.</span></span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>len</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="built_in">dict</span> = &#123;<span class="string">&quot;Raina&quot;</span> : <span class="string">&quot;The Armored Titan&quot;</span>, <span class="string">&quot;Bertolt&quot;</span> : <span class="string">&quot;The Colossus Titan&quot;</span>&#125;</span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">len</span>(<span class="built_in">dict</span>))</span><br><span class="line"></span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line"><span class="string">輸出結果: </span></span><br><span class="line"><span class="string">2</span></span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>取值</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="built_in">dict</span> = &#123;<span class="string">&quot;Bertolt&quot;</span> : <span class="string">&quot;The Colossus Titan&quot;</span>&#125;</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;I am&quot;</span>, <span class="built_in">dict</span>[<span class="string">&quot;Raina&quot;</span>]) <span class="comment"># 取的值不存在</span></span><br><span class="line"></span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line"><span class="string">輸出結果: </span></span><br><span class="line"><span class="string">KeyError: &#x27;Raina&#x27;</span></span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>get</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="built_in">dict</span> = &#123;<span class="string">&quot;Bertolt&quot;</span> : <span class="string">&quot;The Colossus Titan&quot;</span>&#125;</span><br><span class="line">result = <span class="built_in">dict</span>.get(<span class="string">&quot;Armin&quot;</span>)</span><br><span class="line"><span class="built_in">print</span>(result)</span><br><span class="line"></span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line"><span class="string">輸出結果: </span></span><br><span class="line"><span class="string">None</span></span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>新增</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="built_in">dict</span> = &#123;<span class="string">&quot;Bertolt&quot;</span> : <span class="string">&quot;The Colossus Titan&quot;</span>&#125;</span><br><span class="line"><span class="built_in">dict</span>[<span class="string">&quot;Raina&quot;</span>] = <span class="string">&quot;The Armored Titan&quot;</span> </span><br><span class="line"><span class="built_in">print</span>(<span class="string">f&quot;I am <span class="subst">&#123;<span class="built_in">dict</span>[<span class="string">&#x27;Raina&#x27;</span>]&#125;</span> ,and Bertolt is <span class="subst">&#123;<span class="built_in">dict</span>[<span class="string">&#x27;Bertolt&#x27;</span>]&#125;</span>.&quot;</span>)</span><br><span class="line"></span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line"><span class="string">輸出結果: </span></span><br><span class="line"><span class="string">I am The Armored Titan ,and Bertolt is The Colossus Titan.</span></span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>修改</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="built_in">dict</span> = &#123;<span class="string">&quot;Bertolt&quot;</span> : <span class="string">&quot;The Colossus Titan&quot;</span>&#125;</span><br><span class="line"><span class="built_in">dict</span>[<span class="string">&quot;Raina&quot;</span>] = <span class="string">&quot;The Armored Titan&quot;</span> </span><br><span class="line"><span class="built_in">dict</span>[<span class="string">&quot;Bertolt&quot;</span>] = <span class="string">&quot;Eaten&quot;</span></span><br><span class="line"><span class="built_in">print</span>(<span class="string">f&quot;I am <span class="subst">&#123;<span class="built_in">dict</span>[<span class="string">&#x27;Raina&#x27;</span>]&#125;</span> ,and Bertolt is <span class="subst">&#123;<span class="built_in">dict</span>[<span class="string">&#x27;Bertolt&#x27;</span>]&#125;</span>.&quot;</span>)</span><br><span class="line"></span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line"><span class="string">輸出結果: </span></span><br><span class="line"><span class="string">I am The Armored Titan ,and Bertolt is eaten.</span></span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>pop</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="built_in">dict</span> = &#123;<span class="string">&quot;Raina&quot;</span> : <span class="string">&quot;The Armored Titan&quot;</span>, <span class="string">&quot;Bertolt&quot;</span> : <span class="string">&quot;The Colossus Titan&quot;</span>&#125;</span><br><span class="line"><span class="built_in">dict</span>.pop(<span class="string">&quot;Bertolt&quot;</span>)</span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">dict</span>[<span class="string">&quot;Bertolt&quot;</span>]) <span class="comment"># Bertolt 已經被刪除</span></span><br><span class="line"></span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line"><span class="string">輸出結果: </span></span><br><span class="line"><span class="string">KeyError: &#x27;Bertolt&#x27;</span></span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>clear</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="built_in">dict</span> = &#123;<span class="string">&quot;Raina&quot;</span> : <span class="string">&quot;The Armored Titan&quot;</span>, <span class="string">&quot;Bertolt&quot;</span> : <span class="string">&quot;The Colossus Titan&quot;</span>&#125;</span><br><span class="line"><span class="built_in">dict</span>.clear()</span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">dict</span>[<span class="string">&quot;Raina&quot;</span>]) <span class="comment"># Raina 已經被刪除</span></span><br><span class="line"></span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line"><span class="string">輸出結果: </span></span><br><span class="line"><span class="string">KeyError: &#x27;Raina&#x27;</span></span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="遍歷"><a href="#遍歷" class="headerlink" title="遍歷"></a>遍歷</h2><ul>
+<li>以 key 遍歷<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span> k <span class="keyword">in</span> dict_name.keys():</span><br></pre></td></tr></table></figure></li>
+<li>範例:<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="built_in">dict</span> = &#123;<span class="string">&quot;Raina&quot;</span> : <span class="string">&quot;The Armored Titan&quot;</span>, <span class="string">&quot;Bertolt&quot;</span> : <span class="string">&quot;The Colossus Titan&quot;</span>&#125;</span><br><span class="line"><span class="keyword">for</span> k <span class="keyword">in</span> <span class="built_in">dict</span>.keys():</span><br><span class="line">    <span class="built_in">print</span>(k)</span><br><span class="line"></span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line"><span class="string">輸出結果: </span></span><br><span class="line"><span class="string">Raina</span></span><br><span class="line"><span class="string">Bertolt</span></span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br></pre></td></tr></table></figure></li>
+<li>以 value 遍歷<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span> v <span class="keyword">in</span> dict_name.values():</span><br></pre></td></tr></table></figure></li>
+<li>範例:<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="built_in">dict</span> = &#123;<span class="string">&quot;Raina&quot;</span> : <span class="string">&quot;The Armored Titan&quot;</span>, <span class="string">&quot;Bertolt&quot;</span> : <span class="string">&quot;The Colossus Titan&quot;</span>&#125;</span><br><span class="line"><span class="keyword">for</span> v <span class="keyword">in</span> <span class="built_in">dict</span>.values():</span><br><span class="line">    <span class="built_in">print</span>(v)</span><br><span class="line"></span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line"><span class="string">輸出結果: </span></span><br><span class="line"><span class="string">The Armored Titan</span></span><br><span class="line"><span class="string">The Colossus Titan</span></span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br></pre></td></tr></table></figure></li>
+<li>以 key, value 遍歷<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span> k, v <span class="keyword">in</span> dict_name.items():</span><br></pre></td></tr></table></figure></li>
+<li>範例:<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="built_in">dict</span> = &#123;<span class="string">&quot;Raina&quot;</span> : <span class="string">&quot;The Armored Titan&quot;</span>, <span class="string">&quot;Bertolt&quot;</span> : <span class="string">&quot;The Colossus Titan&quot;</span>&#125;</span><br><span class="line"><span class="keyword">for</span> k, v <span class="keyword">in</span> <span class="built_in">dict</span>.items():</span><br><span class="line">    <span class="built_in">print</span>(k, v)</span><br><span class="line"></span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line"><span class="string">輸出結果: </span></span><br><span class="line"><span class="string">Raina The Armored Titan</span></span><br><span class="line"><span class="string">Bertolt The Colossus Titan</span></span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h2 id="List-vs-Dictionay"><a href="#List-vs-Dictionay" class="headerlink" title="List vs. Dictionay"></a>List vs. Dictionay</h2><ul>
+<li>list<ul>
+<li>必須拿連續整數當 index</li>
+<li>list[index] -&gt; value</li>
+</ul>
+</li>
+<li>dict<ul>
+<li>可以拿許多不同型態當 key</li>
+<li>dictionay[key] -&gt; value</li>
+</ul>
+</li>
+</ul>
+<h2 id="參考資料"><a href="#參考資料" class="headerlink" title="參考資料"></a>參考資料</h2><p><a href="https://github.com/tw-csie-sprout">資訊之芽 Python語法班 歷屆講義</a><br><a href="https://docs.python.org/zh-tw/3/contents.html">Python Documentation contents</a></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>Python[註解(Comment)]</title>
+    <url>/2022/03/31/Python-%E8%A8%BB%E8%A7%A3-Comment/</url>
+    <content><![CDATA[<blockquote>
+<p><a href="https://hackmd.io/@Puchi1118/rJsWG9_0s">Hackmd 文章連結</a></p>
+<p><a href="https://github.com/puchi-coding/Python-note">Github 範例連結</a></p>
+</blockquote>
+<h2 id="註解-Comment"><a href="#註解-Comment" class="headerlink" title="註解(Comment)"></a>註解(Comment)</h2><ul>
+<li>功用:<ul>
+<li>解釋程式碼的功用</li>
+<li>增強程式的可讀性</li>
+<li>增強程式的可維護性</li>
+<li>處理不需執行的代碼段</li>
+</ul>
+</li>
+<li>語法(一):<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">something</span></span><br><span class="line"><span class="string">&quot;&quot;&quot;</span></span><br></pre></td></tr></table></figure></li>
+<li><p>範例:</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">Hello, world!</span></span><br><span class="line"><span class="string">&quot;&quot;&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line"><span class="string">輸出結果: </span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>語法(二):</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># something</span></span><br></pre></td></tr></table></figure></li>
+<li>範例:<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Hello, world!</span></span><br><span class="line"></span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line"><span class="string">輸出結果: </span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h2 id="參考資料"><a href="#參考資料" class="headerlink" title="參考資料"></a>參考資料</h2><p><a href="https://github.com/tw-csie-sprout">資訊之芽 Python語法班 歷屆講義</a><br><a href="https://docs.python.org/zh-tw/3/contents.html">Python Documentation contents</a></p>
+]]></content>
+      <categories>
+        <category>教學</category>
+      </categories>
+      <tags>
+        <tag>Python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Python[類別(Class)]</title>
+    <url>/2022/03/31/Python-%E9%A1%9E%E5%88%A5-Class/</url>
+    <content><![CDATA[<blockquote>
+<p><a href="https://hackmd.io/@Puchi1118/rJsWG9_0s">Hackmd 文章連結</a></p>
+<p><a href="https://github.com/puchi-coding/Python-note">Github 範例連結</a></p>
+</blockquote>
+<h1 id="類別-Class"><a href="#類別-Class" class="headerlink" title="類別(Class)"></a>類別(Class)</h1><ul>
+<li><p>功能:</p>
+<ul>
+<li>創造一個物件</li>
+<li>把函數跟變數結合的工具</li>
+<li>可以用來建立資料結構</li>
+</ul>
+</li>
+<li><p>語法:</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">class_name</span>:</span><br><span class="line">    <span class="keyword">pass</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>名詞定義:</p>
+<ul>
+<li>method(方法)：class 裡面的 function</li>
+<li>instance(實體)：依照 class 做出來的物件</li>
+<li>attribute(屬性)：class 裡面的變數</li>
+</ul>
+</li>
+<li>範例:<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">introduction</span>:</span><br><span class="line"><span class="keyword">def</span> <span class="title function_">__init__</span>(<span class="params">self, name, age, hobby</span>): <span class="comment"># method(方式)</span></span><br><span class="line">    self.name = name <span class="comment"># attribute(屬性)</span></span><br><span class="line">    self.age = age</span><br><span class="line">    self.hobby = hobby</span><br><span class="line"></span><br><span class="line">About_me = introduction(<span class="string">&quot;Puchi&quot;</span>, <span class="string">&quot;18&quot;</span>, <span class="string">&quot;Bottle Cap Baseball&quot;</span>) <span class="comment"># instance(實體)</span></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;Name:&quot;</span>, About_me.name)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;Age:&quot;</span>, About_me.age)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;hobby:&quot;</span>, About_me.hobby)</span><br><span class="line"></span><br><span class="line"><span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">輸出結果: </span></span><br><span class="line"><span class="string">Name: Puchi</span></span><br><span class="line"><span class="string">Age: 18</span></span><br><span class="line"><span class="string">hobby: Bottle Cap Baseball</span></span><br><span class="line"><span class="string">&quot;&quot;&quot;</span></span><br></pre></td></tr></table></figure></li>
+<li><p>self</p>
+<ul>
+<li>每個 class 中 method 的參數都要有 self</li>
+<li>決定要設定哪一個物件</li>
+<li>要用 self 才能存取 instance 中的 attribute</li>
+</ul>
+</li>
+<li><p><strong> init </strong></p>
+<ul>
+<li>class 中一個的 method</li>
+<li>是一個建構子，初始化的時候用時一定要搭配 self 作為參數</li>
+</ul>
+</li>
+</ul>
+<h2 id="繼承"><a href="#繼承" class="headerlink" title="繼承"></a>繼承</h2><ul>
+<li>功用:<ul>
+<li>繼承就是以一個既有的類別，對那個類別進行擴充，變成一個新的類別</li>
+<li>原有的類別稱為”父類別”，以父類別為基礎做擴充跟改寫而成的新類別稱為”子類別”</li>
+<li>經由繼承可以降低程式的重複性</li>
+</ul>
+</li>
+<li><p>語法:</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> (BaseClass_1, BaseClass_2, ...):</span><br><span class="line">    <span class="keyword">pass</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>super</p>
+<ul>
+<li>代表父類別</li>
+<li>透過 super() 執行上層 function</li>
+<li>放在 function 開頭、中間、結尾都可以</li>
+<li>單一繼承範例:<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Person</span>:</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">__init__</span>(<span class="params">self, name, age</span>):</span><br><span class="line">        self.name = name</span><br><span class="line">        self.age = age</span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Normalperson</span>(<span class="title class_ inherited__">Person</span>):</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">__init__</span>(<span class="params">self, name, age, punch</span>):</span><br><span class="line">        <span class="built_in">super</span>().__init__(name, age)</span><br><span class="line">        self.punch_1 = punch</span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Vampire</span>(<span class="title class_ inherited__">Person</span>):</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">__init__</span>(<span class="params">self, name, age, punch</span>):</span><br><span class="line">        <span class="built_in">super</span>().__init__(name, age)</span><br><span class="line">        self.punch_2 = punch</span><br><span class="line"></span><br><span class="line">Jojo = Normalperson(<span class="string">&quot;JOJO&quot;</span>, <span class="string">&quot;17&quot;</span>, <span class="string">&quot;olaola&quot;</span>)</span><br><span class="line">Dio = Vampire(<span class="string">&quot;DIO&quot;</span>, <span class="string">&quot;120&quot;</span>, <span class="string">&quot;mudamuda&quot;</span>)</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;Name:&quot;</span>, Jojo.name, <span class="string">&quot;Age:&quot;</span>, Jojo.age, <span class="string">&quot;Punch:&quot;</span>, Jojo.punch_1)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;Name:&quot;</span>, Dio.name, <span class="string">&quot;Age:&quot;</span>, Dio.age, <span class="string">&quot;Punch:&quot;</span>, Dio.punch_2)</span><br><span class="line"></span><br><span class="line"><span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">輸出結果: </span></span><br><span class="line"><span class="string">Name: JOJO Age: 17 Punch: olaola</span></span><br><span class="line"><span class="string">Name: DIO Age: 120 Punch: mudamuda</span></span><br><span class="line"><span class="string">&quot;&quot;&quot;</span></span><br></pre></td></tr></table></figure></li>
+<li>多重繼承範例:<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">First</span>:</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">__init__</span>(<span class="params">self</span>):</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&#x27;First class&#x27;</span>)</span><br><span class="line">        <span class="comment"># super().__init__()  # no need</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Second</span>(<span class="title class_ inherited__">First</span>):</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">__init__</span>(<span class="params">self</span>):</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&#x27;Second class&#x27;</span>)</span><br><span class="line">        <span class="built_in">super</span>().__init__()</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Third</span>(<span class="title class_ inherited__">Second</span>):</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">__init__</span>(<span class="params">self</span>):</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&#x27;Third class&#x27;</span>)</span><br><span class="line">        <span class="built_in">super</span>().__init__()</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">test = Third()</span><br><span class="line"></span><br><span class="line"><span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">輸出結果: </span></span><br><span class="line"><span class="string">Third class</span></span><br><span class="line"><span class="string">Second class</span></span><br><span class="line"><span class="string">First class</span></span><br><span class="line"><span class="string">&quot;&quot;&quot;</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="參考資料"><a href="#參考資料" class="headerlink" title="參考資料"></a>參考資料</h2><p><a href="https://github.com/tw-csie-sprout">資訊之芽 Python語法班 歷屆講義</a><br><a href="https://docs.python.org/zh-tw/3/contents.html">Python Documentation contents</a></p>
+]]></content>
+      <categories>
+        <category>教學</category>
+      </categories>
+      <tags>
+        <tag>Python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Python[輸出(Input) / 輸入(Output)]</title>
+    <url>/2022/03/31/Python-%E8%BC%B8%E5%87%BA-Input-%E8%BC%B8%E5%85%A5-Output/</url>
+    <content><![CDATA[<blockquote>
+<p><a href="https://hackmd.io/@Puchi1118/rJsWG9_0s">Hackmd 文章連結</a></p>
+<p><a href="https://github.com/puchi-coding/Python-note">Github 範例連結</a></p>
+</blockquote>
+<h1 id="輸出-Input-輸入-Output"><a href="#輸出-Input-輸入-Output" class="headerlink" title="輸出(Input) / 輸入(Output)"></a>輸出(Input) / 輸入(Output)</h1><h2 id="輸入"><a href="#輸入" class="headerlink" title="輸入"></a>輸入</h2><ul>
 <li>語法:<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="built_in">input</span>()</span><br></pre></td></tr></table></figure></li>
 <li>範例:<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="built_in">input</span>() <span class="comment"># 輸入 Hello, world!</span></span><br><span class="line"></span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line"><span class="string">輸出結果:</span></span><br><span class="line"><span class="string">&#x27;Hello, world!&#x27;</span></span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br></pre></td></tr></table></figure>
-<h3 id="輸出"><a href="#輸出" class="headerlink" title="輸出"></a>輸出</h3></li>
+</li>
+</ul>
+<h2 id="輸出"><a href="#輸出" class="headerlink" title="輸出"></a>輸出</h2><ul>
 <li>語法:<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="built_in">print</span>()</span><br></pre></td></tr></table></figure></li>
 <li>範例:<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="built_in">print</span>(<span class="string">&quot;Hello, world!&quot;</span>)</span><br><span class="line"></span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line"><span class="string">輸出結果:</span></span><br><span class="line"><span class="string">Hello, world!</span></span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br></pre></td></tr></table></figure>
-<h3 id="基本運用"><a href="#基本運用" class="headerlink" title="基本運用"></a>基本運用</h3></li>
+</li>
+</ul>
+<h2 id="基本運用"><a href="#基本運用" class="headerlink" title="基本運用"></a>基本運用</h2><ul>
 <li>語法:<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="built_in">print</span>(<span class="built_in">input</span>())</span><br></pre></td></tr></table></figure></li>
 <li>範例:<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="built_in">print</span>(<span class="built_in">input</span>()) <span class="comment"># 輸入與輸出 Hello, world!</span></span><br><span class="line"></span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line"><span class="string">輸出結果:</span></span><br><span class="line"><span class="string">Hello, world!</span></span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br></pre></td></tr></table></figure>
-<h3 id="特殊用法"><a href="#特殊用法" class="headerlink" title="特殊用法"></a>特殊用法</h3></li>
+</li>
+</ul>
+<h2 id="特殊用法"><a href="#特殊用法" class="headerlink" title="特殊用法"></a>特殊用法</h2><ul>
 <li>強制轉型:<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="built_in">int</span> -&gt; <span class="built_in">str</span> <span class="comment"># 整數 轉 字串</span></span><br><span class="line"><span class="built_in">float</span> -&gt; <span class="built_in">str</span> <span class="comment"># 浮點數 轉 字串</span></span><br><span class="line"><span class="built_in">str</span> -&gt; <span class="built_in">float</span> <span class="comment"># 字串 轉 浮點數</span></span><br><span class="line"><span class="built_in">bool</span> -&gt; <span class="built_in">int</span> <span class="comment"># 布林值 轉 整數</span></span><br><span class="line">...(更多)...</span><br></pre></td></tr></table></figure></li>
 <li><p>範例:</p>
 <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="built_in">print</span>(<span class="built_in">bool</span>(<span class="string">&quot;0&quot;</span>))</span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">float</span>(<span class="number">1</span>))</span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">int</span>(<span class="literal">True</span>))</span><br><span class="line"></span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line"><span class="string">輸出結果:</span></span><br><span class="line"><span class="string">True</span></span><br><span class="line"><span class="string">1.0</span></span><br><span class="line"><span class="string">1</span></span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br></pre></td></tr></table></figure>
@@ -217,368 +818,23 @@
 </ul>
 </li>
 </ul>
-<hr>
-<h2 id="型態-Type"><a href="#型態-Type" class="headerlink" title="型態(Type)"></a>型態(Type)</h2><h3 id="分類"><a href="#分類" class="headerlink" title="分類"></a>分類</h3><div class="table-container">
-<table>
-<thead>
-<tr>
-<th>型態</th>
-<th>範例</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>整數(int)</td>
-<td>0、1、123</td>
-</tr>
-<tr>
-<td>浮點數(float)</td>
-<td>0.3、1.4、100.0</td>
-</tr>
-<tr>
-<td>字串(string)</td>
-<td>“安安”、”Puchi”、”111”</td>
-</tr>
-<tr>
-<td>布林值(bool)</td>
-<td>True、False</td>
-</tr>
-</tbody>
-</table>
-</div>
-<h3 id="查看型態"><a href="#查看型態" class="headerlink" title="查看型態"></a>查看型態</h3><ul>
-<li>語法:<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="built_in">type</span>()</span><br></pre></td></tr></table></figure></li>
-<li>範例:<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="built_in">print</span>(<span class="built_in">type</span>(<span class="number">1</span>))</span><br><span class="line"></span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line"><span class="string">輸出結果: </span></span><br><span class="line"><span class="string">&lt;class &#x27;int&#x27;&gt;</span></span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<hr>
-<h2 id="註解-Comment"><a href="#註解-Comment" class="headerlink" title="註解(Comment)"></a>註解(Comment)</h2><ul>
-<li>功用:<ul>
-<li>解釋程式碼的功用</li>
-<li>增強程式的可讀性</li>
-<li>增強程式的可維護性</li>
-<li>處理不需執行的代碼段</li>
-</ul>
-</li>
-<li>語法(一):<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">something</span></span><br><span class="line"><span class="string">&quot;&quot;&quot;</span></span><br></pre></td></tr></table></figure></li>
-<li><p>範例:</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">Hello, world!</span></span><br><span class="line"><span class="string">&quot;&quot;&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line"><span class="string">輸出結果: </span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>語法(二):</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># something</span></span><br></pre></td></tr></table></figure></li>
-<li>範例:<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Hello, world!</span></span><br><span class="line"></span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line"><span class="string">輸出結果: </span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<hr>
-<h2 id="運算子-Operator"><a href="#運算子-Operator" class="headerlink" title="運算子(Operator)"></a>運算子(Operator)</h2><h3 id="Assignment-Operators"><a href="#Assignment-Operators" class="headerlink" title="Assignment Operators"></a>Assignment Operators</h3><div class="table-container">
-<table>
-<thead>
-<tr>
-<th>運算子</th>
-<th>舉例</th>
-<th>同等</th>
-<th>意義</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>=</strong></td>
-<td>x = 3</td>
-<td>x = 3</td>
-<td>運算等號</td>
-</tr>
-<tr>
-<td><strong>+=</strong></td>
-<td>x += 3</td>
-<td>x = x + 3</td>
-<td>加法</td>
-</tr>
-<tr>
-<td><strong>-=</strong></td>
-<td>x -= 3</td>
-<td>x = x - 3</td>
-<td>減法</td>
-</tr>
-<tr>
-<td><strong>*=</strong></td>
-<td>x *= 3</td>
-<td>x = x * 3</td>
-<td>乘法</td>
-</tr>
-<tr>
-<td><strong>/=</strong></td>
-<td>x /= 3</td>
-<td>x = x / 3</td>
-<td>除法</td>
-</tr>
-<tr>
-<td><strong>%=</strong></td>
-<td>x %= 3</td>
-<td>x = x % 3</td>
-<td>除法取餘數</td>
-</tr>
-<tr>
-<td><strong>//=</strong></td>
-<td>x //= 3</td>
-<td>x = x // 3</td>
-<td>除法取商數</td>
-</tr>
-<tr>
-<td><strong>**=</strong></td>
-<td>x **= 3</td>
-<td>x = x ** 3</td>
-<td>指數</td>
-</tr>
-</tbody>
-</table>
-</div>
-<h3 id="Comparison-Operators"><a href="#Comparison-Operators" class="headerlink" title="Comparison Operators"></a>Comparison Operators</h3><div class="table-container">
-<table>
-<thead>
-<tr>
-<th>運算子</th>
-<th>意義</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>==</strong></td>
-<td>相同</td>
-</tr>
-<tr>
-<td><strong>==</strong></td>
-<td>不同</td>
-</tr>
-<tr>
-<td><strong>&gt;</strong></td>
-<td>大於</td>
-</tr>
-<tr>
-<td><strong>&lt;</strong></td>
-<td>小於</td>
-</tr>
-<tr>
-<td><strong>&gt;=</strong></td>
-<td>大於等於</td>
-</tr>
-<tr>
-<td><strong>&lt;=</strong></td>
-<td>小於等於</td>
-</tr>
-</tbody>
-</table>
-</div>
-<h3 id="Logical-Operators"><a href="#Logical-Operators" class="headerlink" title="Logical Operators"></a>Logical Operators</h3><div class="table-container">
-<table>
-<thead>
-<tr>
-<th>運算子</th>
-<th>意義</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>and</strong></td>
-<td>且(兩個都要符合)</td>
-</tr>
-<tr>
-<td><strong>or</strong></td>
-<td>或(只要一個符合)</td>
-</tr>
-<tr>
-<td><strong>not</strong></td>
-<td>不(相反)</td>
-</tr>
-</tbody>
-</table>
-</div>
-<h3 id="Membership-Operators"><a href="#Membership-Operators" class="headerlink" title="Membership Operators"></a>Membership Operators</h3><div class="table-container">
-<table>
-<thead>
-<tr>
-<th>運算子</th>
-<th>意義</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>in</strong></td>
-<td>在</td>
-</tr>
-<tr>
-<td><strong>not in</strong></td>
-<td>不在</td>
-</tr>
-</tbody>
-</table>
-</div>
-<h3 id="Identity-Operators"><a href="#Identity-Operators" class="headerlink" title="Identity Operators"></a>Identity Operators</h3><div class="table-container">
-<table>
-<thead>
-<tr>
-<th>運算子</th>
-<th>意義</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>is</strong></td>
-<td>是</td>
-</tr>
-<tr>
-<td><strong>not is</strong></td>
-<td>不是</td>
-</tr>
-</tbody>
-</table>
-</div>
-<h3 id="比較-、-、-差異"><a href="#比較-、-、-差異" class="headerlink" title="比較(==、!=、=)差異"></a>比較(==、!=、=)差異</h3><ul>
-<li>範例:<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">x = <span class="number">1</span> <span class="comment"># 賦予變數 x 為1</span></span><br><span class="line"><span class="keyword">if</span> x == <span class="number">1</span>: <span class="comment"># 如果 x 是1</span></span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;It&#x27;s 1.&quot;</span>)</span><br><span class="line"><span class="keyword">if</span> x != <span class="number">2</span>: <span class="comment"># 如果 x 不是2</span></span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;It&#x27;s 2.&quot;</span>)</span><br><span class="line">    </span><br><span class="line"><span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">輸出結果:</span></span><br><span class="line"><span class="string">It&#x27;s 1.</span></span><br><span class="line"><span class="string">It&#x27;s 2.</span></span><br><span class="line"><span class="string">&quot;&quot;&quot;</span></span><br></pre></td></tr></table></figure>
-<h3 id="運算順序"><a href="#運算順序" class="headerlink" title="運算順序"></a>運算順序</h3><strong>(由高至低排序)</strong></li>
-</ul>
-<div class="table-container">
-<table>
-<thead>
-<tr>
-<th>排序</th>
-<th>運算子</th>
-<th>意義</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>1.</td>
-<td><strong>()</strong></td>
-<td>括號</td>
-</tr>
-<tr>
-<td>2.</td>
-<td><strong>**</strong></td>
-<td>指數</td>
-</tr>
-<tr>
-<td>3.</td>
-<td><strong>+x, -x</strong></td>
-<td>正、負</td>
-</tr>
-<tr>
-<td>4.</td>
-<td><strong>, /, //, %</strong></td>
-<td>乘、除、餘數)</td>
-</tr>
-<tr>
-<td>5.</td>
-<td><strong>+, -</strong></td>
-<td>加、減</td>
-</tr>
-<tr>
-<td>6.</td>
-<td><strong>==, !=, &gt;, &gt;=, &lt;, &lt;=, is, is not, in, not in</strong></td>
-<td>Comparison、Membership、Identity Operators</td>
-</tr>
-<tr>
-<td>7.</td>
-<td><strong>not</strong></td>
-<td>邏輯NOT</td>
-</tr>
-<tr>
-<td>8.</td>
-<td><strong>and</strong></td>
-<td>邏輯AND</td>
-</tr>
-<tr>
-<td>9.</td>
-<td><strong>or</strong></td>
-<td>邏輯OR</td>
-</tr>
-</tbody>
-</table>
-</div>
-<hr>
-<h2 id="變數-Variable"><a href="#變數-Variable" class="headerlink" title="變數(Variable)"></a>變數(Variable)</h2><ul>
-<li>功用:<ul>
-<li>用來儲存資料數值的容器</li>
-</ul>
-</li>
-<li>賦值<ul>
-<li>將變數賦予為一種型態的值</li>
-</ul>
-</li>
-<li>變數命名規則<ol>
-<li>變數名稱的開頭必須是字母或者底線，不能以數字開頭</li>
-<li>變數名稱只能包含字母、數字與底線</li>
-<li>變數名稱的大小寫不一樣則被視為不同變數</li>
-<li>不能是if, else, while等關鍵字</li>
-<li>不要用函數名稱當變數名字</li>
-</ol>
-</li>
-</ul>
-<hr>
-<h2 id="條件判斷-If"><a href="#條件判斷-If" class="headerlink" title="條件判斷(If)"></a>條件判斷(If)</h2><ul>
-<li><p>語法:</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span> condition :</span><br><span class="line">    do something</span><br><span class="line"></span><br><span class="line"><span class="keyword">elif</span> condition : </span><br><span class="line">    do something</span><br><span class="line"></span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">    do something</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>範例:</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">n = <span class="number">2</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> n &lt; <span class="number">1</span>:</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;It&#x27;s 1.&quot;</span>)</span><br><span class="line"></span><br><span class="line"><span class="keyword">elif</span> n &lt; <span class="number">2</span> :</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;It&#x27;s 2.&quot;</span>)</span><br><span class="line"></span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;It&#x27;s 3.&quot;</span>)</span><br><span class="line"></span><br><span class="line"><span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">輸出結果: </span></span><br><span class="line"><span class="string">It&#x27;s 3.</span></span><br><span class="line"><span class="string">&quot;&quot;&quot;</span></span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<hr>
-<h2 id="迴圈-Loop"><a href="#迴圈-Loop" class="headerlink" title="迴圈(Loop)"></a>迴圈(Loop)</h2><h3 id="While-Loop"><a href="#While-Loop" class="headerlink" title="While-Loop"></a>While-Loop</h3><ul>
-<li>語法:<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">while</span> condition :</span><br><span class="line">    do something</span><br></pre></td></tr></table></figure></li>
-<li>範例:<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">i = <span class="number">0</span></span><br><span class="line"><span class="keyword">while</span> i &lt;= <span class="number">5</span>:</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;Hello, world!&quot;</span>)</span><br><span class="line">    i += <span class="number">1</span></span><br><span class="line"></span><br><span class="line"><span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">輸出結果: </span></span><br><span class="line"><span class="string">Hello, world!</span></span><br><span class="line"><span class="string">Hello, world!</span></span><br><span class="line"><span class="string">Hello, world!</span></span><br><span class="line"><span class="string">Hello, world!</span></span><br><span class="line"><span class="string">Hello, world!</span></span><br><span class="line"><span class="string">Hello, world!</span></span><br><span class="line"><span class="string">&quot;&quot;&quot;</span></span><br></pre></td></tr></table></figure>
-<h3 id="For-Loop"><a href="#For-Loop" class="headerlink" title="For-Loop"></a>For-Loop</h3></li>
-<li>語法:<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span> variable <span class="keyword">in</span> iterable: </span><br><span class="line">    do something </span><br><span class="line"></span><br><span class="line"><span class="comment"># Iterable（可迭代物件）: 可以一個一個輪流取出其中元素的物件</span></span><br><span class="line"><span class="comment"># Variable(變數): 變數是用來儲存資料數值的容器</span></span><br></pre></td></tr></table></figure></li>
-<li>範例:<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> [<span class="number">1</span>, <span class="number">2</span> ,<span class="number">3</span>]: </span><br><span class="line">    <span class="built_in">print</span>(i, end = <span class="string">&#x27; &#x27;</span>)</span><br><span class="line"></span><br><span class="line"><span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">輸出結果: </span></span><br><span class="line"><span class="string">1 2 3</span></span><br><span class="line"><span class="string">&quot;&quot;&quot;</span></span><br></pre></td></tr></table></figure></li>
-<li>range<ul>
-<li>功用:<ul>
-<li>可以建立一個包含整數的iterable</li>
-</ul>
-</li>
-<li>規則:<ul>
-<li>range(start, stop, step)</li>
-<li>由start至stop(不含)，每次遞增step</li>
-<li>start預設是0，step預設是1</li>
-</ul>
-</li>
-<li>範例:<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">5</span>, <span class="number">15</span>, <span class="number">5</span>):</span><br><span class="line">    <span class="built_in">print</span>(i, end = <span class="string">&#x27; &#x27;</span>)</span><br><span class="line"></span><br><span class="line"><span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">輸出結果: </span></span><br><span class="line"><span class="string">5 10</span></span><br><span class="line"><span class="string">&quot;&quot;&quot;</span></span><br></pre></td></tr></table></figure></li>
-</ul>
-</li>
-<li>巢狀迴圈(Nested For)<ul>
-<li>語法: <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span> variable_1 <span class="keyword">in</span> iterable:</span><br><span class="line">    <span class="keyword">for</span> variable_2 <span class="keyword">in</span> iterable:</span><br><span class="line">        do something</span><br><span class="line">        ...(更多)...</span><br></pre></td></tr></table></figure></li>
-<li>範例:<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">3</span>):</span><br><span class="line">    <span class="keyword">for</span> j <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">2</span>):</span><br><span class="line">        <span class="built_in">print</span>(i, j)</span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line"><span class="string">輸出結果: </span></span><br><span class="line"><span class="string">0 0</span></span><br><span class="line"><span class="string">0 1</span></span><br><span class="line"><span class="string">1 0</span></span><br><span class="line"><span class="string">1 1</span></span><br><span class="line"><span class="string">2 0</span></span><br><span class="line"><span class="string">2 1</span></span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br></pre></td></tr></table></figure></li>
-<li>規則: 外層執行n次，內層m次，則總共會執行m*n次<h3 id="Break-amp-Continue"><a href="#Break-amp-Continue" class="headerlink" title="Break &amp; Continue"></a>Break &amp; Continue</h3></li>
-</ul>
-</li>
-<li>break<ul>
-<li>功用:<ul>
-<li>跑到 break 的程式時會離開當次迴圈</li>
-</ul>
-</li>
-<li>範例:<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">n = <span class="number">0</span></span><br><span class="line"><span class="keyword">while</span> <span class="literal">True</span>:</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;Hello, world!&quot;</span>)</span><br><span class="line">    n += <span class="number">1</span></span><br><span class="line">    <span class="keyword">if</span> n == <span class="number">3</span>:</span><br><span class="line">        <span class="keyword">break</span></span><br><span class="line"></span><br><span class="line"><span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">輸出結果: </span></span><br><span class="line"><span class="string">Hello, world!</span></span><br><span class="line"><span class="string">Hello, world!</span></span><br><span class="line"><span class="string">Hello, world!</span></span><br><span class="line"><span class="string">&quot;&quot;&quot;</span></span><br></pre></td></tr></table></figure></li>
-</ul>
-</li>
-<li>continue<ul>
-<li>功用:<ul>
-<li>跑到 continue 的程式時會直接忽略接續程式，進入下一次迴圈</li>
-</ul>
-</li>
-<li>範例:<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">n = <span class="number">0</span></span><br><span class="line"><span class="keyword">while</span> n &lt; <span class="number">10</span>:</span><br><span class="line">    n += <span class="number">1</span></span><br><span class="line">    <span class="keyword">if</span> (n % <span class="number">2</span>) == <span class="number">0</span>:</span><br><span class="line">        <span class="keyword">continue</span></span><br><span class="line">    <span class="built_in">print</span>(n)</span><br><span class="line"></span><br><span class="line"><span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">輸出結果: </span></span><br><span class="line"><span class="string">1</span></span><br><span class="line"><span class="string">3</span></span><br><span class="line"><span class="string">5</span></span><br><span class="line"><span class="string">7</span></span><br><span class="line"><span class="string">9</span></span><br><span class="line"><span class="string">&quot;&quot;&quot;</span></span><br></pre></td></tr></table></figure>
-<h3 id="While-Loop-vs-For-Loop"><a href="#While-Loop-vs-For-Loop" class="headerlink" title="While-Loop vs. For-Loop"></a>While-Loop vs. For-Loop</h3></li>
-</ul>
-</li>
-<li>While-Loop<ul>
-<li>有明確終止條件</li>
-<li>不確定執行次數</li>
-</ul>
-</li>
-<li>For-Loop<ul>
-<li>確定執行次數</li>
-<li>可用於遍歷可迭代物件</li>
-</ul>
-</li>
-</ul>
-<hr>
-<h2 id="列表-List"><a href="#列表-List" class="headerlink" title="列表(List)"></a>列表(List)</h2><ul>
+<h2 id="參考資料"><a href="#參考資料" class="headerlink" title="參考資料"></a>參考資料</h2><p><a href="https://github.com/tw-csie-sprout">資訊之芽 Python語法班 歷屆講義</a><br><a href="https://docs.python.org/zh-tw/3/contents.html">Python Documentation contents</a></p>
+]]></content>
+      <categories>
+        <category>教學</category>
+      </categories>
+      <tags>
+        <tag>Python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Python[列表(List)]</title>
+    <url>/2022/03/31/Python-%E5%88%97%E8%A1%A8-List/</url>
+    <content><![CDATA[<blockquote>
+<p><a href="https://hackmd.io/@Puchi1118/rJsWG9_0s">Hackmd 文章連結</a></p>
+<p><a href="https://github.com/puchi-coding/Python-note">Github 範例連結</a></p>
+</blockquote>
+<h1 id="列表-List"><a href="#列表-List" class="headerlink" title="列表(List)"></a>列表(List)</h1><ul>
 <li>語法:<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">l = []</span><br><span class="line"><span class="comment"># 建立 list</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">len</span>(<span class="built_in">list</span>)</span><br><span class="line"><span class="comment"># 在 list 中有多少個項目</span></span><br><span class="line"></span><br><span class="line">value <span class="keyword">in</span> <span class="built_in">list</span></span><br><span class="line"><span class="comment"># 判斷 list 中的項目是否存在</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">list</span>.append(value)</span><br><span class="line"><span class="comment"># 將一個新的項目加到 list 的尾端</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">list</span>.extend([value_1, value_2, ...])</span><br><span class="line"><span class="comment"># 將一群接到 list 的尾端</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">del</span> <span class="built_in">list</span>[index]</span><br><span class="line"><span class="comment"># 在 list 刪除指定元素</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">list</span>.insert(index, value)</span><br><span class="line"><span class="comment"># 將一個項目插入至 list 中給定的位置</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">list</span>.remove(value)</span><br><span class="line"><span class="comment"># 刪除 list 中第一個值等於 x 的元素</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">list</span>.pop(index)</span><br><span class="line"><span class="comment"># 移除 list 中給定位置的項目，並回傳(預設最後一項)</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">list</span>.clear()</span><br><span class="line"><span class="comment"># 刪除 list 中所有項目</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">list</span>.index(value, start, end)</span><br><span class="line"><span class="comment"># 回傳 list 中第一個值等於 x 的項目之索引值</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">list</span>.count(value)</span><br><span class="line"><span class="comment"># 回傳 x 在 list 中所出現的次數</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">list</span>.sort()</span><br><span class="line"><span class="comment"># 將 list 中的項目排序</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">list</span>.reverse()</span><br><span class="line"><span class="comment"># 將 list 中的項目前後順序反過來</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">list</span>.copy()</span><br><span class="line"><span class="comment"># 回傳一個複製的 list</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">max</span>(<span class="built_in">list</span>)</span><br><span class="line"><span class="built_in">max</span>(value_1, value_2, ...)</span><br><span class="line"><span class="comment"># 在 list 中最大值</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">min</span>(<span class="built_in">list</span>)</span><br><span class="line"><span class="built_in">min</span>(value_1, value_2, ...)</span><br><span class="line"><span class="comment"># 在 list 中最小值</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">sum</span>(<span class="built_in">list</span>)</span><br><span class="line"><span class="comment"># 在 list 中所有數字大小總和</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">sorted</span>(<span class="built_in">list</span>)</span><br><span class="line"><span class="comment"># 回傳一個排序好的 list</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">map</span>(function, interable)</span><br><span class="line"><span class="comment"># 對 list 中的每個值都執行函式，再將所有新值放入新的 list</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">help</span>(<span class="built_in">list</span>)</span><br><span class="line"><span class="comment"># 查看詳細用法資訊</span></span><br></pre></td></tr></table></figure></li>
 <li><p>範例:</p>
 <ul>
@@ -626,16 +882,16 @@
 </ul>
 </li>
 </ul>
-<h3 id="Slicing"><a href="#Slicing" class="headerlink" title="Slicing"></a>Slicing</h3><ul>
+<h2 id="Slicing"><a href="#Slicing" class="headerlink" title="Slicing"></a>Slicing</h2><ul>
 <li>語法:<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="built_in">list</span>[start: stop: step]</span><br><span class="line"><span class="comment"># 標準型</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">list</span>[start: stop]</span><br><span class="line"><span class="comment"># step 預設為 1</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">list</span>[start:]</span><br><span class="line"><span class="comment"># 預設至最後一項結束</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">list</span>[:stop]</span><br><span class="line"><span class="comment"># 預設從第一項開始</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">list</span>[:]</span><br><span class="line"><span class="comment"># 從頭到尾</span></span><br></pre></td></tr></table></figure></li>
 <li>範例:<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">l = [<span class="number">0</span>, <span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>]</span><br><span class="line"><span class="built_in">print</span>(l[<span class="number">2</span>:<span class="number">5</span>:<span class="number">2</span>])</span><br><span class="line"></span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line"><span class="string">輸出結果: </span></span><br><span class="line"><span class="string">[2, 4]</span></span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br></pre></td></tr></table></figure>
-</li>
-</ul>
 <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">l = [<span class="number">0</span>, <span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>]</span><br><span class="line"><span class="built_in">print</span>(l[<span class="number">2</span>:<span class="number">5</span>])</span><br><span class="line"></span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line"><span class="string">輸出結果: </span></span><br><span class="line"><span class="string">[2, 3, 4]</span></span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br></pre></td></tr></table></figure>
 <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">l = [<span class="number">0</span>, <span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>]</span><br><span class="line"><span class="built_in">print</span>(l[<span class="number">2</span>:])</span><br><span class="line"></span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line"><span class="string">輸出結果: </span></span><br><span class="line"><span class="string">[2, 3, 4, 5]</span></span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br></pre></td></tr></table></figure>
 <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">l = [<span class="number">0</span>, <span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>]</span><br><span class="line"><span class="built_in">print</span>(l[:<span class="number">3</span>])</span><br><span class="line"></span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line"><span class="string">輸出結果: </span></span><br><span class="line"><span class="string">[0, 1, 2]</span></span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br></pre></td></tr></table></figure>
 <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">l = [<span class="number">0</span>, <span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>]</span><br><span class="line"><span class="built_in">print</span>(l[:])</span><br><span class="line"></span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line"><span class="string">輸出結果: </span></span><br><span class="line"><span class="string">[0, 1, 2, 3, 4, 5]</span></span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br></pre></td></tr></table></figure>
-<h3 id="Index-amp-value"><a href="#Index-amp-value" class="headerlink" title="Index &amp; value"></a>Index &amp; value</h3><ul>
+</li>
+</ul>
+<h2 id="Index-amp-value"><a href="#Index-amp-value" class="headerlink" title="Index &amp; value"></a>Index &amp; value</h2><ul>
 <li><strong>n [ index ]  =&gt; value</strong><ul>
 <li>中括號裡面的數字是索引 index</li>
 <li>n[index] 代表的數值是 value</li>
@@ -660,9 +916,11 @@
 </ul>
 </li>
 <li>範例:<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">l = [<span class="number">1</span>, <span class="number">3.0</span>, [<span class="number">5</span>, <span class="number">7</span>], <span class="string">&quot;Hello!&quot;</span>]</span><br><span class="line"><span class="built_in">print</span>(l[<span class="number">1</span>], l[<span class="number">2</span>][<span class="number">1</span>], l[<span class="number">3</span>])</span><br><span class="line"></span><br><span class="line"><span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">輸出結果: </span></span><br><span class="line"><span class="string">3.0 7 Hello!</span></span><br><span class="line"><span class="string">&quot;&quot;&quot;</span></span><br></pre></td></tr></table></figure>
-<h3 id="遍歷"><a href="#遍歷" class="headerlink" title="遍歷"></a>遍歷</h3></li>
+</li>
 </ul>
 </li>
+</ul>
+<h2 id="遍歷"><a href="#遍歷" class="headerlink" title="遍歷"></a>遍歷</h2><ul>
 <li>以 value 遍歷<ul>
 <li>語法:<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span> variable <span class="keyword">in</span> iterable:</span><br></pre></td></tr></table></figure></li>
 <li>範例:<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">l = [<span class="number">1</span>, <span class="number">3</span>, <span class="number">5</span>, <span class="number">7</span>]</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> l:</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;value:&quot;</span>, i)</span><br><span class="line"></span><br><span class="line"><span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">輸出結果: </span></span><br><span class="line"><span class="string">value: 1</span></span><br><span class="line"><span class="string">value: 3</span></span><br><span class="line"><span class="string">value: 5</span></span><br><span class="line"><span class="string">value: 7</span></span><br><span class="line"><span class="string">&quot;&quot;&quot;</span></span><br></pre></td></tr></table></figure></li>
@@ -693,11 +951,11 @@
 </ul>
 </li>
 <li>範例:<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">l = [<span class="number">1</span>, <span class="number">3</span>, <span class="number">5</span>, <span class="number">7</span>]</span><br><span class="line"><span class="keyword">for</span> i, j <span class="keyword">in</span> <span class="built_in">enumerate</span>(l)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;index:&quot;</span>, i, <span class="string">&quot;value:&quot;</span>, j)</span><br></pre></td></tr></table></figure>
-<h3 id="funtion-amp-method"><a href="#funtion-amp-method" class="headerlink" title="funtion &amp; method"></a>funtion &amp; method</h3></li>
+</li>
 </ul>
 </li>
 </ul>
-<div class="table-container">
+<h2 id="funtion-amp-method"><a href="#funtion-amp-method" class="headerlink" title="funtion &amp; method"></a>funtion &amp; method</h2><div class="table-container">
 <table>
 <thead>
 <tr>
@@ -753,8 +1011,23 @@
 </tbody>
 </table>
 </div>
-<hr>
-<h2 id="字串-String"><a href="#字串-String" class="headerlink" title="字串(String)"></a>字串(String)</h2><ul>
+<h2 id="參考資料"><a href="#參考資料" class="headerlink" title="參考資料"></a>參考資料</h2><p><a href="https://github.com/tw-csie-sprout">資訊之芽 Python語法班 歷屆講義</a><br><a href="https://docs.python.org/zh-tw/3/contents.html">Python Documentation contents</a></p>
+]]></content>
+      <categories>
+        <category>教學</category>
+      </categories>
+      <tags>
+        <tag>Python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Python[字串(String)]</title>
+    <url>/2022/03/31/Python-%E5%AD%97%E4%B8%B2-String/</url>
+    <content><![CDATA[<blockquote>
+<p><a href="https://hackmd.io/@Puchi1118/rJsWG9_0s">Hackmd 文章連結</a></p>
+<p><a href="https://github.com/puchi-coding/Python-note">Github 範例連結</a></p>
+</blockquote>
+<h1 id="字串-String"><a href="#字串-String" class="headerlink" title="字串(String)"></a>字串(String)</h1><ul>
 <li>字元<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="built_in">print</span>(<span class="string">&quot;a&quot;</span>) <span class="comment"># 1 個字元</span></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;Hello, world!&quot;</span>) <span class="comment"># 多個字元組成 1 個字串</span></span><br><span class="line"></span><br><span class="line"><span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">輸出結果:</span></span><br><span class="line"><span class="string">a</span></span><br><span class="line"><span class="string">Hello, world!</span></span><br><span class="line"><span class="string">&quot;&quot;&quot;</span></span><br></pre></td></tr></table></figure></li>
 <li>單行字串<ul>
 <li>單引號<ul>
@@ -808,62 +1081,28 @@
 </ul>
 </li>
 </ul>
-<hr>
-<h2 id="字典-Dictionay"><a href="#字典-Dictionay" class="headerlink" title="字典(Dictionay)"></a>字典(Dictionay)</h2><ul>
-<li><p>語法:</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="built_in">dict</span> = &#123;key : value&#125;</span><br><span class="line"><span class="comment"># 建立 dictionay</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">len</span>(<span class="built_in">dict</span>)</span><br><span class="line"><span class="comment"># 在 dictionay 中有多少個項目</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">dict</span>[key]</span><br><span class="line"><span class="comment"># 取值</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">dict</span>.get(key)</span><br><span class="line"><span class="comment"># 搜尋 key 是否存在，否則回傳 None</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">dict</span>[new_key] = new_value</span><br><span class="line"><span class="comment"># 新增</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">dict</span>[old_key] = new_value</span><br><span class="line"><span class="comment"># 修改</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">dict</span>.pop(key)</span><br><span class="line"><span class="comment"># 刪除指定的 key 和他對應到的 value</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">dict</span>.clear()</span><br><span class="line"><span class="comment"># 刪除所有的 key 和他對應到的 value</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>範例:</p>
-<ul>
-<li><p>dict</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="built_in">dict</span> = &#123;<span class="string">&quot;Bertolt&quot;</span> : <span class="string">&quot;The Colossus Titan&quot;</span>&#125;</span><br><span class="line"><span class="built_in">print</span>(<span class="string">f&quot;Bertolt is <span class="subst">&#123;<span class="built_in">dict</span>[<span class="string">&#x27;Bertolt&#x27;</span>]&#125;</span>.&quot;</span>)</span><br><span class="line"></span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line"><span class="string">輸出結果: </span></span><br><span class="line"><span class="string">Bertolt is The Colossus Titan.</span></span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>len</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="built_in">dict</span> = &#123;<span class="string">&quot;Raina&quot;</span> : <span class="string">&quot;The Armored Titan&quot;</span>, <span class="string">&quot;Bertolt&quot;</span> : <span class="string">&quot;The Colossus Titan&quot;</span>&#125;</span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">len</span>(<span class="built_in">dict</span>))</span><br><span class="line"></span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line"><span class="string">輸出結果: </span></span><br><span class="line"><span class="string">2</span></span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>取值</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="built_in">dict</span> = &#123;<span class="string">&quot;Bertolt&quot;</span> : <span class="string">&quot;The Colossus Titan&quot;</span>&#125;</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;I am&quot;</span>, <span class="built_in">dict</span>[<span class="string">&quot;Raina&quot;</span>]) <span class="comment"># 取的值不存在</span></span><br><span class="line"></span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line"><span class="string">輸出結果: </span></span><br><span class="line"><span class="string">KeyError: &#x27;Raina&#x27;</span></span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>get</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="built_in">dict</span> = &#123;<span class="string">&quot;Bertolt&quot;</span> : <span class="string">&quot;The Colossus Titan&quot;</span>&#125;</span><br><span class="line">result = <span class="built_in">dict</span>.get(<span class="string">&quot;Armin&quot;</span>)</span><br><span class="line"><span class="built_in">print</span>(result)</span><br><span class="line"></span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line"><span class="string">輸出結果: </span></span><br><span class="line"><span class="string">None</span></span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>新增</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="built_in">dict</span> = &#123;<span class="string">&quot;Bertolt&quot;</span> : <span class="string">&quot;The Colossus Titan&quot;</span>&#125;</span><br><span class="line"><span class="built_in">dict</span>[<span class="string">&quot;Raina&quot;</span>] = <span class="string">&quot;The Armored Titan&quot;</span> </span><br><span class="line"><span class="built_in">print</span>(<span class="string">f&quot;I am <span class="subst">&#123;<span class="built_in">dict</span>[<span class="string">&#x27;Raina&#x27;</span>]&#125;</span> ,and Bertolt is <span class="subst">&#123;<span class="built_in">dict</span>[<span class="string">&#x27;Bertolt&#x27;</span>]&#125;</span>.&quot;</span>)</span><br><span class="line"></span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line"><span class="string">輸出結果: </span></span><br><span class="line"><span class="string">I am The Armored Titan ,and Bertolt is The Colossus Titan.</span></span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>修改</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="built_in">dict</span> = &#123;<span class="string">&quot;Bertolt&quot;</span> : <span class="string">&quot;The Colossus Titan&quot;</span>&#125;</span><br><span class="line"><span class="built_in">dict</span>[<span class="string">&quot;Raina&quot;</span>] = <span class="string">&quot;The Armored Titan&quot;</span> </span><br><span class="line"><span class="built_in">dict</span>[<span class="string">&quot;Bertolt&quot;</span>] = <span class="string">&quot;Eaten&quot;</span></span><br><span class="line"><span class="built_in">print</span>(<span class="string">f&quot;I am <span class="subst">&#123;<span class="built_in">dict</span>[<span class="string">&#x27;Raina&#x27;</span>]&#125;</span> ,and Bertolt is <span class="subst">&#123;<span class="built_in">dict</span>[<span class="string">&#x27;Bertolt&#x27;</span>]&#125;</span>.&quot;</span>)</span><br><span class="line"></span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line"><span class="string">輸出結果: </span></span><br><span class="line"><span class="string">I am The Armored Titan ,and Bertolt is eaten.</span></span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>pop</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="built_in">dict</span> = &#123;<span class="string">&quot;Raina&quot;</span> : <span class="string">&quot;The Armored Titan&quot;</span>, <span class="string">&quot;Bertolt&quot;</span> : <span class="string">&quot;The Colossus Titan&quot;</span>&#125;</span><br><span class="line"><span class="built_in">dict</span>.pop(<span class="string">&quot;Bertolt&quot;</span>)</span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">dict</span>[<span class="string">&quot;Bertolt&quot;</span>]) <span class="comment"># Bertolt 已經被刪除</span></span><br><span class="line"></span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line"><span class="string">輸出結果: </span></span><br><span class="line"><span class="string">KeyError: &#x27;Bertolt&#x27;</span></span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>clear</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="built_in">dict</span> = &#123;<span class="string">&quot;Raina&quot;</span> : <span class="string">&quot;The Armored Titan&quot;</span>, <span class="string">&quot;Bertolt&quot;</span> : <span class="string">&quot;The Colossus Titan&quot;</span>&#125;</span><br><span class="line"><span class="built_in">dict</span>.clear()</span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">dict</span>[<span class="string">&quot;Raina&quot;</span>]) <span class="comment"># Raina 已經被刪除</span></span><br><span class="line"></span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line"><span class="string">輸出結果: </span></span><br><span class="line"><span class="string">KeyError: &#x27;Raina&#x27;</span></span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br></pre></td></tr></table></figure>
-<h3 id="遍歷-1"><a href="#遍歷-1" class="headerlink" title="遍歷"></a>遍歷</h3></li>
-</ul>
-</li>
-<li>以 key 遍歷<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span> k <span class="keyword">in</span> dict_name.keys():</span><br></pre></td></tr></table></figure></li>
-<li>範例:<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="built_in">dict</span> = &#123;<span class="string">&quot;Raina&quot;</span> : <span class="string">&quot;The Armored Titan&quot;</span>, <span class="string">&quot;Bertolt&quot;</span> : <span class="string">&quot;The Colossus Titan&quot;</span>&#125;</span><br><span class="line"><span class="keyword">for</span> k <span class="keyword">in</span> <span class="built_in">dict</span>.keys():</span><br><span class="line">    <span class="built_in">print</span>(k)</span><br><span class="line"></span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line"><span class="string">輸出結果: </span></span><br><span class="line"><span class="string">Raina</span></span><br><span class="line"><span class="string">Bertolt</span></span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br></pre></td></tr></table></figure></li>
-<li>以 value 遍歷<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span> v <span class="keyword">in</span> dict_name.values():</span><br></pre></td></tr></table></figure></li>
-<li>範例:<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="built_in">dict</span> = &#123;<span class="string">&quot;Raina&quot;</span> : <span class="string">&quot;The Armored Titan&quot;</span>, <span class="string">&quot;Bertolt&quot;</span> : <span class="string">&quot;The Colossus Titan&quot;</span>&#125;</span><br><span class="line"><span class="keyword">for</span> v <span class="keyword">in</span> <span class="built_in">dict</span>.values():</span><br><span class="line">    <span class="built_in">print</span>(v)</span><br><span class="line"></span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line"><span class="string">輸出結果: </span></span><br><span class="line"><span class="string">The Armored Titan</span></span><br><span class="line"><span class="string">The Colossus Titan</span></span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br></pre></td></tr></table></figure></li>
-<li>以 key, value 遍歷<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span> k, v <span class="keyword">in</span> dict_name.items():</span><br></pre></td></tr></table></figure></li>
-<li>範例:<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="built_in">dict</span> = &#123;<span class="string">&quot;Raina&quot;</span> : <span class="string">&quot;The Armored Titan&quot;</span>, <span class="string">&quot;Bertolt&quot;</span> : <span class="string">&quot;The Colossus Titan&quot;</span>&#125;</span><br><span class="line"><span class="keyword">for</span> k, v <span class="keyword">in</span> <span class="built_in">dict</span>.items():</span><br><span class="line">    <span class="built_in">print</span>(k, v)</span><br><span class="line"></span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line"><span class="string">輸出結果: </span></span><br><span class="line"><span class="string">Raina The Armored Titan</span></span><br><span class="line"><span class="string">Bertolt The Colossus Titan</span></span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br></pre></td></tr></table></figure>
-<h3 id="List-vs-Dictionay"><a href="#List-vs-Dictionay" class="headerlink" title="List vs. Dictionay"></a>List vs. Dictionay</h3></li>
-<li>list<ul>
-<li>必須拿連續整數當 index</li>
-<li>list[index] -&gt; value</li>
-</ul>
-</li>
-<li>dict<ul>
-<li>可以拿許多不同型態當 key</li>
-<li>dictionay[key] -&gt; value</li>
-</ul>
-</li>
-</ul>
-<hr>
-<h2 id="函式-Function"><a href="#函式-Function" class="headerlink" title="函式(Function)"></a>函式(Function)</h2><ul>
+<h2 id="參考資料"><a href="#參考資料" class="headerlink" title="參考資料"></a>參考資料</h2><p><a href="https://github.com/tw-csie-sprout">資訊之芽 Python語法班 歷屆講義</a><br><a href="https://docs.python.org/zh-tw/3/contents.html">Python Documentation contents</a></p>
+]]></content>
+      <categories>
+        <category>教學</category>
+      </categories>
+      <tags>
+        <tag>Python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Python[函式(Function)]</title>
+    <url>/2022/03/31/Python-%E5%87%BD%E5%BC%8F-Function/</url>
+    <content><![CDATA[<blockquote>
+<p><a href="https://hackmd.io/@Puchi1118/rJsWG9_0s">Hackmd 文章連結</a></p>
+<p><a href="https://github.com/puchi-coding/Python-note">Github 範例連結</a></p>
+</blockquote>
+<h1 id="函式-Function"><a href="#函式-Function" class="headerlink" title="函式(Function)"></a>函式(Function)</h1><ul>
 <li>語法:<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">function_name</span>(<span class="params">parameters</span>): <span class="comment"># 函數名稱</span></span><br><span class="line">    do something <span class="comment"># 函數內容</span></span><br><span class="line">function_name(arguments) <span class="comment"># 呼叫函數</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># parameters(參數)</span></span><br><span class="line"><span class="comment"># aruments(引數)</span></span><br></pre></td></tr></table></figure></li>
 <li>範例:<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">addition</span>(<span class="params">x, y</span>):</span><br><span class="line">    <span class="built_in">print</span>(x+y)</span><br><span class="line">addition(<span class="number">3</span>, <span class="number">6</span>)</span><br><span class="line"></span><br><span class="line"><span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">輸出結果: </span></span><br><span class="line"><span class="string">9</span></span><br><span class="line"><span class="string">&quot;&quot;&quot;</span></span><br></pre></td></tr></table></figure>
-<h3 id="Id"><a href="#Id" class="headerlink" title="Id"></a>Id</h3></li>
+</li>
+</ul>
+<h2 id="Id"><a href="#Id" class="headerlink" title="Id"></a>Id</h2><ul>
 <li>功能:<ul>
 <li>id 回傳 Variable 存在電腦內的位置</li>
 <li>“會” 改變原本數值: list, dict, set…</li>
@@ -871,14 +1110,18 @@
 </ul>
 </li>
 <li>範例:<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">function_1</span>(<span class="params">num</span>): <span class="comment"># function 內外的 int 是不同個</span></span><br><span class="line">    num += <span class="number">3</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">function_2</span>(<span class="params">l</span>): <span class="comment"># function 內外的 list 是同一個</span></span><br><span class="line">    l += [<span class="number">9</span>]</span><br><span class="line"></span><br><span class="line">x = <span class="number">2</span> </span><br><span class="line">y = [<span class="number">1</span>, <span class="number">3</span>, <span class="number">5</span>, <span class="number">7</span>] </span><br><span class="line"></span><br><span class="line">function_1(x)</span><br><span class="line">function_2(y)</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(x)</span><br><span class="line"><span class="built_in">print</span>(y)</span><br><span class="line"></span><br><span class="line"><span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">輸出結果: </span></span><br><span class="line"><span class="string">2</span></span><br><span class="line"><span class="string">[1, 3, 5, 7, 9]</span></span><br><span class="line"><span class="string">&quot;&quot;&quot;</span></span><br></pre></td></tr></table></figure>
-<h3 id="Return"><a href="#Return" class="headerlink" title="Return"></a>Return</h3></li>
+</li>
+</ul>
+<h2 id="Return"><a href="#Return" class="headerlink" title="Return"></a>Return</h2><ul>
 <li>功能: <ul>
 <li>要讓 function 跑完可以產出一個值讓我們後續可以使用，那我們要用 function 的回傳值</li>
 </ul>
 </li>
 <li>語法:<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">function_name</span>(<span class="params">parameters</span>): <span class="comment"># 函數名稱</span></span><br><span class="line">    do something <span class="comment"># 函數內容</span></span><br><span class="line">    <span class="keyword">return</span> value <span class="comment"># 回傳函數值</span></span><br><span class="line">function_name(arguments) <span class="comment"># 呼叫函數</span></span><br></pre></td></tr></table></figure></li>
 <li>範例:<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">function</span>(<span class="params">num</span>):</span><br><span class="line">    result = <span class="number">1</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">1</span>, num + <span class="number">1</span>):</span><br><span class="line">        result += i</span><br><span class="line">    <span class="keyword">return</span> result</span><br><span class="line">function(<span class="number">3</span>)</span><br><span class="line"><span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">輸出結果: </span></span><br><span class="line"><span class="string">7</span></span><br><span class="line"><span class="string">&quot;&quot;&quot;</span></span><br></pre></td></tr></table></figure>
-<h3 id="Global-Variable-vs-Local-Variable"><a href="#Global-Variable-vs-Local-Variable" class="headerlink" title="Global Variable vs. Local Variable"></a>Global Variable vs. Local Variable</h3></li>
+</li>
+</ul>
+<h2 id="Global-Variable-vs-Local-Variable"><a href="#Global-Variable-vs-Local-Variable" class="headerlink" title="Global Variable vs. Local Variable"></a>Global Variable vs. Local Variable</h2><ul>
 <li>全域變數: 所有地方都能看到的變數(非函數中所宣告的變數)</li>
 <li>區域變數: 只有 Function 裡面才能看到的變數(函數中宣告的變數)</li>
 <li>範例:<ul>
@@ -888,7 +1131,7 @@
 </ul>
 </li>
 </ul>
-<h3 id="Lambda"><a href="#Lambda" class="headerlink" title="Lambda"></a>Lambda</h3><ul>
+<h2 id="Lambda"><a href="#Lambda" class="headerlink" title="Lambda"></a>Lambda</h2><ul>
 <li>功用:<ul>
 <li>Lambda不需要定義名稱，並且只有一行運算式的特性，讓整體程式碼看來更加的簡潔</li>
 </ul>
@@ -897,66 +1140,13 @@
 <li>範例:<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">function = <span class="keyword">lambda</span> x, y, z : x*y*z</span><br><span class="line">function(<span class="number">1</span>, <span class="number">3</span>, <span class="number">5</span>)</span><br><span class="line"></span><br><span class="line"><span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">輸出結果: </span></span><br><span class="line"><span class="string">15</span></span><br><span class="line"><span class="string">&quot;&quot;&quot;</span></span><br></pre></td></tr></table></figure>
 </li>
 </ul>
-<hr>
-<h2 id="類別-Class"><a href="#類別-Class" class="headerlink" title="類別(Class)"></a>類別(Class)</h2><ul>
-<li><p>功能:</p>
-<ul>
-<li>創造一個物件</li>
-<li>把函數跟變數結合的工具</li>
-<li>可以用來建立資料結構</li>
-</ul>
-</li>
-<li><p>語法:</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">class_name</span>:</span><br><span class="line">    <span class="keyword">pass</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>名詞定義:</p>
-<ul>
-<li>method(方法)：class 裡面的 function</li>
-<li>instance(實體)：依照 class 做出來的物件</li>
-<li>attribute(屬性)：class 裡面的變數</li>
-</ul>
-</li>
-<li>範例:<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">introduction</span>:</span><br><span class="line"><span class="keyword">def</span> <span class="title function_">__init__</span>(<span class="params">self, name, age, hobby</span>): <span class="comment"># method(方式)</span></span><br><span class="line">    self.name = name <span class="comment"># attribute(屬性)</span></span><br><span class="line">    self.age = age</span><br><span class="line">    self.hobby = hobby</span><br><span class="line"></span><br><span class="line">About_me = introduction(<span class="string">&quot;Puchi&quot;</span>, <span class="string">&quot;18&quot;</span>, <span class="string">&quot;Bottle Cap Baseball&quot;</span>) <span class="comment"># instance(實體)</span></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;Name:&quot;</span>, About_me.name)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;Age:&quot;</span>, About_me.age)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;hobby:&quot;</span>, About_me.hobby)</span><br><span class="line"></span><br><span class="line"><span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">輸出結果: </span></span><br><span class="line"><span class="string">Name: Puchi</span></span><br><span class="line"><span class="string">Age: 18</span></span><br><span class="line"><span class="string">hobby: Bottle Cap Baseball</span></span><br><span class="line"><span class="string">&quot;&quot;&quot;</span></span><br></pre></td></tr></table></figure></li>
-<li><p>self</p>
-<ul>
-<li>每個 class 中 method 的參數都要有 self</li>
-<li>決定要設定哪一個物件</li>
-<li>要用 self 才能存取 instance 中的 attribute</li>
-</ul>
-</li>
-<li><p><strong> init </strong></p>
-<ul>
-<li>class 中一個的 method</li>
-<li>是一個建構子，初始化的時候用時一定要搭配 self 作為參數</li>
-</ul>
-</li>
-</ul>
-<h3 id="繼承"><a href="#繼承" class="headerlink" title="繼承"></a>繼承</h3><ul>
-<li>功用:<ul>
-<li>繼承就是以一個既有的類別，對那個類別進行擴充，變成一個新的類別</li>
-<li>原有的類別稱為”父類別”，以父類別為基礎做擴充跟改寫而成的新類別稱為”子類別”</li>
-<li>經由繼承可以降低程式的重複性</li>
-</ul>
-</li>
-<li><p>語法:</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> (BaseClass_1, BaseClass_2, ...):</span><br><span class="line">    <span class="keyword">pass</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>super</p>
-<ul>
-<li>代表父類別</li>
-<li>透過 super() 執行上層 function</li>
-<li>放在 function 開頭、中間、結尾都可以</li>
-<li>單一繼承範例:<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Person</span>:</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">__init__</span>(<span class="params">self, name, age</span>):</span><br><span class="line">        self.name = name</span><br><span class="line">        self.age = age</span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Normalperson</span>(<span class="title class_ inherited__">Person</span>):</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">__init__</span>(<span class="params">self, name, age, punch</span>):</span><br><span class="line">        <span class="built_in">super</span>().__init__(name, age)</span><br><span class="line">        self.punch_1 = punch</span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Vampire</span>(<span class="title class_ inherited__">Person</span>):</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">__init__</span>(<span class="params">self, name, age, punch</span>):</span><br><span class="line">        <span class="built_in">super</span>().__init__(name, age)</span><br><span class="line">        self.punch_2 = punch</span><br><span class="line"></span><br><span class="line">Jojo = Normalperson(<span class="string">&quot;JOJO&quot;</span>, <span class="string">&quot;17&quot;</span>, <span class="string">&quot;olaola&quot;</span>)</span><br><span class="line">Dio = Vampire(<span class="string">&quot;DIO&quot;</span>, <span class="string">&quot;120&quot;</span>, <span class="string">&quot;mudamuda&quot;</span>)</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;Name:&quot;</span>, Jojo.name, <span class="string">&quot;Age:&quot;</span>, Jojo.age, <span class="string">&quot;Punch:&quot;</span>, Jojo.punch_1)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;Name:&quot;</span>, Dio.name, <span class="string">&quot;Age:&quot;</span>, Dio.age, <span class="string">&quot;Punch:&quot;</span>, Dio.punch_2)</span><br><span class="line"></span><br><span class="line"><span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">輸出結果: </span></span><br><span class="line"><span class="string">Name: JOJO Age: 17 Punch: olaola</span></span><br><span class="line"><span class="string">Name: DIO Age: 120 Punch: mudamuda</span></span><br><span class="line"><span class="string">&quot;&quot;&quot;</span></span><br></pre></td></tr></table></figure></li>
-<li>多重繼承範例:<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">First</span>:</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">__init__</span>(<span class="params">self</span>):</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&#x27;First class&#x27;</span>)</span><br><span class="line">        <span class="comment"># super().__init__()  # no need</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Second</span>(<span class="title class_ inherited__">First</span>):</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">__init__</span>(<span class="params">self</span>):</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&#x27;Second class&#x27;</span>)</span><br><span class="line">        <span class="built_in">super</span>().__init__()</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Third</span>(<span class="title class_ inherited__">Second</span>):</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">__init__</span>(<span class="params">self</span>):</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&#x27;Third class&#x27;</span>)</span><br><span class="line">        <span class="built_in">super</span>().__init__()</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">test = Third()</span><br><span class="line"></span><br><span class="line"><span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">輸出結果: </span></span><br><span class="line"><span class="string">Third class</span></span><br><span class="line"><span class="string">Second class</span></span><br><span class="line"><span class="string">First class</span></span><br><span class="line"><span class="string">&quot;&quot;&quot;</span></span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-</li>
-</ul>
-<h1 id="參考資料"><a href="#參考資料" class="headerlink" title="參考資料"></a>參考資料</h1><p><a href="https://github.com/tw-csie-sprout">資訊之芽 Python語法班 歷屆講義</a></p>
-<h1 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h1><p><a href="https://hackmd.io/QgF1mEcTRjafxbckon_-bA">Hackmd 文章連結</a></p>
+<h2 id="參考資料"><a href="#參考資料" class="headerlink" title="參考資料"></a>參考資料</h2><p><a href="https://github.com/tw-csie-sprout">資訊之芽 Python語法班 歷屆講義</a><br><a href="https://docs.python.org/zh-tw/3/contents.html">Python Documentation contents</a></p>
 ]]></content>
       <categories>
         <category>教學</category>
       </categories>
+      <tags>
+        <tag>Python</tag>
+      </tags>
   </entry>
 </search>
