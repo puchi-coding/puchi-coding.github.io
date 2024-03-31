@@ -430,15 +430,15 @@
       </tags>
   </entry>
   <entry>
-    <title>Python[字典(Dictionay)]</title>
+    <title>Python[字典(Dictionary)]</title>
     <url>/2022/03/31/Python-%E5%AD%97%E5%85%B8-Dictionay/</url>
     <content><![CDATA[<blockquote>
 <p><a href="https://hackmd.io/@Puchi1118/rJsWG9_0s">Hackmd 文章連結</a></p>
 <p><a href="https://github.com/puchi-coding/Python-note">Github 範例連結</a></p>
 </blockquote>
-<h1 id="字典-Dictionay"><a href="#字典-Dictionay" class="headerlink" title="字典(Dictionay)"></a>字典(Dictionay)</h1><ul>
+<h1 id="字典-Dictionary"><a href="#字典-Dictionary" class="headerlink" title="字典(Dictionary)"></a>字典(Dictionary)</h1><ul>
 <li><p>語法:</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="built_in">dict</span> = &#123;key : value&#125;</span><br><span class="line"><span class="comment"># 建立 dictionay</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">len</span>(<span class="built_in">dict</span>)</span><br><span class="line"><span class="comment"># 在 dictionay 中有多少個項目</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">dict</span>[key]</span><br><span class="line"><span class="comment"># 取值</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">dict</span>.get(key)</span><br><span class="line"><span class="comment"># 搜尋 key 是否存在，否則回傳 None</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">dict</span>[new_key] = new_value</span><br><span class="line"><span class="comment"># 新增</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">dict</span>[old_key] = new_value</span><br><span class="line"><span class="comment"># 修改</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">dict</span>.pop(key)</span><br><span class="line"><span class="comment"># 刪除指定的 key 和他對應到的 value</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">dict</span>.clear()</span><br><span class="line"><span class="comment"># 刪除所有的 key 和他對應到的 value</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="built_in">dict</span> = &#123;key : value&#125;</span><br><span class="line"><span class="comment"># 建立 dictionary</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">len</span>(<span class="built_in">dict</span>)</span><br><span class="line"><span class="comment"># 在 dictionary 中有多少個項目</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">dict</span>[key]</span><br><span class="line"><span class="comment"># 取值</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">dict</span>.get(key)</span><br><span class="line"><span class="comment"># 搜尋 key 是否存在，否則回傳 None</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">dict</span>[new_key] = new_value</span><br><span class="line"><span class="comment"># 新增</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">dict</span>[old_key] = new_value</span><br><span class="line"><span class="comment"># 修改</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">dict</span>.pop(key)</span><br><span class="line"><span class="comment"># 刪除指定的 key 和他對應到的 value</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">dict</span>.clear()</span><br><span class="line"><span class="comment"># 刪除所有的 key 和他對應到的 value</span></span><br></pre></td></tr></table></figure>
 </li>
 <li><p>範例:</p>
 <ul>
@@ -478,7 +478,7 @@
 <li>範例:<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="built_in">dict</span> = &#123;<span class="string">&quot;Raina&quot;</span> : <span class="string">&quot;The Armored Titan&quot;</span>, <span class="string">&quot;Bertolt&quot;</span> : <span class="string">&quot;The Colossus Titan&quot;</span>&#125;</span><br><span class="line"><span class="keyword">for</span> k, v <span class="keyword">in</span> <span class="built_in">dict</span>.items():</span><br><span class="line">    <span class="built_in">print</span>(k, v)</span><br><span class="line"></span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line"><span class="string">輸出結果: </span></span><br><span class="line"><span class="string">Raina The Armored Titan</span></span><br><span class="line"><span class="string">Bertolt The Colossus Titan</span></span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br></pre></td></tr></table></figure>
 </li>
 </ul>
-<h2 id="List-vs-Dictionay"><a href="#List-vs-Dictionay" class="headerlink" title="List vs. Dictionay"></a>List vs. Dictionay</h2><ul>
+<h2 id="List-vs-Dictionary"><a href="#List-vs-Dictionary" class="headerlink" title="List vs. Dictionary"></a>List vs. Dictionary</h2><ul>
 <li>list<ul>
 <li>必須拿連續整數當 index</li>
 <li>list[index] -&gt; value</li>
@@ -486,7 +486,7 @@
 </li>
 <li>dict<ul>
 <li>可以拿許多不同型態當 key</li>
-<li>dictionay[key] -&gt; value</li>
+<li>dictionary[key] -&gt; value</li>
 </ul>
 </li>
 </ul>
