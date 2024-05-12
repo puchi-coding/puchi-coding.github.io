@@ -1175,7 +1175,10 @@
   <entry>
     <title>強化式學習(Reinforcement Learning)</title>
     <url>/2024/05/11/%E5%BC%B7%E5%8C%96%E5%BC%8F%E5%AD%B8%E7%BF%92-Reinforcement-Learning/</url>
-    <content><![CDATA[<h1 id="強化式學習-Reinforcement-Learning"><a href="#強化式學習-Reinforcement-Learning" class="headerlink" title="強化式學習(Reinforcement Learning)"></a>強化式學習(Reinforcement Learning)</h1><p>強化式學習是指機器與環境互動過程中，人類不必直接提供解決方案，而是透過電腦不斷嘗試中學習。在訓練中以獎勵機制來強化機器行為，找到最佳的行動策略。</p>
+    <content><![CDATA[<h1 id="強化式學習-Reinforcement-Learning"><a href="#強化式學習-Reinforcement-Learning" class="headerlink" title="強化式學習(Reinforcement Learning)"></a>強化式學習(Reinforcement Learning)</h1><blockquote>
+<p><a href="https://github.com/puchi-coding/Machine-Learning/blob/main/Reinforcement%20Learning.pdf">強化式學習(Reinforcement Learning).pdf</a></p>
+</blockquote>
+<p>強化式學習是指機器與環境互動過程中，人類不必直接提供解決方案，而是透過電腦不斷嘗試中學習。在訓練中以獎勵機制來強化機器行為，找到最佳的行動策略。</p>
 <p><img src="https://github.com/puchi-coding/puchi-coding.github.io/blob/master/img/ML_img/0025.png?raw=true" alt=""></p>
 <center>圖: 馬可夫決策過程示意圖</center>
 
@@ -1187,7 +1190,7 @@
 <li>Action(行動): Agent 依 Environment 給予的 Reward 做出的決策</li>
 </ul>
 <p>不同於演算法中的「貪婪法(Greedy method)」，在每個決策點時只會選擇當下情況的最佳決策。「馬可夫決策過程(Markov decision process)」是決策者在決策過程時，除了選擇當下最佳決策外，也會隨機選擇其他決策。在最佳化問題中會有一個「最佳解(Optimum)」與其他「次佳解(Suboptimal)」的結果，而貪婪法往往只能找到次佳解，但馬可夫決策過程卻可以找到最佳解。</p>
-<p><img src="https://github.com/puchi-coding/puchi-coding.github.io/blob/master/img/ML_img/0027.png?raw=true" alt=""></p>
+<p> <img src="https://github.com/puchi-coding/puchi-coding.github.io/blob/master/img/ML_img/0027.png?raw=true " width = "800" height = "400" alt="圖片" align=center /></p>
 <center>圖: 馬可夫決策過程隨機決策概念</center>
 
 <hr></hr>
@@ -1202,10 +1205,10 @@
 <li>做一個行動後，轉到下一個狀態時，可能在未來獲得獎勵</li>
 </ol>
 <p>環境給予代理人的影響稱為「獎勵(Reward)」，獎勵可能是正值或負值，依照正負大小值來影響代理人的決策。代理人從某個特定狀態開始，預期未來可以取得的獎勵是多少，選擇最大的「值(Value)」作為決策。</p>
-<p><img src="https://github.com/puchi-coding/puchi-coding.github.io/blob/master/img/ML_img/0028.png?raw=true" alt=""></p>
+<p> <img src="https://github.com/puchi-coding/puchi-coding.github.io/blob/master/img/ML_img/0028.png?raw=true " width = "300" height = "200" alt="圖片" align=center /></p>
 <center>圖: 值(Value)概念圖</center>
 
-<p><img src="https://github.com/puchi-coding/puchi-coding.github.io/blob/master/img/ML_img/0029.png?raw=true" alt=""></p>
+<p> <img src="https://github.com/puchi-coding/puchi-coding.github.io/blob/master/img/ML_img/0029.png?raw=true" width = "300" height = "200" alt="圖片_1" align=center /></p>
 <center>圖: 獎勵(Reward)概念圖</center>
 
 <hr></hr>
@@ -1225,6 +1228,10 @@
 </ul>
 </li>
 </ul>
+<p><img src="https://github.com/puchi-coding/puchi-coding.github.io/blob/master/img/ML_img/0035.png?raw=true" alt=""></p>
+<center>圖: 路徑上各狀態的值(γ= 0.9)</center>
+
+
 <p>1.編號(1):</p>
 <center>$$V(S)= max(R(S,a) +  γV(S')) = 1+0.9×0=1$$</center>
 
@@ -1248,6 +1255,8 @@
 <center>$$V(S)= max(R(S,a) +  γV(S')) = 0+0.73×0.9=0.66$$</center>
 
 <p>當前狀態無法獲得寶藏𝑅(𝑆,𝑎)為0，將下一個狀態的值0.73乘上𝛾，再相加得出此位置的值為0.66。</p>
+<hr></hr>
+
 <p>之前的方法是將值(Value)儲存在各個狀態(State)中，但「Q-Learning」是將值(Value)儲存在各個狀態(State)所對應行動(Action)當中。Q-Learning記錄下每個狀態所對應行動的值稱為Q-value，而許多Q-Value所形成的表稱為Q-table。</p>
 <p><strong><center>Q-Function</center></strong></p>
 <center>$$Q(S,a)=R(S,a)+𝛾max(Q(S',a'))$$</center>
@@ -1313,6 +1322,8 @@
 </div>
 <p>要將Q-Table中的Q-Value更新優化，就要使用「時值差異(Temporal difference)」這個方法。</p>
 <p>為什麼不直接用Q-Function求出新的Q-value? 原因是直接求出來的Q-Value可能不是最好的，會有高估或低估的情況。最後造成Q-Value量值忽大忽小來回跳動，這不是希望看到的情況。</p>
+<hr></hr>
+
 <p><strong><center>時值差異(Temporal difference)</center></strong></p>
 <center>$$T(S,a)=R(S,a)+𝛾max(Q(S',a'))−Q(S,a)=Q'(S,a)−Q(S,a)$$</center>
 
@@ -1335,5 +1346,11 @@
 <center>更新Q-Table</center>
 <center>↓</center>
 <center>轉移下一個狀態</center>]]></content>
+      <categories>
+        <category>教學</category>
+      </categories>
+      <tags>
+        <tag>Machine Learning</tag>
+      </tags>
   </entry>
 </search>
